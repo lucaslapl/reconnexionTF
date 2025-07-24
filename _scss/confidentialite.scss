@@ -1,0 +1,16 @@
+a {
+  color: #6de862;
+}
+
+.privacy-policy {
+  padding: 90px 64px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #263048;
+}
+
+@media all and (max-width: 555px) {
+  .privacy-policy {
+    padding: 90px 25px;
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <!-- Page d’accueil -->
+      <url>
+            <loc>https://beta.reconnexion.tf/</loc>
+            <lastmod>2025-06-24</lastmod>
+            <priority>1.0</priority>
+            <changefreq>always</changefreq>
+      </url>
+      <!-- Autres pages principales -->
+      <url>
+            <loc>https://reconnexion.tf/news/</loc>
+            <lastmod>2025-07-01</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/confidentialite.php</loc>
+            <lastmod>2025-06-04</lastmod>
+            <priority>0.4</priority>
+            <changefreq>yearly</changefreq>
+      </url>
+      <!-- Articles -->
+      <url>
+            <loc>https://reconnexion.tf/news/telechargez-le-pack-vf-de-tf2</loc>
+            <lastmod>2025-07-22</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/devenez-partenaire</loc>
+            <lastmod>2025-07-16</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/podcast-les-debrouillards-doubleurs-amateurs-vf-de-tf2</loc>
+            <lastmod>2025-06-29</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/video-aventus-nous-fait-redecouvrir-tf2</loc>
+            <lastmod>2025-06-25</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/une-mise-a-jour-mvm-pour-scream-fortress-2025</loc>
+            <lastmod>2025-06-24</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/reconnexion-tf-beta-lancement-reussi</loc>
+            <lastmod>2025-06-24</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+</urlset>

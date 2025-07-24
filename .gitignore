@@ -1,0 +1,19 @@
+# .gitignore
+
+# folders
+_admin/
+_script/
+UNUSED/
+/node_modules/
+.well-known/
+
+# files
+*.log
+*.sql
+*.code-workspace
+*.json
+*.css
+.env
+*.htaccess
+robots.txt
+.secret.php

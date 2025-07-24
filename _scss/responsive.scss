@@ -1,0 +1,293 @@
+/*
+======================================================================================
+
+    @ main.css
+    @ STYLESHEET
+    @ CSS by Lucas LAPLANCHE - https://lucaslaplanche.fr/
+
+======================================================================================
+*/
+
+/********* NAVIGATION BAR *************/
+
+@media all and (max-width: 1620px) {
+  nav .nav-links {
+    margin-left: unset;
+
+    li {
+      margin: 0 25px;
+    }
+  }
+}
+
+@media all and (max-width: 1220px) {
+  nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+
+    .nav-logo {
+      border-radius: 0;
+    }
+
+    .nav-links li {
+      margin: 0 20px;
+    }
+
+    .nav-socials li {
+      margin: 0 5px;
+
+      a {
+        border-radius: 0;
+      }
+
+      .nav-discord, .nav-twitter {
+        padding: 10px 13px;
+      }
+    }
+  }
+
+  .bbq-overlay {
+    top: 55px;
+    left: 0;
+    right: 0;
+    padding: 5px 32px 0 32px;
+    width: 100%;
+  }
+
+  nav:hover + .bbq-overlay {
+    top: 55px;
+  }
+
+  .bbq-overlay {
+    &:hover {
+      top: 55px;
+    }
+
+    p {
+      margin: 15px 0 10px 0;
+    }
+  }
+}
+
+@media all and (max-width: 955px) {
+  nav {
+    justify-content: unset !important;
+
+    .nav-links li {
+      margin: 0 18px;
+    }
+
+    .nav-socials span {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  nav .nav-links li {
+    margin: 0 10px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .nav-links {
+    ul {
+      flex-direction: column;
+      background: #2a4a5e;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      display: none;
+    }
+
+    &.active ul {
+      display: flex;
+    }
+  }
+
+  .nav-toggle {
+    display: flex;
+    margin: 0 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  nav {
+    &.flex {
+      flex-wrap: wrap;
+    }
+
+    .nav-links li {
+      margin: 5px 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        top: 25px;
+      }
+    }
+
+    .nav-socials {
+      position: absolute;
+      right: 0;
+      margin: 0 15px;
+    }
+  }
+
+  .bbq-overlay {
+    padding: 5px 16px 0 16px;
+
+    p {
+      font-size: .95em;
+    }
+  }
+}
+
+/********* HEADER ***********/
+
+@media all and (max-width: 1100px) {
+  .main {
+    display: block;
+  }
+
+  .side-info {
+    margin: 25px 10px;
+  }
+
+  #box-stream {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  #streams {
+    display: block;
+  }
+
+  .stream-title, .news_home .container {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 726px) {
+  .main {
+    width: 95%;
+
+    .logo-title {
+      h1 {
+        font-size: 2.9em;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 490px) {
+  .main .logo-title {
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+
+    a {
+      width: 160px;
+    }
+  }
+
+  .news_home .news-list {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 445px) {
+  .news_home {
+    .news-list .news {
+      width: 270px;
+      height: 170px;
+    }
+
+    .news-all {
+      width: 250px;
+    }
+  }
+}
+
+/****** PRESENTATION *******/
+
+@media all and (max-width: 810px) {
+  #presentation .img-pres img {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  #presentation h1 {
+    font-size: 2.5em;
+  }
+}
+
+/****** SERVEURS *******/
+
+@media all and (max-width: 1220px) {
+  #serveurs .container {
+    width: 90%;
+
+    .server {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 530px) {
+  #serveurs .container .server {
+    padding: 5px 0;
+    flex-direction: column;
+
+    .server-title {
+      flex-direction: column;
+    }
+
+    .server-connect {
+      flex-direction: unset;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+/****** PARTNERS ******/
+
+@media all and (max-width: 631px) {
+  #partners .commu-box {
+    margin: 15px 25px;
+  }
+}
+
+/****** FOOTER *******/
+
+@media all and (max-width: 650px) {
+  footer #copyright {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .foot-links {
+      margin: 0 0 20px 0;
+    }
+  }
+}
