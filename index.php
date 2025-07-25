@@ -217,11 +217,12 @@ include_once '_inc/sourcequery.php';
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Summer #1</h3>
+                    <p><? echo $results[4]['players']; ?> / <? echo $results[4]['maxPlayers']; ?> - <? echo $results[4]['map']; ?></p>
                 </div>
                 <div class="server-connect flex align-center holiday">
-                    <a class="link-holiday" href="#" onclick="return false;">
+                    <a class="link-holiday" href="steam://connect/152.53.183.126:27045" onclick="return false;">
                         <img src="_img/favicon2.webp" alt="">
-                        Bientôt !
+                        Se connecter
                     </a>
                 </div>
             </div>
