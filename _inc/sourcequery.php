@@ -1,21 +1,18 @@
 <?php
-	// error_reporting(E_ALL);
-	// ini_set('display_errors', 'on');
+	error_reporting(E_ALL);
+	ini_set('display_errors', 'on');
 
 	require __DIR__ . '/../sourcequery/SourceQuery/SourceQuery.php';
 
 	use xPaw\SourceQuery\SourceQuery;
 
-	// Edit this ->
 	$servers = [
-		['ip' => '152.53.183.126', 'port' => 27015],
-		['ip' => '152.53.183.126', 'port' => 27025],
-		['ip' => '152.53.183.126', 'port' => 27035],
-		['ip' => '152.53.183.126', 'port' => 27045],
-		['ip' => '152.53.183.126', 'port' => 27055]
-		// Ajoute d'autres serveurs ici
+		['name' => 'vanilla', 'ip' => '152.53.183.126', 'port' => 27015],
+		['name' => 'custom',  'ip' => '152.53.183.126', 'port' => 27025],
+		['name' => 'mvm',     'ip' => '152.53.183.126', 'port' => 27035],
+		['name' => 'holiday',  'ip' => '152.53.183.126', 'port' => 27045],
+		['name' => 'tfdb',     'ip' => '152.53.183.126', 'port' => 27055],
 	];
-	// Edit this <-
 
 	$results = [];
 
@@ -26,7 +23,7 @@
 			$info = $Query->GetInfo();
 			$players = $Query->GetPlayers();
 
-			$results[] = [
+			$results[$srv['name']] = [
 				'ip' => $srv['ip'],
 				'port' => $srv['port'],
 				'hostname' => $info['HostName'] ?? null,
@@ -36,7 +33,7 @@
 				'playerList' => $players
 			];
 		} catch (Exception $e) {
-			$results[] = [
+			$results[$srv['name']] = [
 				'ip' => $srv['ip'],
 				'port' => $srv['port'],
 				'error' => $e->getMessage()
@@ -44,5 +41,8 @@
 		} finally {
 			$Query->Disconnect();
 		}
-	}
+
+	usleep(200000); // pause entre requêtes
+}
+
 ?>
