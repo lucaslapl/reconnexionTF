@@ -22,6 +22,12 @@
       </url>
       <!-- Articles -->
       <url>
+            <loc>https://reconnexion.tf/news/summer-update-2025</loc>
+            <lastmod>2025-07-25</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
             <loc>https://reconnexion.tf/news/telechargez-le-pack-vf-de-tf2</loc>
             <lastmod>2025-07-22</lastmod>
             <priority>0.8</priority>
