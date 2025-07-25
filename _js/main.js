@@ -15,36 +15,7 @@ $(document).ready(function() {
         scrollTop: target.offset().top - navHeight
       }, 600);
     }
-  });
-
-
-/**** TF2 SERVER QUERIES
-
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('../_inc/sourcequery.php')
-        .then(response => response.json())
-        .then(data => {
-            updateServer('vanilla', data.vanilla);
-            updateServer('custom', data.custom);
-            updateServer('mvm', data.mvm);
-            updateServer('summer', data.summer);
-            updateServer('tfdb', data.tfdb);
-        })
-        .catch(err => {
-            console.error("Erreur AJAX :", err);
-        });
-});
-
-function updateServer(id, server) {
-    const el = document.querySelector(`#${id}-srv .server-title p`);
-    if (!el) return;
-
-    if (server.error) {
-        el.textContent = `❌ Erreur : ${server.error}`;
-    } else {
-        el.textContent = `${server.players} / ${server.maxPlayers} - ${server.map}`;
-    }
-} ****/  
+  }); 
 
 
 /******* SERVER FEATURES SLIDE *******/
