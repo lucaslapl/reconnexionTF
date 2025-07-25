@@ -299,7 +299,7 @@ include_once '_inc/sourcequery.php';
                     </ul>
                 </div>
             <?php $srv = $results['mvm']; ?>
-            <div id="mvm-srv" class="server flex wrap-mvm">
+            <div id="mvm-srv" class="server flex wrap-custom">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>MvM #1</h3>
@@ -311,8 +311,8 @@ include_once '_inc/sourcequery.php';
                         <?php endif; ?>
                     </p>
                 </div>
-                <div class="server-connect flex align-center mvm">
-                    <a class="link-mvm" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                <div class="server-connect flex align-center custom">
+                    <a class="link-custom" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -326,7 +326,7 @@ include_once '_inc/sourcequery.php';
                     </ul>
                 </div>
             <?php $srv = $results['tfdb']; ?>
-            <div id="tfdb-srv" class="server flex wrap-tfdb">
+            <div id="tfdb-srv" class="server flex wrap-custom">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Dodgeball #1</h3>
@@ -338,8 +338,8 @@ include_once '_inc/sourcequery.php';
                         <?php endif; ?>
                     </p>
                 </div>
-                <div class="server-connect flex align-center tfdb">
-                    <a class="link-tfdb" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                <div class="server-connect flex align-center custom">
+                    <a class="link-custom" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
