@@ -217,7 +217,7 @@ include_once '_inc/sourcequery.php';
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Summer #1</h3>
-                    <p><? echo $results[4]['players']; ?> / <? echo $results[4]['maxPlayers']; ?> - <? echo $results[4]['map']; ?></p>
+                    <p><? echo $results[3]['players']; ?> / <? echo $results[3]['maxPlayers']; ?> - <? echo $results[3]['map']; ?></p>
                 </div>
                 <div class="server-connect flex align-center holiday">
                     <a class="link-holiday" href="steam://connect/152.53.183.126:27045" onclick="return false;">
@@ -301,7 +301,7 @@ include_once '_inc/sourcequery.php';
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Dodgeball #1</h3>
-                    <p><? echo $results[3]['players']; ?> / <? echo $results[3]['maxPlayers']; ?> - <? echo $results[3]['map']; ?></p>
+                    <p><? echo $results[4]['players']; ?> / <? echo $results[4]['maxPlayers']; ?> - <? echo $results[4]['map']; ?></p>
                 </div>
                 <div class="server-connect flex align-center custom">
                     <a class="link-custom" href="steam://connect/152.53.183.126:27055">
