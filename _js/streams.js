@@ -12,7 +12,9 @@ function loadStreams(container, lang) {
     .then(data => {
       //console.log("Twitch API response:", data);
       container.innerHTML = "";
-      if (data.data.length === 0) {
+      console.log("Réponse Twitch:", data);
+
+      if (!data || !Array.isArray(data.data) || data.data.length === 0) {
         container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment :(</p>`;
       } else {
         data.data.forEach(stream => {
