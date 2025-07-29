@@ -22,6 +22,18 @@
       </url>
       <!-- Articles -->
       <url>
+            <loc>https://beta.reconnexion.tf/news/une-lettre-ouverte-a-valve-pour-corriger-le-mode-casual</loc>
+            <lastmod>2025-07-29</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://reconnexion.tf/news/reconnexion-tf-s-associe-a-fun-fortress-family</loc>
+            <lastmod>2025-07-29</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
             <loc>https://reconnexion.tf/news/summer-update-2025</loc>
             <lastmod>2025-07-25</lastmod>
             <priority>0.8</priority>
