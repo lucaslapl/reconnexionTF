@@ -1,6 +1,5 @@
 <?php
 include("_inc/config.php");
-include_once '_inc/sourcequery.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -213,21 +212,15 @@ include_once '_inc/sourcequery.php';
             <h2>Nos serveurs</h2>
         </div>
         <div class="container flex justify-center align-center">
-            <?php $srv = $results['holiday']; ?>
             <div id="holiday-srv" class="server flex wrap-holiday">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Summer #1</h3>
                     <p>
-                        <?php if (isset($srv['error'])): ?>
-                            ❌ Erreur : <?= htmlspecialchars($srv['error']) ?>
-                        <?php else: ?>
-                            <?= $srv['players'] ?> / <?= $srv['maxPlayers'] ?> - <?= htmlspecialchars($srv['map']) ?>
-                        <?php endif; ?>
                     </p>
                 </div>
                 <div class="server-connect flex align-center holiday">
-                    <a class="link-holiday" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                    <a class="link-holiday" href="steam://connect/jeu.reconnexion.tf:27045">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -241,21 +234,15 @@ include_once '_inc/sourcequery.php';
                         <li>No random bullet spread</li>
                     </ul>
                 </div>
-            <?php $srv = $results['vanilla']; ?>
             <div id="vanilla-srv" class="server flex wrap-vanilla">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Vanilla #1</h3>
                     <p>
-                        <?php if (isset($srv['error'])): ?>
-                            ❌ Erreur : <?= htmlspecialchars($srv['error']) ?>
-                        <?php else: ?>
-                            <?= $srv['players'] ?> / <?= $srv['maxPlayers'] ?> - <?= htmlspecialchars($srv['map']) ?>
-                        <?php endif; ?>
                     </p>
                 </div>
                 <div class="server-connect flex align-center vanilla">
-                    <a class="link-vanilla" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                    <a class="link-vanilla" href="steam://connect/jeu.reconnexion.tf:27015">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -270,21 +257,15 @@ include_once '_inc/sourcequery.php';
                         <li>Ce serveur utilise le fonctionnement des anciens serveurs officiels de Valve pré-2016, avec tous les paramètres de l'ancien Quickplay !</li>
                     </ul>
                 </div>
-            <?php $srv = $results['custom']; ?>
             <div id="custom-srv" class="server flex wrap-custom">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Custom #1</h3>
                     <p>
-                        <?php if (isset($srv['error'])): ?>
-                            ❌ Erreur : <?= htmlspecialchars($srv['error']) ?>
-                        <?php else: ?>
-                            <?= $srv['players'] ?> / <?= $srv['maxPlayers'] ?> - <?= htmlspecialchars($srv['map']) ?>
-                        <?php endif; ?>
                     </p>
                 </div>
                 <div class="server-connect flex align-center custom">
-                    <a class="link-custom" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                    <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27025">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -298,21 +279,15 @@ include_once '_inc/sourcequery.php';
                         <li>Plugin RTD pour plus de piquant</li>
                     </ul>
                 </div>
-            <?php $srv = $results['mvm']; ?>
             <div id="mvm-srv" class="server flex wrap-custom">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>MvM #1</h3>
                     <p>
-                        <?php if (isset($srv['error'])): ?>
-                            ❌ Erreur : <?= htmlspecialchars($srv['error']) ?>
-                        <?php else: ?>
-                            <?= $srv['players'] ?> / <?= $srv['maxPlayers'] ?> - <?= htmlspecialchars($srv['map']) ?>
-                        <?php endif; ?>
                     </p>
                 </div>
                 <div class="server-connect flex align-center custom">
-                    <a class="link-custom" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                    <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27035">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -325,21 +300,15 @@ include_once '_inc/sourcequery.php';
                         <li>Difficulté modulable !</li>
                     </ul>
                 </div>
-            <?php $srv = $results['tfdb']; ?>
             <div id="tfdb-srv" class="server flex wrap-custom">
                 <div class="server-title flex align-center">
                     <i class="fa-solid fa-chevron-right fa-2x"></i>
                     <h3>Dodgeball #1</h3>
                     <p>
-                        <?php if (isset($srv['error'])): ?>
-                            ❌ Erreur : <?= htmlspecialchars($srv['error']) ?>
-                        <?php else: ?>
-                            <?= $srv['players'] ?> / <?= $srv['maxPlayers'] ?> - <?= htmlspecialchars($srv['map']) ?>
-                        <?php endif; ?>
                     </p>
                 </div>
                 <div class="server-connect flex align-center custom">
-                    <a class="link-custom" href="steam://connect/<?= $srv['ip'] ?>:<?= $srv['port'] ?>">
+                    <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27055">
                         <img src="_img/favicon2.webp" alt="">
                         Se connecter
                     </a>
@@ -368,5 +337,6 @@ include_once '_inc/sourcequery.php';
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
 	<script src="_js/main.js"></script>
     <script src="_js/streams.js" defer></script>
+    <script src="_js/server-queries.js"></script>
 </body>
 </html>

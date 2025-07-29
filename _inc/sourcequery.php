@@ -1,4 +1,9 @@
 <?php
+
+	$cache_file = __DIR__ . '/cache_servers.json';
+	$cache_lifetime = 180; // en secondes (3 min)
+
+
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'on');
 
@@ -15,6 +20,13 @@
 	];
 
 	$results = [];
+
+	if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_lifetime) {
+    header('Content-Type: application/json');
+    echo file_get_contents($cache_file);
+    exit;
+}
+
 
 	foreach ($servers as $srv) {
 		$Query = new SourceQuery();
@@ -45,5 +57,8 @@
 	usleep(300000); // pause entre requêtes
 } 
 
+header('Content-Type: application/json');
+file_put_contents($cache_file, json_encode($results));
+echo json_encode($results);
 
 ?>
