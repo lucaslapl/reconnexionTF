@@ -66,11 +66,11 @@ include("_inc/config.php");
 
 <body>
     
-    <?php require_once '_inc/nav.php'; ?>
+    <?php require_once __DIR__ . '/_inc/nav.php'; ?>
 
     <header id="accueil">
         
-        <?php require_once '_inc/header.php'; ?>
+        <?php require_once __DIR__ . '/_inc/header.php'; ?>
 
         <section id="beta-text" class="news_home">
             <div class="container">
@@ -88,20 +88,20 @@ include("_inc/config.php");
             </div>
         </section>
         
-       <?php require_once '_inc/actualites.php'; ?>
+       <?php require_once __DIR__ . '/_inc/actualites.php'; ?>
 
         <div class="header_background">
             <img src="_img/poster.webp" alt="">
         </div>
     </header>
 
-    <?php require_once '_inc/presentation.php'; ?>
+    <?php require_once __DIR__ . '/_inc/presentation.php'; ?>
 
-    <?php require_once '_inc/partners.php'; ?>
+    <?php require_once __DIR__ . '/_inc/partners.php'; ?>
 
-    <?php require_once '_inc/servers.php'; ?>
+    <?php require_once __DIR__ . '/_inc/servers.php'; ?>
 
-    <?php require_once '_inc/footer.php'; ?>
+    <?php require_once __DIR__ . '/_inc/footer.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>
