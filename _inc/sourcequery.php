@@ -33,7 +33,6 @@
 		try {
 			$Query->Connect($srv['ip'], $srv['port'], 3, SourceQuery::SOURCE);
 			$info = $Query->GetInfo();
-			$players = $Query->GetPlayers();
 
 			$results[$srv['name']] = [
 				'ip' => $srv['ip'],
@@ -42,7 +41,6 @@
 				'map' => $info['Map'] ?? null,
 				'players' => $info['Players'] ?? null,
 				'maxPlayers' => $info['MaxPlayers'] ?? null,
-				'playerList' => $players
 			];
 		} catch (Exception $e) {
 			$results[$srv['name']] = [
