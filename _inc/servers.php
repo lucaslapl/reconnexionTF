@@ -1,4 +1,4 @@
-<section id="serveurs"> 
+    <section id="serveurs"> 
         <div class="container">
             <h2>Nos serveurs</h2>
         </div>
