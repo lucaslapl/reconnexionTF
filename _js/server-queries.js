@@ -18,7 +18,7 @@ fetch('_inc/sourcequery.php')
       if (!container || !srv) return;
 
       const info = srv.error
-        ? `❌ Erreur : ${srv.error}`
+        ? `❌ ${srv.error}`
         : `${srv.players} / ${srv.maxPlayers} - ${srv.map}`;
 
       const connectUrl = `steam://connect/${srv.ip}:${srv.port}`;
