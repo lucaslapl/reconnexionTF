@@ -62,5 +62,3 @@
 header('Content-Type: application/json');
 file_put_contents($cache_file, json_encode($results));
 echo json_encode($results);
-
-?>
