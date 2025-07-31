@@ -715,32 +715,46 @@ header {
   box-sizing: border-box;
 
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     flex-direction: column;
   }
 
-  h2 {
+  h1 {
     font-family: TF2Secondary;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     color: #7ef9ff;
     font-size: 3em;
   }
 
-  .status {
-    color: #fff;
-  }
-
-  .container .server {
-    width: 70%;
+  #reconntf-servers .server,
+  #fff-servers .server {
+    width: 85%;
     min-height: 50px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 15px auto;
+    margin: 15px;
     justify-content: space-between;
-    cursor: pointer;
     z-index: 50;
+  }
+  #reconntf-servers .server {
+    cursor: pointer;
+  }
+  #fff-servers.servers {
+    cursor: default;
+  }
+}
+
+#reconntf-servers,
+#fff-servers {
+  width: 100%;
+
+  h2 {
+    font-family: TF2Secondary;
+    font-size: 1.3em;
+    text-align: center;
+    color: #7ef9ff;
   }
 }
 
@@ -777,7 +791,7 @@ header {
   background-position: center;
   background-image: url("../_img/palmtree.png");
   top: -33px;
-  left: 135px;
+  left: -50px;
   width: 70px;
   height: 70px;
 }

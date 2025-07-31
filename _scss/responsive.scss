@@ -242,12 +242,17 @@
 
 /****** SERVEURS *******/
 
-@media all and (max-width: 1220px) {
-  #serveurs .container {
-    width: 90%;
-
-    .server {
+@media all and (max-width: 1200px) {
+  #serveurs {
+    .container {
       width: 100%;
+    }
+    #server-wrapper {
+      flex-direction: column;
+
+      .server {
+        width: 90%;
+      }
     }
   }
 }
@@ -256,9 +261,18 @@
   #serveurs .container .server {
     padding: 5px 0;
     flex-direction: column;
+    width: 100%;
+
+    .fa-chevron-right {
+      display: none;
+    }
 
     .server-title {
       flex-direction: column;
+
+      h3 {
+        margin: 10px auto;
+      }
     }
 
     .server-connect {
