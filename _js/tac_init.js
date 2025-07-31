@@ -1,5 +1,5 @@
 tarteaucitron.init({
-          "privacyUrl": "https://reconnexion.tf/confidentialite.html", /* Privacy policy url */
+          "privacyUrl": "https://reconnexion.tf/confidentialite.php", /* Privacy policy url */
           "bodyPosition": "top", /* top to bring it as first element for accessibility */
 
           "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
