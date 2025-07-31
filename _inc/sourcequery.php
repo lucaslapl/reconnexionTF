@@ -1,7 +1,7 @@
 <?php
 
 	$cache_file = __DIR__ . '/cache_servers.json';
-	$cache_lifetime = 180; // en secondes (3 min)
+	$cache_lifetime = 5; // en secondes (5 min)
 
 
 	error_reporting(E_ALL);
@@ -12,11 +12,15 @@
 	use xPaw\SourceQuery\SourceQuery;
 
 	$servers = [
-		['name' => 'holiday', 'ip' => '152.53.183.126', 'port' => 27045],
+		['name' => 'holiday', 'ip' => '152.53.183.126', 'port' => 27045], // RECONN TF
 		['name' => 'vanilla',  'ip' => '152.53.183.126', 'port' => 27015],
 		['name' => 'custom',     'ip' => '152.53.183.126', 'port' => 27025],
 		['name' => 'mvm',  'ip' => '152.53.183.126', 'port' => 27035],
 		['name' => 'tfdb',     'ip' => '152.53.183.126', 'port' => 27055],
+		['name' => 'casu-fff',     'ip' => '195.15.194.29', 'port' => 27015],  // FFF
+		['name' => 'mge-fff',     'ip' => '195.15.194.29', 'port' => 27016],
+		['name' => 'jump-fff',     'ip' => '195.15.194.29', 'port' => 27017],
+		['name' => 'comp-fff',     'ip' => '195.15.194.29', 'port' => 27018]
 	];
 
 	$results = [];

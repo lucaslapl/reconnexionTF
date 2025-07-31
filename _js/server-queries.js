@@ -1,4 +1,12 @@
-const serverIds = ['holiday', 'vanilla', 'custom', 'mvm', 'tfdb'];
+const serverIds = ['holiday', 
+                  'vanilla', 
+                  'custom', 
+                  'mvm', 
+                  'tfdb', 
+                  'casu-fff', 
+                  'mge-fff', 
+                  'jump-fff', 
+                  'comp-fff'];
 
 fetch('_inc/sourcequery.php')
   .then(res => res.json())
