@@ -1,5 +1,5 @@
 <?php
-include("../_inc/config.php");
+require_once("../_src/news_model.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -59,7 +59,7 @@ include("../_inc/config.php");
 </head>
 
 <body>
-    <?php include '../_inc/nav_sub.php'; ?>
+    <?php include '../_templates/nav_sub.php'; ?>
 
     <section id="news">
         <div class="container">
@@ -68,12 +68,10 @@ include("../_inc/config.php");
         <div class="news-list">
         <?php 
 
-            $sthandler = $conn->prepare("SELECT * FROM reconnexiontf_news ORDER BY id DESC");
-            $sthandler->execute();
-            $resultats = $sthandler->fetchAll();
+            $results = getAllNews();
 
             // Affichage des résultats
-            foreach ($resultats as $row) {
+            foreach ($results as $row) {
                 $id = $row["id"];
                 $titre = $row["titre"];
 
@@ -106,7 +104,7 @@ include("../_inc/config.php");
         </div>
     </section>
 
-    <?php include '../_inc/footer_sub.php'; ?>
+    <?php include '../_templates/footer_sub.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>

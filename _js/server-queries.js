@@ -8,7 +8,7 @@ const serverIds = ['holiday',
                   'jump-fff', 
                   'comp-fff'];
 
-fetch('_inc/sourcequery.php')
+fetch('_src/sourcequery.php')
   .then(res => res.json())
   .then(data => {
     serverIds.forEach(id => {

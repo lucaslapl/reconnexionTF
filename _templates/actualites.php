@@ -5,12 +5,10 @@
              <div class="news-list flex space-evenly">
             <?php 
 
-                $sthandler = $conn->prepare("SELECT * FROM reconnexiontf_news ORDER BY id DESC LIMIT 4");
-                $sthandler->execute();
-                $resultats = $sthandler->fetchAll();
+                $results = getNews();
 
                 // Affichage des résultats
-                foreach ($resultats as $row) {
+                foreach ($results as $row) {
                     $id = $row["id"];
                     $titre = $row["titre"];
                     $slug = $row["slug"];

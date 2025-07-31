@@ -57,7 +57,7 @@
 
 <body>
   
-    <?php include '_inc/nav.php'; ?>
+    <?php include '_templates/nav.php'; ?>
 
   <main class="privacy-policy">
     <h1>Politique de confidentialité</h1>
@@ -106,7 +106,7 @@
     <p>Cette politique de confidentialité peut être mise à jour à tout moment. La date de mise à jour sera indiquée en haut de cette page.</p>
   </main>
 
-    <?php include '_inc/footer.php'; ?>
+    <?php include '_templates/footer.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>

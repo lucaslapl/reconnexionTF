@@ -1,21 +1,19 @@
 <?php
-    include('../_inc/config.php'); 
-    $slug = $_GET['slug'] ?? '';
-        $stmt = $conn->prepare("SELECT * FROM reconnexiontf_news WHERE slug = ?");
-        $stmt->execute([$slug]);
-        $article = $stmt->fetch();
+    require_once('../_src/news_model.php'); 
+    
+    $article = getArticle();
 
-        $description = strip_tags($article['contenu']);
-        $description = mb_substr($description, 0, 150) . '...';
+    $description = strip_tags($article['contenu']);
+    $description = mb_substr($description, 0, 150) . '...';
 
-        $articleTitle = htmlspecialchars($article['titre'], ENT_QUOTES);
-        $articleSlug = htmlspecialchars($article['slug'], ENT_QUOTES);
+    $articleTitle = htmlspecialchars($article['titre'], ENT_QUOTES);
+    $articleSlug = htmlspecialchars($article['slug'], ENT_QUOTES);
 
-        if (!$article) {
-            http_response_code(404);
-            echo "Article non trouvé.";
-            exit;
-        }
+    if (!$article) {
+        http_response_code(404);
+        echo "Article non trouvé.";
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -107,7 +105,7 @@
 
 <body>
     
-    <?php include '../_inc/nav_sub.php'; ?>
+    <?php require_once '../_templates/nav_sub.php'; ?>
 
     <section id="news-head">
     	<div class="news-title">
@@ -123,7 +121,7 @@
     	</div>
     </section>
 
-    <?php include '../_inc/footer_sub.php'; ?>
+    <?php require_once '../_templates/footer_sub.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>
