@@ -1,7 +1,6 @@
 # .gitignore
 
 # folders
-/private/
 _admin/
 UNUSED/
 /node_modules/

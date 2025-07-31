@@ -13,8 +13,14 @@ if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_lifet
 }
 
 $client_id = $env['TWITCH_CLIENT_ID'];
-$tokenData = json_decode(file_get_contents(__DIR__ . '/private/.twitch_token.json'), true);
-$access_token = $tokenData['access_token'];
+$access_token = $env['TWITCH_ACCESS_TOKEN'];
+$expires_at = isset($env['TWITCH_TOKEN_EXPIRES_AT']) ? (int)$env['TWITCH_TOKEN_EXPIRES_AT'] : 0;
+
+if (time() >= $expires_at) {
+    http_response_code(403);
+    echo json_encode(['error' => 'Token expiré']);
+    exit;
+}
 
 $language = isset($_GET['lang']) && $_GET['lang'] === 'fr' ? '&language=fr' : '';
 $url = "https://api.twitch.tv/helix/streams?game_id=16676&first=15" . $language;
