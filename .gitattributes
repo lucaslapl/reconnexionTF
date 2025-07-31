@@ -1,0 +1,6 @@
+# Ignore le JS et PHP externe
+/tarteaucitron/* linguist-vendored
+/sourcequery/* linguist-vendored
+
+# Ignore les fichiers / bibliothèques externes
+/node_modules/* linguist-vendored
