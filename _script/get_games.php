@@ -3,7 +3,7 @@
 $env = parse_ini_file(__DIR__ . '/.env');
 
 $client_id = $env['TWITCH_CLIENT_ID'];
-$tokenData = json_decode(file_get_contents(__DIR__ . '/.twitch_token.json'), true);
+$tokenData = json_decode(file_get_contents(__DIR__ . '/private/.twitch_token.json'), true);
 $access_token = $tokenData['access_token'];
 $game_name = 'Team Fortress 2';
 

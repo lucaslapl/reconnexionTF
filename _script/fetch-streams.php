@@ -13,7 +13,7 @@ if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_lifet
 }
 
 $client_id = $env['TWITCH_CLIENT_ID'];
-$tokenData = json_decode(file_get_contents(__DIR__ . '/.twitch_token.json'), true);
+$tokenData = json_decode(file_get_contents(__DIR__ . '/private/.twitch_token.json'), true);
 $access_token = $tokenData['access_token'];
 
 $language = isset($_GET['lang']) && $_GET['lang'] === 'fr' ? '&language=fr' : '';
