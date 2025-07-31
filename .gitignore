@@ -15,4 +15,4 @@ UNUSED/
 .env
 *.htaccess
 robots.txt
-.secret.php
+*secret*
