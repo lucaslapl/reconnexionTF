@@ -38,7 +38,7 @@
 
 
         
-        <div class="foot-bg">
+        <div class="foot-bg flex justify-center align-center">
             <img src="../_img/foot-bg.webp" alt="" loading="lazy">
         </div>
     </footer>

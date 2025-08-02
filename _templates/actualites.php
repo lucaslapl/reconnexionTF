@@ -19,7 +19,7 @@
             ?>
 
                 <a id="news-nb<?= $id ?>" href="news/<?= $slug ?>">
-                    <div class="news <?= $news_type ?>">
+                    <div class="news flex <?= $news_type ?>">
                         <span>Le <?= date('d/m/Y', strtotime($date_publi)) ?></span>
                         <p><?= $titre ?></p>
                         <img class="news-img" src="<?= $thumbnail_clean ?>" alt="thumbnail" loading="lazy">
