@@ -1,0 +1,144 @@
+/********* NAVIGATION BAR *************/
+
+nav {
+  margin: 0 auto;
+  left: 15px;
+  right: 15px;
+  top: 10px;
+  height: 70px;
+  background: #2a4a5e;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0px 0px 15px #00000061;
+  border-radius: 10px;
+  transition: .4s;
+
+  ul {
+    list-style: none;
+  }
+
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #1d3851;
+
+    a {
+      width: 80px;
+      height: 70px;
+    }
+
+    img {
+      width: 60px;
+      padding: 5px 10px;
+    }
+  }
+
+  .nav-links {
+    margin-left: -435px;
+
+    li {
+      margin: 0 35px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 3px;
+        background: #9cd1ff;
+        left: 50%;
+        top: 43px;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+        transition: .3s;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+
+    .link-sban:hover::before {
+      background: #ff9c9c;
+      opacity: 1;
+    }
+
+    li a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+  .nav-socials li a {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .nav-links .link-sban img {
+    width: 20px;
+    top: 4px;
+  }
+
+  .nav-socials {
+    margin: 0 30px;
+
+    li {
+      margin: 0 5px;
+
+      .nav-twitter {
+        background: #111;
+        padding: 15px 35px;
+        border-radius: 7px;
+        font-size: 1.1em;
+        transition: .3s;
+
+        &:hover {
+          background: #464646;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .nav-discord {
+        background: #5c87b5;
+        padding: 15px 35px;
+        border-radius: 7px;
+        font-size: 1.1em;
+        transition: .3s;
+
+        &:hover {
+          background: #81b5ec;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.bbq-overlay {
+  position: fixed;
+  z-index: 990;
+  top: 25px;
+  left: 15px;
+  right: 15px;
+  min-height: 50px;
+  background-color: gold;
+  color: #000;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: .3s;
+}
+
+nav:hover + .bbq-overlay, .bbq-overlay:hover {
+  top: 75px;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}

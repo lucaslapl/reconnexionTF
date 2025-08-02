@@ -1,0 +1,100 @@
+/* DEFAULTS */
+
+* {
+  font-family: Ebrima, Helvetica, Arial, sans-serif;
+  position: relative;
+
+  &:focus {
+    outline-style: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/** a{text-decoration:none;color:inherit;cursor:pointer;}**/
+
+p {
+  font-size: 1.1em;
+}
+
+ol, ul {
+  list-style: disclosure-closed;
+}
+
+strong {
+  color: #46b2c0;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-left {
+  clear: left;
+}
+
+/* :: pseudo elements */
+
+/* KEYFRAMES */
+
+/********** PACK **********/
+
+/* TRANSITIONS */
+
+/* USER-SELECT */
+
+a, img {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* FLEX */
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

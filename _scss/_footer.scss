@@ -1,0 +1,75 @@
+/******* FOOTER **********/
+
+footer {
+  width: 100%;
+  background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+
+  #foot-socials {
+    text-align: center;
+    margin: 120px auto;
+    width: 80%;
+
+    h1 {
+      font-family: TF2Secondary;
+      font-size: 2.5em;
+    }
+
+    a {
+      background: #33496c;
+      color: #fff;
+      display: inline-flex;
+      width: 60px;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 13px;
+      transition: .3s;
+
+      &:hover {
+        background: #6387c1;
+      }
+    }
+  }
+
+  #copyright {
+    background-color: #2a4a5e;
+    font-size: .9em;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 0 20px 0;
+
+    .foot-links h4 {
+      font-family: TF2Secondary;
+      color: #bbe9ff;
+      margin: 0 0 10px 0;
+    }
+
+    a {
+      color: #bcddff;
+    }
+
+    .foot-links {
+      margin: 0 20px;
+    }
+
+    .copyright {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+
+  .foot-bg {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: .2;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}
