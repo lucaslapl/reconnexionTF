@@ -5,7 +5,7 @@
              <div class="news-list flex space-evenly">
             <?php 
 
-                $results = getNews();
+                $results = getNews(4);
 
                 // Affichage des résultats
                 foreach ($results as $row) {

@@ -68,7 +68,7 @@ require_once("../_src/news_model.php");
         <div class="news-list">
         <?php 
 
-            $results = getAllNews();
+            $results = getNews();
 
             // Affichage des résultats
             foreach ($results as $row) {
