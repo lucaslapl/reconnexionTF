@@ -1,5 +1,6 @@
 <?php
-require_once("_src/news_model.php");
+require '_src/config.php';
+require "_src/news_model.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">

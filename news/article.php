@@ -1,5 +1,6 @@
 <?php
-    require_once('../_src/news_model.php'); 
+    require '../_src/config.php';
+    require '../_src/news_model.php'; 
     
     $article = getArticle($_GET['slug'] ?? '');
 

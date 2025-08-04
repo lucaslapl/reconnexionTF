@@ -1,3 +1,6 @@
+<?php
+require '_src/config.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
