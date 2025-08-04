@@ -14,6 +14,7 @@
                     <a href="https://reconnexion.tf/confidentialite.php">Politique de confidentialité</a>
                     <a href="https://statut.reconn.tf/">État des services</a>
                     <a href="https://beta.reconnexion.tf/news/devenez-partenaire">Programme partenaires</a>
+                    <a href="https://beta.reconnexion.tf/news/rejoignez-l-equipe-reconnexion-tf">Nous rejoindre</a>
                 </div>
                 <div id="social-links" class="flex flex-column foot-links">
                     <h4>Réseaux</h4>
