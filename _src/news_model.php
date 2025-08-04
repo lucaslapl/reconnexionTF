@@ -31,6 +31,7 @@ function getArticle($slug) {
 
 
 ////////////////////////////////////////
+////////////// ADMIN ///////////////////
 ////////////////////////////////////////
 
 function adminGetAllNews() {
@@ -39,34 +40,32 @@ function adminGetAllNews() {
     return $statement->fetchAll();
 }
 
-function adminDeleteNews() {
+function adminAddNews($titre, $slug, $auteur, $contenu, $thumbnail_path, $news_type) {
     $db = dbConnect();
-    $id = (int)$_GET['id'];
-    $statement = $db->prepare("DELETE FROM reconnexiontf_news WHERE id = ?");
-    $statement->execute([$id]);
+    $statement = $db->prepare("INSERT INTO reconnexiontf_news (titre, slug, auteur, contenu, thumbnail, news_type) VALUES (?, ?, ?, ?, ?, ?)");
+    $statement->execute([$titre, $slug, $auteur, $contenu, $thumbnail_path, $news_type]);
 }
 
-function adminEditNews($id) {
-    $db = dbConnect();
-    $statement = $db->prepare("SELECT * FROM reconnexiontf_news WHERE id = ?");
-    $statement->execute([$id]);
-    return $statement->fetch();
+function slugify($text) {
+    // Remplace les caractères spéciaux
+    $text = iconv('UTF-8', 'ASCII//TRANSLIT', $text);
+    $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+    $text = strtolower(trim($text, '-'));
+    $text = preg_replace('~[^-\w]+~', '', $text);
+    return $text ?: 'article';
 }
 
-function adminGetEditNews($id) {
-    $db = dbConnect();
-    $statement = $db->prepare("SELECT thumbnail, slug FROM reconnexiontf_news WHERE id = ?");
-    $statement->execute([$id]);
-    return $statement->fetch();
-}
-
-function handleThumbnailUpload($inputName = 'thumbnail', $destination = '../news/_pics/') {
+function processThumbnailUpload($inputName = 'thumbnail', $destination = '../news/_pics/') {
     if (!isset($_FILES[$inputName]) || $_FILES[$inputName]['error'] !== UPLOAD_ERR_OK) {
-        return null; // Pas de fichier uploadé ou erreur
+        return null; // Aucun fichier envoyé ou erreur
     }
 
     $ext = strtolower(pathinfo($_FILES[$inputName]['name'], PATHINFO_EXTENSION));
     $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+    if (!in_array($ext, $allowed)) {
+        throw new Exception('Extension non autorisée.');
+    }
 
     $validMimeTypes = [
         'jpg'  => 'image/jpeg',
@@ -75,10 +74,6 @@ function handleThumbnailUpload($inputName = 'thumbnail', $destination = '../news
         'gif'  => 'image/gif',
         'webp' => 'image/webp'
     ];
-
-    if (!in_array($ext, $allowed)) {
-        throw new Exception('Extension non autorisée.');
-    }
 
     $finfo = new finfo(FILEINFO_MIME_TYPE);
     $mimeType = $finfo->file($_FILES[$inputName]['tmp_name']);
@@ -106,6 +101,26 @@ function handleThumbnailUpload($inputName = 'thumbnail', $destination = '../news
     return $uploadPath;
 }
 
+function adminDeleteNews() {
+    $db = dbConnect();
+    $id = (int)$_GET['id'];
+    $statement = $db->prepare("DELETE FROM reconnexiontf_news WHERE id = ?");
+    $statement->execute([$id]);
+}
+
+function adminEditNews($id) {
+    $db = dbConnect();
+    $statement = $db->prepare("SELECT * FROM reconnexiontf_news WHERE id = ?");
+    $statement->execute([$id]);
+    return $statement->fetch();
+}
+
+function adminGetEditNews($id) {
+    $db = dbConnect();
+    $statement = $db->prepare("SELECT thumbnail, slug FROM reconnexiontf_news WHERE id = ?");
+    $statement->execute([$id]);
+    return $statement->fetch();
+}
 
 function adminEditNewsValid($titre, $auteur, $contenu, $thumbnail, $id) {
     $db = dbConnect();
