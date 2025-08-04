@@ -47,6 +47,16 @@ window.addEventListener("DOMContentLoaded", function () {
 
 /********** YOUTUBE INTEGRATION **************/
 
+function escapeHTML(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+
 fetch('_script/yt_streams.php')
   .then(response => response.json())
   .then(data => {
@@ -60,8 +70,8 @@ fetch('_script/yt_streams.php')
 
     data.items.forEach(video => {
       const vid = video.videoId;
-      const title = video.title;
-      const channel = video.channelTitle;
+      const title = escapeHTML(video.title);
+      const channel = escapeHTML(video.channelTitle);
       const viewCount = video.viewCount ?? '-';
 
       const html = `
