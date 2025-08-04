@@ -46,7 +46,7 @@
     <h1>reconnexion.tf</h1>
     <h2>🚧 Maintenance en cours... 🚧</h2>
     <p>Nous apportons quelques modifications au site.<br>
-    Merci de réessayer d'ici quelques minutes !</p>
+    Merci de <a href="index.php">réessayer</a> d'ici quelques minutes !</p>
   </div>
 </body>
 </html>
