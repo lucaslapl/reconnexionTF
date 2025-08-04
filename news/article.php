@@ -1,7 +1,7 @@
 <?php
     require_once('../_src/news_model.php'); 
     
-    $article = getArticle();
+    $article = getArticle($_GET['slug'] ?? '');
 
     $description = strip_tags($article['contenu']);
     $description = mb_substr($description, 0, 150) . '...';
