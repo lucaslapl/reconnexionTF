@@ -22,13 +22,13 @@ function getAllNews() {
 }
 
 // Récupération d'un article entier (slug)
-function getArticle() {
+function getArticle($slug) {
     $db = dbConnect();
-    $slug = $_GET['slug'] ?? '';
     $statement = $db->prepare("SELECT * FROM reconnexiontf_news WHERE slug = ?");
     $statement->execute([$slug]);
     return $statement->fetch();
 }
+
 
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -36,7 +36,6 @@ function getArticle() {
 function adminGetAllNews() {
     $db = dbConnect();
     $statement = $db->query("SELECT id, titre, auteur, slug, date_publi FROM reconnexiontf_news ORDER BY date_publi DESC");
-    $statement->execute();
     return $statement->fetchAll();
 }
 
@@ -60,6 +59,53 @@ function adminGetEditNews($id) {
     $statement->execute([$id]);
     return $statement->fetch();
 }
+
+function handleThumbnailUpload($inputName = 'thumbnail', $destination = '../news/_pics/') {
+    if (!isset($_FILES[$inputName]) || $_FILES[$inputName]['error'] !== UPLOAD_ERR_OK) {
+        return null; // Pas de fichier uploadé ou erreur
+    }
+
+    $ext = strtolower(pathinfo($_FILES[$inputName]['name'], PATHINFO_EXTENSION));
+    $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+    $validMimeTypes = [
+        'jpg'  => 'image/jpeg',
+        'jpeg' => 'image/jpeg',
+        'png'  => 'image/png',
+        'gif'  => 'image/gif',
+        'webp' => 'image/webp'
+    ];
+
+    if (!in_array($ext, $allowed)) {
+        throw new Exception('Extension non autorisée.');
+    }
+
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $mimeType = $finfo->file($_FILES[$inputName]['tmp_name']);
+
+    if (!isset($validMimeTypes[$ext]) || $mimeType !== $validMimeTypes[$ext]) {
+        throw new Exception('Le type MIME ne correspond pas à l’extension.');
+    }
+
+    if (!is_dir($destination)) {
+        mkdir($destination, 0755, true);
+    }
+
+    $filename = uniqid('', true) . '.' . $ext;
+    $uploadPath = rtrim($destination, '/') . '/' . $filename;
+
+    if (!move_uploaded_file($_FILES[$inputName]['tmp_name'], $uploadPath)) {
+        throw new Exception('Le déplacement du fichier a échoué.');
+    }
+
+    if (@getimagesize($uploadPath) === false) {
+        unlink($uploadPath);
+        throw new Exception('Le fichier n’est pas une image valide.');
+    }
+
+    return $uploadPath;
+}
+
 
 function adminEditNewsValid($titre, $auteur, $contenu, $thumbnail, $id) {
     $db = dbConnect();
