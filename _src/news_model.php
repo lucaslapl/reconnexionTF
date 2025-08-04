@@ -5,18 +5,19 @@ include("config.php");
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 
-// Récupération News page accueil
-function getNews() {
+// Récupération News paramétrable
+function getNews($limit = null) {
     $db = dbConnect();
-    $statement = $db->prepare("SELECT * FROM reconnexiontf_news ORDER BY id DESC LIMIT 4");
-    $statement->execute();
-    return $statement->fetchAll(PDO::FETCH_ASSOC);
-}
+    $sql = "SELECT * FROM reconnexiontf_news ORDER BY id DESC";
 
-// Récupération de toutes les news
-function getAllNews() {
-    $db = dbConnect();
-    $statement = $db->prepare("SELECT * FROM reconnexiontf_news ORDER BY id DESC");
+    if ($limit !== null && is_int($limit)) {
+        $sql .= " LIMIT :limit";
+        $statement = $db->prepare($sql);
+        $statement->bindValue(':limit', $limit, PDO::PARAM_INT);
+    } else {
+        $statement = $db->prepare($sql);
+    }
+
     $statement->execute();
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -33,12 +34,6 @@ function getArticle($slug) {
 ////////////////////////////////////////
 ////////////// ADMIN ///////////////////
 ////////////////////////////////////////
-
-function adminGetAllNews() {
-    $db = dbConnect();
-    $statement = $db->query("SELECT id, titre, auteur, slug, date_publi FROM reconnexiontf_news ORDER BY date_publi DESC");
-    return $statement->fetchAll();
-}
 
 function adminAddNews($titre, $slug, $auteur, $contenu, $thumbnail_path, $news_type) {
     $db = dbConnect();
