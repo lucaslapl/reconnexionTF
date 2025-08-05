@@ -1,5 +1,5 @@
     <nav class="flex align-center space-between">
-        <div class="nav-logo">
+        <div class="nav-logo flex justify-center align-center">
             <a href="https://reconnexion.tf">
                 <img src="_img/favicon2.png" alt="Logo reconnexion.tf">
             </a>

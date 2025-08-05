@@ -184,8 +184,8 @@
             </div>
         </div>
 
-        <div class="serveurs-bg">
-            <div class="character">
+        <div class="serveurs-bg flex justify-center align-center">
+            <div class="character flex justify-center">
                 <img src="_img/Red_Engineer.webp" alt="">
             </div>
             <div class="bg"></div>

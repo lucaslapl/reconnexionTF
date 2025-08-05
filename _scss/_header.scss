@@ -227,12 +227,10 @@ header {
       }
 
       .news-img {
-        position: absolute;
+        @include absolute-0;
         width: 100%;
         z-index: -1;
         filter: brightness(0.3);
-        top: 0;
-        left: 0;
         border-radius: 10px;
         transition: .3s;
       }
@@ -274,10 +272,8 @@ header {
 }
 
 .header_background {
+  @include absolute-0;
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
   z-index: -1;
 

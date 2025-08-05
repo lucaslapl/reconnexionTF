@@ -189,20 +189,14 @@
   }
 
   .serveurs-bg {
-    align-items: center;
-    display: flex;
+    @include absolute-0;
     height: 100%;
-    justify-content: center;
     overflow: hidden;
-    position: absolute;
-    top: 0;
     width: 100%;
     box-shadow: inset 0px 0px 35px #000;
     z-index: -1;
 
     .character {
-      display: flex;
-      justify-content: center;
       padding-left: 65%;
       padding-top: 200px;
       position: absolute;
