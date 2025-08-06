@@ -101,14 +101,12 @@ header {
 }
 
 .loading {
+  @include square(30px);
   margin: 10px auto;
-  width: 30px;
-  height: 30px;
 }
 
 .stream_line {
-  width: 100%;
-  height: 30px;
+  @include rectangle(100%, 30px);
   font-size: 0.7em;
   text-align: left;
   padding: 6px 8px;
@@ -200,8 +198,7 @@ header {
     }
 
     .news {
-      width: 325px;
-      height: 205px;
+      @include rectangle(325px, 205px);
       border-radius: 10px;
       background-color: rgba(0, 0, 0, 0.4);
       flex-direction: column;

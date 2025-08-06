@@ -40,13 +40,10 @@ nav {
       margin: 0 35px;
 
       &::before {
+        @include rectangle(80px, 3px);
+        @include absolute(43px, 50%, initial);
         content: "";
-        position: absolute;
-        width: 80px;
-        height: 3px;
         background: #9cd1ff;
-        left: 50%;
-        top: 43px;
         transform: translateX(-50%) translateY(-50%);
         opacity: 0;
         transition: .3s;
@@ -114,11 +111,8 @@ nav {
 }
 
 .bbq-overlay {
-  position: fixed;
+  @include fixed(25px, 15px, 15px);
   z-index: 990;
-  top: 25px;
-  left: 15px;
-  right: 15px;
   min-height: 50px;
   background-color: gold;
   color: #000;

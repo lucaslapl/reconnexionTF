@@ -18,14 +18,12 @@ footer {
     }
 
     a {
+      @include square(60px, $radius:  13px);
       background: #33496c;
       color: #fff;
       display: inline-flex;
-      width: 60px;
-      height: 60px;
       justify-content: center;
       align-items: center;
-      border-radius: 13px;
       transition: .3s;
 
       &:hover {
@@ -63,9 +61,8 @@ footer {
 
   .foot-bg {
     @include absolute-0;
+    @include rectangle(100%, 100%);
     opacity: .2;
     z-index: -1;
-    height: 100%;
-    width: 100%;
   }
 }
