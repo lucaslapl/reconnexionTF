@@ -102,6 +102,7 @@
       left: 0;
       right: 0;
       padding: 1rem;
+      margin: 0;
       display: none;
     }
 
@@ -259,7 +260,6 @@
 
 @media all and (max-width: 530px) {
   #serveurs .container .server {
-    padding: 5px 0;
     flex-direction: column;
     width: 100%;
 
@@ -273,12 +273,17 @@
       h3 {
         margin: 10px auto;
       }
+      p {
+        margin: 0;
+      }
     }
 
     .server-connect {
       flex-direction: unset;
       justify-content: center;
       width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
     }
   }
 }
