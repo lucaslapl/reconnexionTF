@@ -1,29 +1,72 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 $env = parse_ini_file(__DIR__ . '/.env');
 
+// fichiers cache
 $language = isset($_GET['lang']) && $_GET['lang'] === 'fr' ? 'fr' : 'all';
 $cache_file = __DIR__ . "/cache_streams_$language.json";
-$cache_lifetime = 300; // durée en secondes
+$cache_lifetime = 300;
 
+// fichiers token
+$token_file = $env["TWITCH_ACCESS_TOKEN"];
+
+// 1. Fonction pour récupérer un nouveau token
+function refreshTwitchToken($client_id, $client_secret, $token_file) {
+    $url = "https://id.twitch.tv/oauth2/token";
+    $data = [
+        "client_id" => $client_id,
+        "client_secret" => $client_secret,
+        "grant_type" => "client_credentials"
+    ];
+
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    $json = json_decode($response, true);
+
+    if (isset($json["access_token"])) {
+        $token_data = [
+            "access_token" => $json["access_token"],
+            "expires_at"   => time() + $json["expires_in"]
+        ];
+        file_put_contents($token_file, json_encode($token_data));
+        return $token_data;
+    } else {
+        throw new Exception("Impossible de rafraîchir le token Twitch : " . $response);
+    }
+}
+
+// 2. Charger le token (depuis fichier ou refresh si expiré)
+if (file_exists($token_file)) {
+    $token_data = json_decode(file_get_contents($token_file), true);
+} else {
+    $token_data = ["access_token" => "", "expires_at" => 0];
+}
+
+if (time() >= $token_data["expires_at"]) {
+    $token_data = refreshTwitchToken($env["TWITCH_CLIENT_ID"], $env["TWITCH_CLIENT_SECRET"], $token_file);
+}
+
+$access_token = $token_data["access_token"];
+$client_id    = $env["TWITCH_CLIENT_ID"];
+
+// 3. Vérifier si cache dispo
 if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_lifetime) {
     header('Content-Type: application/json');
     echo file_get_contents($cache_file);
     exit;
 }
 
-$client_id = $env['TWITCH_CLIENT_ID'];
-$access_token = $env['TWITCH_ACCESS_TOKEN'];
-$expires_at = isset($env['TWITCH_TOKEN_EXPIRES_AT']) ? (int)$env['TWITCH_TOKEN_EXPIRES_AT'] : 0;
-
-if (time() >= $expires_at) {
-    http_response_code(403);
-    echo json_encode(['error' => 'Token expiré']);
-    exit;
-}
-
-$language = isset($_GET['lang']) && $_GET['lang'] === 'fr' ? '&language=fr' : '';
-$url = "https://api.twitch.tv/helix/streams?game_id=16676&first=15" . $language;
+// 4. Construire l’URL avec filtre langue
+$language_param = ($language === 'fr') ? "&language=fr" : "";
+$url = "https://api.twitch.tv/helix/streams?game_id=16676&first=15" . $language_param;
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
@@ -34,7 +77,10 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($ch);
 curl_close($ch);
+
+// mettre en cache
 file_put_contents($cache_file, $response);
 
+// afficher
 header('Content-Type: application/json');
 echo $response;
