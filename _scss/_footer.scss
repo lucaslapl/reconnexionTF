@@ -47,6 +47,10 @@ footer {
 
     a {
       color: #bcddff;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .foot-links {
