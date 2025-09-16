@@ -22,6 +22,24 @@
       </url>
       <!-- Articles -->
       <url>
+            <loc>https://beta.reconnexion.tf/news/summer-update-2025-quel-bilan</loc>
+            <lastmod>2025-09-16</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://beta.reconnexion.tf/news/squidy-rejoint-l-equipe</loc>
+            <lastmod>2025-08-28</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
+            <loc>https://beta.reconnexion.tf/news/rejoignez-l-equipe-reconnexion-tf</loc>
+            <lastmod>2025-08-04</lastmod>
+            <priority>0.8</priority>
+            <changefreq>weekly</changefreq>
+      </url>
+      <url>
             <loc>https://beta.reconnexion.tf/news/une-lettre-ouverte-a-valve-pour-corriger-le-mode-casual</loc>
             <lastmod>2025-07-29</lastmod>
             <priority>0.8</priority>
