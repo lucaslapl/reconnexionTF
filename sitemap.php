@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/xml; charset=utf-8");
 
-include_once("_inc/config.php");
+include_once("_src/config.php");
 
 echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?>
