@@ -6,6 +6,7 @@
             <div id="reconntf-servers">  
                 <h2>reconnexion.tf</h2>
                 <div class="container flex justify-center align-center">
+                    <!--
                     <div id="holiday-srv" class="server flex wrap-holiday">
                         <div class="server-title flex align-center">
                             <i class="fa-solid fa-chevron-right fa-2x"></i>
@@ -21,6 +22,7 @@
                             </a>
                         </div>
                     </div>
+                    -->
                     <div id="holiday-feat" class="server-features srv-holiday">
                         <ul>
                             <li>Notre serveur saisonnier, spécialement dédié pour la Summer Update !</li>
