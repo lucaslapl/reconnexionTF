@@ -45,6 +45,8 @@
             </ul>
         </div>
     </nav>
+    <!--
     <div class="bbq-overlay">
         <p><b style="color: #000;">reconnexion.tf</b> soutient le mouvement <u>#BringBackQuickplay</u> pour un retour du Quickplay sur Team Fortress 2.</p>
     </div>
+    -->
