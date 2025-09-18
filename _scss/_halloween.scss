@@ -1,1 +1,27 @@
-$nav-background: #5e472a;
+@use 'sass:color';
+
+$nav-bg: #5e472a;
+$nav-logo-bg: #51381d;
+$nav-link-hover: #ffd49c;
+
+$button-bg: #ff8300;
+$button-bg-hover: color.adjust($button-bg, $lightness: -20%);
+
+$title-presentation-color: #ffd8bb;
+$strong-color: #fda74c;
+
+$title-section-color: #ffdf7e;
+
+$presentation-gradient-color: rgba(51, 27, 10, 0.79);
+
+$partner-section-bg: #331f05;
+
+$server-gradient-bg: rgb(47, 26, 26);
+
+$footer-gradient-bg: rgb(213, 136, 79);
+
+$footer-copyright-bg: $nav-bg;
+$footer-subtitile-color: #ffebbb;
+$footer-link-color: #ffdbbc;
+
+$privacy-policy-bg: #483126;

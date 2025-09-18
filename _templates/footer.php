@@ -40,6 +40,6 @@
 
         
         <div class="foot-bg flex justify-center align-center">
-            <img src="_img/foot-bg.webp" alt="" loading="lazy">
+            <img src="_img/halloween-bg1.webp" style="width:2150px;bottom:160px;" alt="" loading="lazy">
         </div>
     </footer>

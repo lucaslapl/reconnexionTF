@@ -2,7 +2,7 @@
 
 footer {
   width: 100%;
-  background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
+  background: linear-gradient($footer-gradient-bg, rgba(98, 98, 98, 0.67));
   overflow: hidden;
   position: relative;
   z-index: 100;
@@ -33,7 +33,7 @@ footer {
   }
 
   #copyright {
-    background-color: #2a4a5e;
+    background-color: $footer-copyright-bg;
     font-size: .9em;
     margin: 0 auto;
     width: 100%;
@@ -41,12 +41,12 @@ footer {
 
     .foot-links h4 {
       font-family: TF2Secondary;
-      color: #bbe9ff;
+      color: $footer-subtitile-color;
       margin: 0 0 10px 0;
     }
 
     a {
-      color: #bcddff;
+      color: $footer-link-color;
 
       &:hover {
         text-decoration: underline;

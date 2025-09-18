@@ -3,7 +3,7 @@
 #serveurs {
   width: 100%;
   min-height: 650px;
-  background: linear-gradient(transparent, rgb(26, 35, 47));
+  background: linear-gradient(transparent, $server-gradient-bg);
   padding: 32px 0;
   box-sizing: border-box;
 
@@ -17,7 +17,7 @@
     font-family: TF2Secondary;
     width: 80%;
     margin: 0 auto 20px auto;
-    color: #7ef9ff;
+    color: $title-section-color;
     font-size: 3em;
   }
 
@@ -47,7 +47,7 @@
     font-family: TF2Secondary;
     font-size: 1.3em;
     text-align: center;
-    color: #7ef9ff;
+    color: $title-section-color;
   }
 }
 
@@ -199,7 +199,7 @@
     }
 
     .bg {
-      background-image: url("../_img/gorgeblog_cap2.webp");
+      background-image: url("../_img/halloween-bg8.webp");
       background-attachment: fixed;
       background-size: cover;
       background-repeat: no-repeat;

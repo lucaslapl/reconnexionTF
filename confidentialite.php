@@ -44,7 +44,9 @@ require '_src/config.php';
 
 	  <link rel="stylesheet" type="text/css" href="_css/main.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
+    <!--
     <link rel="stylesheet" type="text/css" href="_css/confidentialite.css">
+    -->
 
     <!-- Cookie Manager (Tarteaucitron.io) -->
     <script src="tarteaucitron/tarteaucitron.min.js"></script>

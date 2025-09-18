@@ -89,10 +89,10 @@ require "_src/news_model.php";
             </div>
         </section>
         
-       <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+        <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
         <div class="header_background">
-            <img src="_img/poster.webp" alt="">
+            <img src="_img/halloween-bg6.webp" alt="">
         </div>
     </header>
 

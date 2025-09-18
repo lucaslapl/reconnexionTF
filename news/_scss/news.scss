@@ -1,10 +1,12 @@
+@import 'halloween';
+
 /***** ARTICLE.PHP *****/
 
 #news-head {
   width: 100%;
   padding: 32px;
   box-sizing: border-box;
-  background-color: #6384c4;
+  background-color: $news-head-bg;
 
   .news-title {
     padding-top: 70px;
@@ -20,13 +22,13 @@
 #news-content {
   width: 100%;
   box-sizing: border-box;
-  background-color: #263048;
+  background-color: $news-content-bg;
 
   .article {
     width: 850px;
     margin: 0 auto;
     color: #000;
-    background: #f9f9f9;
+    background: $news-article-bg;
     padding: 50px;
     box-shadow: 0 15px 15px 0 #000;
 
@@ -57,7 +59,7 @@
     }
 
     a {
-      color: #6384c4;
+      color: $news-link-color;
       text-decoration: none;
     }
   }

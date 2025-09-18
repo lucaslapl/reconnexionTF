@@ -41,7 +41,7 @@
                         </div>
                         <div class="server-connect flex align-center vanilla">
                             <a class="link-vanilla" href="steam://connect/jeu.reconnexion.tf:27015">
-                                <img src="_img/favicon2.webp" alt="">
+                                <img src="_img/favicon-orange-connect.webp" alt="">
                                 Se connecter
                             </a>
                         </div>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27025">
-                                <img src="_img/favicon2.webp" alt="">
+                                <img src="_img/favicon-orange-connect.webp" alt="">
                                 Se connecter
                             </a>
                         </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27035">
-                                <img src="_img/favicon2.webp" alt="">
+                                <img src="_img/favicon-orange-connect.webp" alt="">
                                 Se connecter
                             </a>
                         </div>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27055">
-                                <img src="_img/favicon2.webp" alt="">
+                                <img src="_img/favicon-orange-connect.webp" alt="">
                                 Se connecter
                             </a>
                         </div>
@@ -188,7 +188,7 @@
 
         <div class="serveurs-bg flex justify-center align-center">
             <div class="character flex justify-center">
-                <img src="_img/Red_Engineer.webp" alt="">
+                <img src="_img/zombie_engineer.webp" alt="">
             </div>
             <div class="bg"></div>
         </div>

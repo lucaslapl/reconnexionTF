@@ -11,7 +11,7 @@
     @include square(1000px);
     @include absolute(-165px, -260px, initial);
     content: "";
-    background-image: url('../_img/favicon2.webp');
+    background-image: url('../_img/favicon-orange.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
   h2 {
     font-family: TF2Secondary;
     margin: 0;
-    color: #7ef9ff;
+    color: $title-section-color;
     font-size: 3em;
   }
 
@@ -67,7 +67,7 @@
     }
 
     &::before {
-      background: linear-gradient(rgba(0, 0, 0, 0.25), #0a1d33c9);
+      background: linear-gradient(rgba(0, 0, 0, 0.25), $presentation-gradient-color);
       content: "";
       height: 100%;
       position: absolute;

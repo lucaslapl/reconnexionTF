@@ -12,12 +12,13 @@
 @import 'mixins';
 @import 'fonts';
 @import 'defaults';
-@import  'nav';
+@import 'nav';
 @import 'header';
 @import 'presentation';
 @import 'serveurs';
 @import 'partners';
 @import 'footer';
+@import 'confidentialite';
 
 /********** * **********/
 
@@ -42,6 +43,6 @@ a {
   text-decoration: none;
 }
 
-b {
-  color: #5abccc;
+b, strong {
+  color: $strong-color;
 }

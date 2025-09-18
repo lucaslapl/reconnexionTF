@@ -40,7 +40,7 @@ header {
       font-family: TF2Secondary;
       display: inherit;
       color: #fff;
-      background: #00c3ff;
+      background: $button-bg;
       padding: 16px 30px;
       border-radius: 11px;
       width: 300px;
@@ -52,7 +52,7 @@ header {
       transition: .4s;
 
       &:hover {
-        background: #0082aa;
+        background: $button-bg-hover;
         transform: scale(0.99);
       }
     }
@@ -179,11 +179,11 @@ header {
     h2 {
       font-family: TF2Build;
       letter-spacing: 0.05em;
-      color: #bbe9ff;
+      color: $title-presentation-color;
     }
 
     a {
-      color: #5abccc;
+      color: $strong-color;
     }
   }
 
@@ -251,7 +251,7 @@ header {
   font-family: TF2Secondary;
   display: inherit;
   color: #fff;
-  background: #00c3ff;
+  background: $button-bg;
   padding: 16px 0;
   border-radius: 11px;
   width: 300px;
@@ -263,7 +263,7 @@ header {
   transition: .4s;
 
   &:hover {
-    background: #0082aa;
+    background: $button-bg-hover;
     transform: scale(0.99);
   }
 }
