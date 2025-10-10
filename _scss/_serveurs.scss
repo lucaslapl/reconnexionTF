@@ -76,14 +76,14 @@
 }
 
 #holiday-srv h3::before {
-  @include square(70px);
-  @include absolute(-33px, -50px, initial);
+  @include square(50px);
+  @include absolute(-15px, -45px, initial);
   content: "";
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../_img/palmtree.png");
+  background-image: url("../_img/pumpkin.webp");
 }
 
 .srv-vanilla {
