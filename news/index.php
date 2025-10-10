@@ -108,7 +108,7 @@ require '../_src/news_model.php';
     <?php include '../_templates/footer_sub.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-UubVPeRg+bdh8vhqHOVDw9ith9KIv4UkAr/uXAPcetHpb6kcEZvvbQtuWEAmFFu6" crossorigin="anonymous"></script>
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
 	<script src="_js/news.js"></script>
 </body>
