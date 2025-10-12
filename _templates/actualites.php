@@ -2,7 +2,7 @@
             <div class="container">
                 <h1>Actualités communautaires</h1>
             </div>
-             <div class="news-list flex space-evenly">
+            <div class="news-list flex space-evenly">
             <?php 
 
                 $results = getNews(4);
