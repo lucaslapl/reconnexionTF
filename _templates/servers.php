@@ -29,7 +29,7 @@
                             <li>No random bullet spread</li>
                         </ul>
                     </div>
-                    <div id="holiday-srv2" class="server flex wrap-holiday">
+                    <div id="holiday2-srv" class="server flex wrap-holiday">
                         <div class="server-title flex align-center">
                             <i class="fa-solid fa-chevron-right fa-2x"></i>
                             <h3>Halloween #2 - Classic</h3>
