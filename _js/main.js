@@ -48,7 +48,7 @@ function toggleService(serviceId, featId) {
 
 // Applique la fonction pour chaque service
 toggleService("holiday-srv", "holiday-feat");
-toggleService("holiday-srv2", "holiday-feat2");
+toggleService("holiday2-srv", "holiday-feat2");
 toggleService("vanilla-srv", "vanilla-feat");
 toggleService("custom-srv", "custom-feat");
 toggleService("mvm-srv", "mvm-feat");
