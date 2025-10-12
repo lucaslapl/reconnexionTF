@@ -9,7 +9,7 @@
                     <div id="holiday-srv" class="server flex wrap-holiday">
                         <div class="server-title flex align-center">
                             <i class="fa-solid fa-chevron-right fa-2x"></i>
-                            <h3>Halloween #1</h3>
+                            <h3>Halloween #1 - 2025</h3>
                             <p>
                                 Chargement...
                             </p>
@@ -25,6 +25,28 @@
                         <ul>
                             <li>Notre serveur saisonnier, spécialement dédié pour Scream Fortress 2025 !</li>
                             <li>Il contient toutes les maps communautaires sorties avec la mise à jour d'Halloween 2025 !</li>
+                            <li>La rotation des maps se fait toutes les 30 minutes (sauf changement avec la commande <b>RTV</b>)</li>
+                            <li>No random bullet spread</li>
+                        </ul>
+                    </div>
+                    <div id="holiday-srv2" class="server flex wrap-holiday">
+                        <div class="server-title flex align-center">
+                            <i class="fa-solid fa-chevron-right fa-2x"></i>
+                            <h3>Halloween #2 - Classic</h3>
+                            <p>
+                                Chargement...
+                            </p>
+                        </div>
+                        <div class="server-connect flex align-center holiday">
+                            <a class="link-holiday" href="steam://connect/jeu.reconnexion.tf:27065">
+                                <img src="_img/favicon2.webp" alt="">
+                                Se connecter
+                            </a>
+                        </div>
+                    </div>
+                    <div id="holiday-feat2" class="server-features srv-holiday">
+                        <ul>
+                            <li>Notre deuxième serveur saisonnier spécialement dédié aux maps classiques d'Halloween avec les différents boss à battre, pour vos succès et contrats !</li>
                             <li>La rotation des maps se fait toutes les 30 minutes (sauf changement avec la commande <b>RTV</b>)</li>
                             <li>No random bullet spread</li>
                         </ul>

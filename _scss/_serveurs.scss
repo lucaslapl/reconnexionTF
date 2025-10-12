@@ -75,7 +75,7 @@
   border: 1px solid gold;
 }
 
-#holiday-srv h3::before {
+#holiday-srv h3::before, #holiday-srv2 h3::before {
   @include square(50px);
   @include absolute(-15px, -45px, initial);
   content: "";
@@ -100,7 +100,7 @@
   margin: 0 25px;
 }
 
-#holiday-feat, #vanilla-feat, #custom-feat, #mvm-feat, #tfdb-feat {
+#holiday-feat, #holiday-feat2, #vanilla-feat, #custom-feat, #mvm-feat, #tfdb-feat {
   display: none;
 }
 

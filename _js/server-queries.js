@@ -1,11 +1,12 @@
-const serverIds = ['holiday', 
-                  'vanilla', 
-                  'custom', 
-                  'mvm', 
-                  'tfdb', 
-                  'casu-fff', 
-                  'mge-fff', 
-                  'jump-fff', 
+const serverIds = ['holiday',
+                  'holiday2',
+                  'vanilla',
+                  'custom',
+                  'mvm',
+                  'tfdb',
+                  'casu-fff',
+                  'mge-fff',
+                  'jump-fff',
                   'comp-fff'];
 
 fetch('_src/sourcequery.php')
