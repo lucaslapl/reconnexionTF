@@ -42,7 +42,12 @@ require "_src/news_model.php";
     <link rel="icon" type="image/png" sizes="512x512" href="https://reconnexion.tf/_img/android-chrome-512x512.png">
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
+    <link async rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://yt3.ggpht.com">
 
     <link rel="preload" href="/_fonts/TF2Build.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/_fonts/TF2Secondary.woff2" as="font" type="font/woff2" crossorigin>
@@ -92,7 +97,7 @@ require "_src/news_model.php";
         <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
         <div class="header_background">
-            <img src="_img/halloween-bg6.webp" alt="">
+            <img src="_img/halloween-bg6.webp" alt="" fetchpriority="high">
         </div>
     </header>
 
