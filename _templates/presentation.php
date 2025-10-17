@@ -7,7 +7,7 @@
                 <h3>Les enjeux</h3>
                 <p>La Communauté Française de Team Fortress 2 a souffert, ces dix dernières années, de la fermeture de ses derniers serveurs, et du déclin des dernières communautés actives du jeu.<br>
                 Les Français sont alors dispersés dans un jeu où les parties en solo sont devenus la norme, et où les parties entre amis sont rendues difficiles à cause d'un système de Matchmaking inadapté.</p>
-                <p><b>reconnexion.tf</b> veut pouvoir proposer une solution ambitieuse à tout cela, surtout à un moment où Team Fortress 2 connaît un regain d'intérêt et que des changements posifitfs sont à prévoir !</p>
+                <p><b>reconnexion.tf</b> veut pouvoir proposer une solution ambitieuse à tout cela, surtout à un moment où Team Fortress 2 connaît un regain d'intérêt et que des changements positifs sont à prévoir !</p>
                 <h3>Les objectifs</h3>
                 <ul>
                     <li>Le but de <b>reconnexion.tf</b> est d'aider la communauté française à retrouver un point de chute sur lequel les joueurs peuvent se rassembler et profiter de leur jeu favori entre amis !</li>
