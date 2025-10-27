@@ -72,7 +72,7 @@ require "_src/news_model.php";
     <header id="accueil">
         
         <?php require_once __DIR__ . '/_templates/header.php'; ?>
-
+        <!--
         <section id="beta-text" class="news_home">
             <div class="container">
                 <h2>Notre plateforme se construit...</h2>
@@ -88,8 +88,8 @@ require "_src/news_model.php";
                 </p>
             </div>
         </section>
-        
-       <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+        -->
+        <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
         <div class="header_background">
             <img src="_img/poster.webp" alt="">
