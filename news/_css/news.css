@@ -3,7 +3,7 @@
   width: 100%;
   padding: 32px;
   box-sizing: border-box;
-  background-color: #c48c63;
+  background-color: #6384c4;
 }
 #news-head .news-title {
   padding-top: 70px;
@@ -17,13 +17,13 @@
 #news-content {
   width: 100%;
   box-sizing: border-box;
-  background-color: #483326;
+  background-color: #263048;
 }
 #news-content .article {
   width: 850px;
   margin: 0 auto;
   color: #000;
-  background: #eee;
+  background: #f9f9f9;
   padding: 50px;
   box-shadow: 0 15px 15px 0 #000;
 }
@@ -49,7 +49,7 @@
   font-size: 1.5em;
 }
 #news-content .article a {
-  color: #733b00;
+  color: #6384c4;
   text-decoration: none;
 }
 
