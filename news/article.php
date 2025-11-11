@@ -75,7 +75,7 @@
                 article_title: "<?= htmlspecialchars($article['titre'], ENT_QUOTES) ?>",
                 article_slug: "<?= htmlspecialchars($article['slug'], ENT_QUOTES) ?>"
             });
-         };
+        };
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
     </script>
 
@@ -124,8 +124,8 @@
 
     <?php require_once '../_templates/footer_sub.php'; ?>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
 	<script src="_js/news.js"></script>
 </body>
