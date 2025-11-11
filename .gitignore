@@ -11,7 +11,6 @@ UNUSED/
 *.sql
 *.code-workspace
 *.json
-*.css
 .env
 *.htaccess
 robots.txt
