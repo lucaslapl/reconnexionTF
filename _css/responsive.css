@@ -1,0 +1,240 @@
+/*
+======================================================================================
+
+    @ main.css
+    @ STYLESHEET
+    @ CSS by Lucas LAPLANCHE - https://lucaslaplanche.fr/
+
+======================================================================================
+*/
+/********* NAVIGATION BAR *************/
+@media all and (max-width: 1620px) {
+  nav .nav-links {
+    margin-left: unset;
+  }
+  nav .nav-links li {
+    margin: 0 25px;
+  }
+}
+@media all and (max-width: 1220px) {
+  nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+  nav .nav-logo {
+    border-radius: 0;
+  }
+  nav .nav-links li {
+    margin: 0 20px;
+  }
+  nav .nav-socials li {
+    margin: 0 5px;
+  }
+  nav .nav-socials li a {
+    border-radius: 0;
+  }
+  nav .nav-socials li .nav-discord, nav .nav-socials li .nav-twitter {
+    padding: 10px 13px;
+  }
+  .bbq-overlay {
+    top: 55px;
+    left: 0;
+    right: 0;
+    padding: 5px 32px 0 32px;
+    width: 100%;
+  }
+  nav:hover + .bbq-overlay {
+    top: 55px;
+  }
+  .bbq-overlay:hover {
+    top: 55px;
+  }
+  .bbq-overlay p {
+    margin: 15px 0 10px 0;
+  }
+}
+@media all and (max-width: 955px) {
+  nav {
+    justify-content: unset !important;
+  }
+  nav .nav-links li {
+    margin: 0 18px;
+  }
+  nav .nav-socials span {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  nav .nav-links li {
+    margin: 0 10px;
+  }
+}
+@media all and (max-width: 720px) {
+  .nav-links ul {
+    flex-direction: column;
+    background: #2a4a5e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    margin: 0;
+    display: none;
+  }
+  .nav-links.active ul {
+    display: flex;
+  }
+  .nav-toggle {
+    display: flex;
+    margin: 0 20px;
+  }
+  .nav-links {
+    width: 100%;
+  }
+  nav.flex {
+    flex-wrap: wrap;
+  }
+  nav .nav-links li {
+    margin: 5px 10px;
+  }
+  nav .nav-links li::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 25px;
+  }
+  nav .nav-socials {
+    position: absolute;
+    right: 0;
+    margin: 0 15px;
+  }
+  .bbq-overlay {
+    padding: 5px 16px 0 16px;
+  }
+  .bbq-overlay p {
+    font-size: 0.95em;
+  }
+}
+/********* HEADER ***********/
+@media all and (max-width: 1100px) {
+  .main {
+    display: block;
+  }
+  .side-info {
+    margin: 25px 10px;
+  }
+  #box-stream {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #streams {
+    display: block;
+  }
+  .stream-title, .news_home .container {
+    width: 90%;
+  }
+}
+@media all and (max-width: 726px) {
+  .main {
+    width: 95%;
+  }
+  .main .logo-title h1 {
+    font-size: 2.9em;
+  }
+  .main .logo-title h2 {
+    font-size: 1.4em;
+  }
+}
+@media all and (max-width: 490px) {
+  .main .logo-title h1 {
+    font-size: 2em;
+  }
+  .main .logo-title h2 {
+    font-size: 1.2em;
+  }
+  .main .logo-title a {
+    width: 160px;
+  }
+  .news_home .news-list {
+    width: 95%;
+  }
+}
+@media all and (max-width: 445px) {
+  .news_home .news-list .news {
+    width: 270px;
+    height: 170px;
+  }
+  .news_home .news-all {
+    width: 250px;
+  }
+}
+/****** PRESENTATION *******/
+@media all and (max-width: 810px) {
+  #presentation .img-pres img {
+    width: 100%;
+  }
+}
+@media all and (max-width: 420px) {
+  #presentation h1 {
+    font-size: 2.5em;
+  }
+}
+/****** SERVEURS *******/
+@media all and (max-width: 1200px) {
+  #serveurs .container {
+    width: 100%;
+  }
+  #serveurs #server-wrapper {
+    flex-direction: column;
+  }
+  #serveurs #server-wrapper .server {
+    width: 90%;
+  }
+}
+@media all and (max-width: 530px) {
+  #serveurs .container .server {
+    flex-direction: column;
+    width: 100%;
+  }
+  #serveurs .container .server .fa-chevron-right {
+    display: none;
+  }
+  #serveurs .container .server .server-title {
+    flex-direction: column;
+  }
+  #serveurs .container .server .server-title h3 {
+    margin: 10px auto;
+  }
+  #serveurs .container .server .server-title p {
+    margin: 0;
+  }
+  #serveurs .container .server .server-connect {
+    flex-direction: unset;
+    justify-content: center;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
+/****** PARTNERS ******/
+@media all and (max-width: 631px) {
+  #partners .commu-box {
+    margin: 15px 25px;
+  }
+}
+/****** FOOTER *******/
+@media all and (max-width: 650px) {
+  footer #copyright .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer #copyright .foot-links {
+    margin: 0 0 20px 0;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
