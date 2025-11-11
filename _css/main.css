@@ -129,18 +129,23 @@ a, img {
 /********* NAVIGATION BAR *************/
 nav {
   margin: 0 auto;
-  width: 100%;
+  left: 15px;
+  right: 15px;
+  top: 10px;
   height: 70px;
   background: #2a4a5e;
   position: fixed;
   z-index: 999;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3803921569);
+  border-radius: 10px;
   transition: 0.4s;
 }
 nav ul {
   list-style: none;
 }
 nav .nav-logo {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   background-color: #1d3851;
 }
 nav .nav-logo a {
@@ -156,7 +161,6 @@ nav .nav-links {
 }
 nav .nav-links li {
   margin: 0 35px;
-  text-transform: uppercase;
 }
 nav .nav-links li::before {
   width: 80px;
@@ -174,9 +178,6 @@ nav .nav-links li::before {
 nav .nav-links li:hover::before {
   opacity: 1;
 }
-nav .nav-links .link-sban {
-  font-family: TF2Build !important;
-}
 nav .nav-links .link-sban:hover::before {
   background: #ff9c9c;
   opacity: 1;
@@ -184,7 +185,6 @@ nav .nav-links .link-sban:hover::before {
 nav .nav-links li a {
   color: #fff;
   font-weight: bold;
-  font-family: TF2Build;
 }
 nav .nav-socials li a {
   color: #fff;
@@ -270,7 +270,7 @@ header {
 }
 .main .logo-title h1 {
   font-family: TF2Secondary;
-  font-size: 4.9em;
+  font-size: 3.9em;
   text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -279,22 +279,21 @@ header {
 }
 .main .logo-title h2 {
   font-family: TF2Secondary;
-  font-size: 2.8em;
+  font-size: 1.8em;
   color: #f0f0f0;
   text-align: center;
 }
 .main .logo-title a {
-  font-family: TF2Build;
+  font-family: TF2Secondary;
   display: inherit;
-  color: #353535;
-  background: #c7ba9f;
-  background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+  color: #fff;
+  background: #00c3ff;
   padding: 16px 30px;
   border-radius: 11px;
   width: 300px;
   margin: 0 auto;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: bold;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3803921569);
   transition: 0.4s;
@@ -313,6 +312,7 @@ header {
   width: 285px;
   min-height: 100px;
   padding-top: 5px;
+  border-radius: 15px;
 }
 #box-stream h1 {
   margin: 5px auto 10px auto;
@@ -320,8 +320,10 @@ header {
   font-size: 1.4em;
 }
 #box-stream #streams {
-  background: #47699d;
+  background: #fff;
   padding: 10px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 #box-stream #streams #streams-all {
   max-height: 300px;
@@ -331,7 +333,7 @@ header {
 .no-stream {
   font-size: 0.9em;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 #streams {
@@ -359,7 +361,7 @@ header {
 }**/
 .streamer-name {
   margin-right: 5px;
-  color: #fff;
+  color: #000;
 }
 
 .stream-title {
@@ -369,12 +371,12 @@ header {
   overflow: hidden;
   white-space: nowrap;
   width: 240px;
-  color: #fff;
+  color: gray;
 }
 
 .viewercount {
   float: right;
-  color: #fff;
+  color: gray;
 }
 
 .tabs {
@@ -434,6 +436,7 @@ header {
 .news_home .news-list .news {
   width: 325px;
   height: 205px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   flex-direction: column;
   justify-content: flex-end;
@@ -877,11 +880,11 @@ footer #foot-socials {
 }
 footer #foot-socials h1 {
   font-family: TF2Secondary;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 footer #foot-socials a {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 13px;
   background: #33496c;
   color: #fff;
