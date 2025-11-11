@@ -4,9 +4,8 @@ const serverIds = ['holiday',
                   'mvm', 
                   'tfdb', 
                   'casu-fff', 
-                  'mge-fff', 
                   'jump-fff', 
-                  'comp-fff'];
+                  'mge-fff'];
 
 fetch('_src/sourcequery.php')
   .then(res => res.json())

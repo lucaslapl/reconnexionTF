@@ -141,9 +141,9 @@
                             </a>
                         </div>
                     </div>
-                    <div id="mge-fff-srv" class="server flex wrap-custom">
+                    <div id="jump-fff-srv" class="server flex wrap-custom">
                         <div class="server-title flex align-center">
-                            <h3>MGE</h3>
+                            <h3>Jump</h3>
                             <p>
                                 Chargement...
                             </p>
@@ -154,23 +154,9 @@
                             </a>
                         </div>
                     </div>
-                    <div id="jump-fff-srv" class="server flex wrap-custom">
+                    <div id="mge-fff-srv" class="server flex wrap-custom">
                         <div class="server-title flex align-center">
-                            <h3>Jump</h3>
-                            <p>
-                                Chargement...
-                            </p>
-                        </div>
-                        <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="#">
-                                Se connecter<br>
-                                <span>password ggFFF</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="comp-fff-srv" class="server flex wrap-custom">
-                        <div class="server-title flex align-center">
-                            <h3>Compétitif</h3>
+                            <h3>MGE</h3>
                             <p>
                                 Chargement...
                             </p>
