@@ -164,7 +164,6 @@
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="#">
                                 Se connecter<br>
-                                <span>password ggFFF</span>
                             </a>
                         </div>
                     </div>
