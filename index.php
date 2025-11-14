@@ -53,16 +53,16 @@ require "_src/news_model.php";
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
 
-    <!-- Cookie Manager (Tarteaucitron.io) -->
+    <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="_js/tac_init.js"></script>
+    <script src="_js/tac_init.js"></script>-->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () {};
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+    </script> -->
 </head>
 
 <body>
