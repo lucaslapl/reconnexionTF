@@ -67,26 +67,36 @@ require "_src/news_model.php";
 
 <body>
     
-    <?php require_once __DIR__ . '/_templates/nav.php'; ?>
+    <main id="main" class="flex">
 
-    <header id="accueil">
-        
-        <?php require_once __DIR__ . '/_templates/header.php'; ?>
-        
-        <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+        <?php //require_once __DIR__ . '/_templates/nav.php'; ?>
 
-        <div class="header_background">
-            <img src="_img/poster.webp" alt="">
-        </div>
-    </header>
+        <section id="left-content">
+            <header id="accueil">
+                
+                <?php require_once __DIR__ . '/_templates/header.php'; ?>
+                
+                <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
-    <?php require_once __DIR__ . '/_templates/presentation.php'; ?>
+                <!--<div class="header_background">
+                    <img src="_img/poster.webp" alt="">
+                </div>-->
+            </header>
 
-    <?php require_once __DIR__ . '/_templates/partners.php'; ?>
+            <?php //require_once __DIR__ . '/_templates/presentation.php'; ?>
 
-    <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+            <?php require_once __DIR__ . '/_templates/partners.php'; ?>
+        </section>
 
-    <?php require_once __DIR__ . '/_templates/footer.php'; ?>
+        <section id="right-content">
+            <?php require_once __DIR__ . '/_templates/streamlist.php'; ?>
+
+            <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+
+            <?php require_once __DIR__ . '/_templates/footer.php'; ?>
+        </section>
+
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-UubVPeRg+bdh8vhqHOVDw9ith9KIv4UkAr/uXAPcetHpb6kcEZvvbQtuWEAmFFu6" crossorigin="anonymous"></script>
