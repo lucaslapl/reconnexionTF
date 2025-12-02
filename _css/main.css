@@ -940,8 +940,8 @@ html {
 
 body {
   width: 100%;
-  min-height: 100%;
-  overflow-x: hidden !important;
+  height: 100%;
+  overflow: hidden !important;
   background-position: bottom;
   background-attachment: fixed;
 }

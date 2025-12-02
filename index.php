@@ -72,23 +72,7 @@ require "_src/news_model.php";
     <header id="accueil">
         
         <?php require_once __DIR__ . '/_templates/header.php'; ?>
-        <!--
-        <section id="beta-text" class="news_home">
-            <div class="container">
-                <h2>Notre plateforme se construit...</h2>
-                <p>
-                    <b>reconnexion.tf</b> est un projet d'envergure <i>en cours de développement</i>. Cela signifie que le contenu visible sur ce site, notre serveur Discord, ainsi que nos serveurs de jeu, est susceptible d'évoluer dans le temps.
-                    <br>
-                    Cette <a href="https://i.imgur.com/bXMr1cC.jpeg" target="_blank">roadmap</a> résume assez globalement nos objectifs et ambitions par rapport à notre projet.
-                </p>
-                <p>
-                    Dans le cadre de ce projet, nous sommes à la recherche de volontaires motivés et ambitieux pour nous aider à construire une plateforme communautaire solide pour Team Fortress 2.
-                    <br>
-                    Si participer à un tel projet vous intéresse, n'hésitez pas à nous contacter directement sur Discord avec les liens mis à disposition sur cette page. Vous êtes les bienvenus !
-                </p>
-            </div>
-        </section>
-        -->
+        
         <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
         <div class="header_background">
