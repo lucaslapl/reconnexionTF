@@ -1,9 +1,12 @@
         <div class="hero flex space-evenly">
             <div class="logo-title">
-                <img src="_img/favicon2.webp" alt="Logo reconnexion.tf" fetchpriority="high">
-                <h1>
-                    reconnexion.tf
-                </h1>
+                <div class="flex justify-center align-center">
+                    <img src="_img/favicon2.webp" alt="Logo reconnexion.tf" fetchpriority="high">
+                    <h1>
+                        reconnexion<br>
+                        <span>.tf</span>
+                    </h1>
+                </div>
                 <h2>
                     La plateforme communautaire au service de la francophonie sur Team Fortress 2
                 </h2>

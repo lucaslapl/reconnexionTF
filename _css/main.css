@@ -262,24 +262,28 @@ header {
   padding: 45px 0;
 }
 .hero .logo-title img {
-  width: 200px;
-  margin: 0 auto;
+  width: 145px;
+  margin: 0 20px;
   display: block;
 }
 .hero .logo-title h1 {
   font-family: TF2Secondary;
-  font-size: 1.9em;
+  font-size: 2.8em;
   text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0 auto;
-  text-align: center;
+  text-align: left;
+}
+.hero .logo-title span {
+  font-size: 1.5em;
+  line-height: 0.9em;
+  font-family: TF2Build;
 }
 .hero .logo-title h2 {
   font-family: TF2Secondary;
   font-size: 1.6em;
   color: #f0f0f0;
   text-align: center;
+  margin: 0 auto 20px auto;
 }
 .hero .logo-title a {
   font-family: TF2Build;

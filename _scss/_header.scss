@@ -12,19 +12,22 @@ header {
 
   .logo-title {
     img {
-      width: 200px;
-      margin: 0 auto;
+      width: 145px;
+      margin: 0 20px;
       display: block;
     }
 
     h1 {
       font-family: TF2Secondary;
-      font-size: 1.9em;
+      font-size: 2.8em;
       text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
-      letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin: 0 auto;
-      text-align: center;
+      text-align: left;
+    }
+    span {
+      font-size: 1.5em;
+      line-height: .9em;
+      font-family: TF2Build;
     }
 
     h2 {
@@ -32,6 +35,7 @@ header {
       font-size: 1.6em;
       color: #f0f0f0;
       text-align: center;
+      margin: 0 auto 20px auto;
     }
 
     a {
