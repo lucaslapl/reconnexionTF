@@ -1,11 +1,4 @@
     <footer>
-        <div id="foot-socials">
-            <h1>Rejoignez reconnexion.tf dès maintenant !</h1>
-            <a href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">
-                <i class="fa-brands fa-discord fa-2x"></i>
-            </a>
-        </div>
-
         <div id="copyright">
             <div class="container flex justify-center">
                 <div id="recontf-links" class="flex flex-column foot-links">

@@ -156,7 +156,7 @@
 /********* HEADER ***********/
 
 @media all and (max-width: 1100px) {
-  .main {
+  .hero {
     display: block;
   }
 
@@ -179,7 +179,7 @@
 }
 
 @media all and (max-width: 726px) {
-  .main {
+  .hero {
     width: 95%;
 
     .logo-title {
@@ -195,7 +195,7 @@
 }
 
 @media all and (max-width: 490px) {
-  .main .logo-title {
+  .hero .logo-title {
     h1 {
       font-size: 2em;
     }

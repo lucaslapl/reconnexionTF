@@ -1,4 +1,4 @@
-        <div class="main flex space-evenly">
+        <div class="hero flex space-evenly">
             <div class="logo-title">
                 <img src="_img/favicon2.webp" alt="Logo reconnexion.tf" fetchpriority="high">
                 <h1>

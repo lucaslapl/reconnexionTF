@@ -253,37 +253,35 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 /********* HEADER ***********/
 header {
   width: 100%;
-  min-height: 980px;
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.main {
+.hero {
   width: 85%;
-  min-height: 500px;
   margin: 0 auto;
-  padding: 150px 0 45px 0;
+  padding: 45px 0;
 }
-.main .logo-title img {
+.hero .logo-title img {
   width: 200px;
   margin: 0 auto;
   display: block;
 }
-.main .logo-title h1 {
+.hero .logo-title h1 {
   font-family: TF2Secondary;
-  font-size: 4.9em;
+  font-size: 1.9em;
   text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
 }
-.main .logo-title h2 {
+.hero .logo-title h2 {
   font-family: TF2Secondary;
-  font-size: 2.8em;
+  font-size: 1.6em;
   color: #f0f0f0;
   text-align: center;
 }
-.main .logo-title a {
+.hero .logo-title a {
   font-family: TF2Build;
   display: inherit;
   color: #353535;
@@ -299,7 +297,7 @@ header {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3803921569);
   transition: 0.4s;
 }
-.main .logo-title a:hover {
+.hero .logo-title a:hover {
   background: #0082aa;
   transform: scale(0.99);
 }
@@ -601,7 +599,6 @@ header {
 /****** SERVEURS *******/
 #serveurs {
   width: 100%;
-  min-height: 650px;
   background: linear-gradient(transparent, rgb(26, 35, 47));
   padding: 32px 0;
   box-sizing: border-box;
@@ -620,19 +617,9 @@ header {
 }
 #serveurs #reconntf-servers .server,
 #serveurs #fff-servers .server {
-  width: 85%;
-  min-height: 50px;
-  border-radius: 10px;
+  width: 80%;
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 15px;
   justify-content: space-between;
-  z-index: 50;
-}
-#serveurs #reconntf-servers .server {
-  cursor: pointer;
-}
-#serveurs #fff-servers.servers {
-  cursor: default;
 }
 
 #reconntf-servers,
@@ -648,26 +635,15 @@ header {
 }
 
 .wrap-holiday {
-  border: 1px solid gold;
+  border-left: 8px solid gold;
 }
 
 .wrap-vanilla {
-  border: 1px solid #6b8dc4;
+  border-left: 8px solid #6b8dc4;
 }
 
 .wrap-custom {
-  border: 1px solid #c4996b;
-}
-
-#serveurs .container .server .server-title {
-  text-align: center;
-}
-#serveurs .container .server .server-title .fa-chevron-right {
-  margin: 0 15px;
-}
-
-.srv-holiday {
-  border: 1px solid gold;
+  border-left: 8px solid #c4996b;
 }
 
 #holiday-srv h3::before {
@@ -685,45 +661,21 @@ header {
   background-image: url("../_img/palmtree.png");
 }
 
-.srv-vanilla {
-  border: 1px solid #2eebff;
+#serveurs .server .server-title {
+  justify-content: space-between;
+  width: 280px;
+  padding: 0 20px;
 }
-
-.srv-custom {
-  border: 1px solid #ff7c2e;
-}
-
-#serveurs .container .server .server-title h3 {
+#serveurs .server .server-title h3 {
   font-family: TF2Build;
-  font-size: 1.5em;
-  margin: 0 25px;
+  font-size: 1em;
 }
-
-#holiday-feat, #vanilla-feat, #custom-feat, #mvm-feat, #tfdb-feat {
-  display: none;
-}
-
-#serveurs .server-features {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  top: -16px;
-  width: 75%;
-  padding: 5px 25px;
-  box-sizing: border-box;
-}
-#serveurs .server-features ul {
-  list-style: inside;
-  padding: 0;
-}
-#serveurs .server-features li {
-  margin: 10px auto;
+#serveurs .server .server-title p {
+  font-size: 0.8em;
 }
 #serveurs .server .server-connect {
   text-align: center;
   background: rgba(0, 0, 0, 0);
-  width: 200px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   transition: 0.3s;
   flex-direction: row-reverse;
 }
@@ -735,16 +687,6 @@ header {
 }
 #serveurs .server .custom:hover {
   background: rgba(164, 115, 62, 0.1294117647);
-}
-#serveurs .server .server-connect img {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 3px;
-  left: 0;
-  right: initial;
-  opacity: 0.2;
-  transition: 0.4s;
 }
 #serveurs .server .server-connect a {
   font-weight: bold;
@@ -764,11 +706,6 @@ header {
   color: #ffc17e;
 }
 
-#serveurs .container .server .server-connect a:hover img {
-  left: -20px;
-  transform: rotate(180deg);
-  opacity: 0.8;
-}
 #serveurs .serveurs-bg {
   position: absolute;
   top: 0;
@@ -785,15 +722,6 @@ header {
   position: absolute;
   width: 100%;
   z-index: 1;
-}
-#serveurs .serveurs-bg .bg {
-  background-image: url("../_img/gorgeblog_cap2.webp");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  height: 100%;
-  width: 100%;
 }
 
 /******* PARTNERS *******/
@@ -867,38 +795,16 @@ footer {
   width: 100%;
   background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   z-index: 100;
-}
-footer #foot-socials {
-  text-align: center;
-  margin: 120px auto;
-  width: 80%;
-}
-footer #foot-socials h1 {
-  font-family: TF2Secondary;
-  font-size: 3.5em;
-}
-footer #foot-socials a {
-  width: 90px;
-  height: 90px;
-  border-radius: 13px;
-  background: #33496c;
-  color: #fff;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-footer #foot-socials a:hover {
-  background: #6387c1;
 }
 footer #copyright {
   background-color: #2a4a5e;
   font-size: 0.9em;
   margin: 0 auto;
   width: 100%;
-  padding: 40px 0 20px 0;
+  padding: 10px 0 1px 0;
 }
 footer #copyright .foot-links h4 {
   font-family: TF2Secondary;
@@ -944,6 +850,10 @@ body {
   overflow: hidden !important;
   background-position: bottom;
   background-attachment: fixed;
+}
+
+#left-content, #right-content {
+  width: 50%;
 }
 
 a {
