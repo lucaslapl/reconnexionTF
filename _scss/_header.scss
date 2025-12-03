@@ -8,7 +8,7 @@ header {
 .hero {
   width: 85%;
   margin: 0 auto;
-  padding: 45px 0;
+  padding: 20px 0;
 
   .logo-title {
     img {
@@ -169,21 +169,16 @@ header {
 .news_home {
   width: 100%;
   padding-bottom: 35px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
 
   .container {
     width: 80%;
     margin: 0 auto;
     padding: 15px 0;
 
-    h2 {
+    h1 {
+      margin: 0;
+      font-size: 1.2em;
       font-family: TF2Build;
-      letter-spacing: 0.05em;
-      color: #bbe9ff;
-    }
-
-    a {
-      color: #5abccc;
     }
   }
 
@@ -191,43 +186,37 @@ header {
     width: 85%;
     margin: 0 auto;
     padding-bottom: 35px;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     a {
-      margin: 5px 10px;
+      margin: 2px 0;
     }
 
     .news {
-      @include rectangle(325px, 205px);
+      @include rectangle(100%, 60px);
       background-color: rgba(0, 0, 0, 0.4);
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 10px;
-      margin: 10px auto;
       box-sizing: border-box;
-      z-index: 10;
+      overflow: hidden;
 
       &:hover > .news-img {
         filter: brightness(0.8);
       }
 
-      span {
+      p.date-news {
         color: lightgray;
         font-size: .9em;
+        margin: 0 10px;
       }
 
-      p {
+      p.titre-news {
         font-weight: bold;
         color: #e6e6e6;
         text-shadow: 3px 3px 3px #000;
       }
 
       .news-img {
-        @include absolute-0;
-        width: 100%;
-        z-index: -1;
+        width: 110px;
         filter: brightness(0.3);
-        border-radius: 10px;
         transition: .3s;
       }
     }
@@ -235,15 +224,15 @@ header {
 }
 
 .mod {
-  border: 2px solid #315e31;
+  border-left: 8px solid #315e31;
 }
 
 .commu {
-  border: 2px solid #4a779f;
+  border-left: 8px solid #4a779f;
 }
 
 .offi {
-  border: 2px solid orange;
+  border-left: 8px solid orange;
 }
 
 .news_home .news-all {

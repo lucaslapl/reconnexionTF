@@ -2,7 +2,7 @@
             <div class="container">
                 <h1>Actualités communautaires</h1>
             </div>
-                <div class="news-list flex space-evenly">
+                <div class="news-list flex">
             <?php 
 
                 $results = getNews(4);
@@ -19,10 +19,10 @@
             ?>
 
                 <a id="news-nb<?= $id ?>" href="news/<?= $slug ?>">
-                    <div class="news flex <?= $news_type ?>">
-                        <span>Le <?= date('d/m/Y', strtotime($date_publi)) ?></span>
-                        <p><?= $titre ?></p>
+                    <div class="news flex space-between align-center <?= $news_type ?>">
                         <img class="news-img" src="<?= $thumbnail_clean ?>" alt="thumbnail" loading="lazy">
+                        <p class="titre-news"><?= $titre ?></p>
+                        <p class="date-news">Le <?= date('d/m/Y', strtotime($date_publi)) ?></p>
                     </div>
                 </a>
 
