@@ -803,34 +803,26 @@ footer #copyright {
   font-size: 0.9em;
   margin: 0 auto;
   width: 100%;
-  padding: 10px 0 1px 0;
-}
-footer #copyright .foot-links h4 {
-  font-family: TF2Secondary;
-  color: #bbe9ff;
-  margin: 0 0 10px 0;
-}
-footer #copyright a {
-  color: #bcddff;
-}
-footer #copyright a:hover {
-  text-decoration: underline;
 }
 footer #copyright .foot-links {
   margin: 0 20px;
 }
-footer #copyright .copyright {
-  margin: 10px 0;
-  text-align: center;
+footer #copyright .foot-links a {
+  color: #bcddff;
+  margin: 0 10px;
 }
-footer .foot-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  z-index: -1;
+footer #copyright .foot-links a:hover {
+  text-decoration: underline;
+}
+footer #copyright .copyright {
+  font-family: TF2Secondary;
+}
+footer #copyright .copyright a {
+  color: #bcddff;
+  font-family: TF2Secondary;
+}
+footer #copyright .copyright a:hover {
+  text-decoration: underline;
 }
 
 /********** * **********/

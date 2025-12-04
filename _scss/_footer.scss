@@ -13,36 +13,30 @@ footer {
     font-size: .9em;
     margin: 0 auto;
     width: 100%;
-    padding: 10px 0 1px 0;
-
-    .foot-links h4 {
-      font-family: TF2Secondary;
-      color: #bbe9ff;
-      margin: 0 0 10px 0;
-    }
-
-    a {
-      color: #bcddff;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
 
     .foot-links {
       margin: 0 20px;
+
+      a {
+        color: #bcddff;
+        margin: 0 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .copyright {
-      margin: 10px 0;
-      text-align: center;
-    }
-  }
+      font-family: TF2Secondary;
+      a {
+        color: #bcddff;
+        font-family: TF2Secondary;
 
-  .foot-bg {
-    @include absolute-0;
-    @include rectangle(100%, 100%);
-    opacity: .2;
-    z-index: -1;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
