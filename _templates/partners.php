@@ -1,4 +1,4 @@
-    <section id="partners">
+    <section id="partners" class="flex space-around">
         <div id="commu-partners">
             <h1>Communautés partenaires</h1>
             <div class="container flex justify-center align-center">

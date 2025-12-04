@@ -3,13 +3,13 @@
 #partners {
   padding: 15px 0 25px 0;
   text-align: center;
-  background-color: #051e33;
+  align-items: flex-start;
 
   #commu-partners {
 
     h1 {
-      font-family: TF2Secondary;
-      font-size: 2em;
+      font-family: TF2Build;
+      font-size: 1.2em;
       margin: 0 auto 35px auto;
     }
 
@@ -43,8 +43,8 @@
 
   #creator-partners {
     h2 {
-      font-family: TF2Secondary;
-      font-size: 1.7em;
+      font-family: TF2Build;
+      font-size: 1.2em;
       margin: 0 auto 15px auto;
     }
 

@@ -253,7 +253,6 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 /********* HEADER ***********/
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .hero {
@@ -408,7 +407,6 @@ header {
 
 .news_home {
   width: 100%;
-  padding-bottom: 35px;
 }
 .news_home .container {
   width: 80%;
@@ -607,9 +605,9 @@ header {
 #serveurs h1 {
   font-family: TF2Secondary;
   width: 80%;
-  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
   color: #7ef9ff;
-  font-size: 3em;
+  font-size: 2em;
 }
 #serveurs #reconntf-servers .server,
 #serveurs #fff-servers .server {
@@ -712,12 +710,11 @@ header {
   height: 100%;
   overflow: hidden;
   width: 100%;
-  box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.3607843137);
   z-index: -1;
 }
 #serveurs .serveurs-bg .character {
-  padding-left: 65%;
-  padding-top: 200px;
+  padding-left: 55%;
+  padding-top: 280px;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -727,11 +724,11 @@ header {
 #partners {
   padding: 15px 0 25px 0;
   text-align: center;
-  background-color: #051e33;
+  align-items: flex-start;
 }
 #partners #commu-partners h1 {
-  font-family: TF2Secondary;
-  font-size: 2em;
+  font-family: TF2Build;
+  font-size: 1.2em;
   margin: 0 auto 35px auto;
 }
 #partners #commu-partners .container {
@@ -757,8 +754,8 @@ header {
   color: #f6f4f2;
 }
 #partners #creator-partners h2 {
-  font-family: TF2Secondary;
-  font-size: 1.7em;
+  font-family: TF2Build;
+  font-size: 1.2em;
   margin: 0 auto 15px auto;
 }
 #partners #creator-partners .container {

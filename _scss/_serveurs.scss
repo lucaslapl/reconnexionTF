@@ -14,9 +14,9 @@
   h1 {
     font-family: TF2Secondary;
     width: 80%;
-    margin: 0 auto 20px auto;
+    margin-bottom: 20px;
     color: #7ef9ff;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   #reconntf-servers .server,
@@ -127,12 +127,11 @@
     height: 100%;
     overflow: hidden;
     width: 100%;
-    box-shadow: inset 0px 0px 35px #0000005c;
     z-index: -1;
 
     .character {
-      padding-left: 65%;
-      padding-top: 200px;
+      padding-left: 55%;
+      padding-top: 280px;
       position: absolute;
       width: 100%;
       z-index: 1;
