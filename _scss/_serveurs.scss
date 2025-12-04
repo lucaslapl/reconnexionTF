@@ -25,18 +25,21 @@
     width: 80%;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: space-between;
+    height: 40px;
   }
 }
 
 #reconntf-servers,
 #fff-servers {
   width: 100%;
+  margin-bottom: 10px;
 
   h2 {
     font-family: TF2Secondary;
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1em;
+    text-align: left;
     color: #7ef9ff;
+    margin: 5px 130px;
   }
 }
 

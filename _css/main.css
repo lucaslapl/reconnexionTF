@@ -291,9 +291,9 @@ header {
   color: #353535;
   background: #c7ba9f;
   background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
-  padding: 16px 30px;
+  padding: 12px 30px;
   border-radius: 11px;
-  width: 300px;
+  width: 230px;
   margin: 0 auto;
   text-align: center;
   font-size: 1.3em;
@@ -612,18 +612,21 @@ header {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: space-between;
+  height: 40px;
 }
 
 #reconntf-servers,
 #fff-servers {
   width: 100%;
+  margin-bottom: 10px;
 }
 #reconntf-servers h2,
 #fff-servers h2 {
   font-family: TF2Secondary;
-  font-size: 1.3em;
-  text-align: center;
+  font-size: 1em;
+  text-align: left;
   color: #7ef9ff;
+  margin: 5px 130px;
 }
 
 .wrap-holiday {
