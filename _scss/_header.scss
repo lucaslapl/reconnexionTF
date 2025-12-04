@@ -179,6 +179,12 @@ header {
       margin: 0;
       font-size: 1.2em;
       font-family: TF2Build;
+
+      a {
+        font-family: TF2Secondary;
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
 
