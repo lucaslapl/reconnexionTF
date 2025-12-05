@@ -311,22 +311,24 @@ header {
 
 #box-stream {
   background: rgba(0, 0, 0, 0.35);
-  width: 285px;
+  width: 510px;
   min-height: 100px;
   padding-top: 5px;
+  margin: 0 auto;
 }
 #box-stream h1 {
   margin: 5px auto 10px auto;
   text-align: center;
   font-size: 1.4em;
+  font-family: TF2Build;
 }
 #box-stream #streams {
-  background: #47699d;
   padding: 10px 0;
 }
 #box-stream #streams #streams-all {
   max-height: 300px;
   overflow-y: scroll;
+  padding: 0 8px;
 }
 
 .no-stream {
@@ -348,19 +350,32 @@ header {
 
 .stream_line {
   width: 100%;
-  height: 30px;
+  height: 60px;
   font-size: 0.7em;
   text-align: left;
   padding: 6px 8px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  margin: 3px 0;
 }
 
 /**.stream-link {
 
 }**/
+.stream-thumb {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
 .streamer-name {
+  font-family: TF2Build;
   margin-right: 5px;
   color: #fff;
+  font-size: 1.2em;
 }
 
 .stream-title {
@@ -369,13 +384,17 @@ header {
   float: left;
   overflow: hidden;
   white-space: nowrap;
-  width: 240px;
+  width: 430px;
   color: #fff;
+  font-size: 1.2em;
 }
 
 .viewercount {
   float: right;
   color: #fff;
+  margin-left: 10px;
+  font-family: TF2Build;
+  font-size: 1.5em;
 }
 
 .tabs {
@@ -842,6 +861,10 @@ body {
 
 #left-content, #right-content {
   width: 50%;
+}
+
+#right-content {
+  margin-top: 75px;
 }
 
 a {

@@ -18,10 +18,16 @@ function loadStreams(container, lang) {
         container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment :(</p>`;
       } else {
         data.data.forEach(stream => {
+
+          const thumb = stream.thumbnail_url
+            .replace('{width}', '320')
+            .replace('{height}', '180');
+
           container.innerHTML += `
             <div class="stream_line">
               <a class="stream-link" href="https://twitch.tv/${stream.user_login}" target="_blank" title="${stream.title}">
                 <span class="stream-title">
+                  <img class="stream-thumb" src="${thumb}" alt="Thumbnail de ${stream.user_name}" />
                   <span class="streamer-name">${stream.user_name}</span>
                   ${stream.title}
                 </span>
