@@ -101,9 +101,8 @@
 
     .server-connect {
       a {
-        font-weight: bold;
-        padding: 10px 20px;
-        transition: .4s;
+        @include tf2button(120px, 6px, 12px);
+        text-decoration: none;
       }
     }
   }
