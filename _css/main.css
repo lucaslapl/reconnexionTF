@@ -355,6 +355,9 @@ header {
   background-color: #333;
   margin: 3px 0;
 }
+.stream_line:hover {
+  background-color: #444;
+}
 
 .stream-link {
   width: 100%;
@@ -629,10 +632,9 @@ header {
   flex-direction: column;
 }
 #serveurs h1 {
-  font-family: TF2Secondary;
+  font-family: TF2Build;
   width: 80%;
   margin-bottom: 20px;
-  color: #7ef9ff;
   font-size: 2em;
 }
 #serveurs #reconntf-servers .server,
@@ -726,6 +728,9 @@ header {
   font-size: 1em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
 }
+#serveurs .server .server-connect a:hover {
+  background: #c7ba9f;
+}
 
 .link-holiday {
   color: gold;
@@ -759,13 +764,12 @@ header {
 /******* PARTNERS *******/
 #partners {
   padding: 15px 0 25px 0;
-  text-align: center;
   align-items: flex-start;
 }
 #partners #commu-partners h1 {
   font-family: TF2Build;
   font-size: 1.2em;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 15px auto;
 }
 #partners #commu-partners .container {
   text-align: center;
@@ -776,7 +780,9 @@ header {
   filter: saturate(1);
 }
 #partners #commu-partners .commu-box {
-  margin: 0 25px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  box-sizing: border-box;
 }
 #partners #commu-partners .commu-box img {
   width: 70px;
@@ -795,31 +801,55 @@ header {
   margin: 0 auto 15px auto;
 }
 #partners #creator-partners .container {
-  text-align: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: column;
 }
-#partners #creator-partners a:hover img {
-  filter: saturate(1);
+#partners #creator-partners .container .creator-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 1px 0;
+  padding: 4px 5px;
 }
-#partners #creator-partners .creator-box {
-  margin: 0 25px;
-}
-#partners #creator-partners .creator-box img {
-  width: 50px;
+#partners #creator-partners .container .creator-box img {
+  width: 30px;
   border-radius: 9999px;
   filter: saturate(0);
   transition: 0.2s;
 }
-#partners #creator-partners .creator-box h3 {
+#partners #creator-partners .container .creator-box h3 {
   font-family: TF2Secondary;
   margin: 5px 0;
   color: #f6f4f2;
 }
-#partners #creator-partners .creator-box p {
+#partners #creator-partners .container .creator-box p {
   color: #f6f4f2;
   font-size: 0.8em;
   margin: 0;
+}
+#partners #creator-partners .container .cta-partner {
+  width: 200px;
+  padding: 6px 0;
+  font-family: TF2Build;
+  color: #353535;
+  background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
+  background: linear-gradient(0deg, rgb(255, 253, 144) 35%, rgb(255, 249, 235) 100%);
+  margin: 15px 0 0 0;
+  cursor: pointer;
+}
+#partners #creator-partners .container .cta-partner:hover {
+  background: #ffe19b;
+}
+#partners #creator-partners .container a:hover img {
+  filter: saturate(1);
 }
 
 /******* FOOTER **********/

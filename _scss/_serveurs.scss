@@ -11,10 +11,9 @@
   }
 
   h1 {
-    font-family: TF2Secondary;
+    font-family: TF2Build;
     width: 80%;
     margin-bottom: 20px;
-    color: #7ef9ff;
     font-size: 2em;
   }
 
@@ -102,6 +101,9 @@
       margin: 5px;
       a {
         @include tf2button(110px, 6px, 0, 1em, 4px);
+        &:hover {
+        background: #c7ba9f;
+      }
       }
     }
   }

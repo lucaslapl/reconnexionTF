@@ -12,7 +12,7 @@
         </div>
         <div id="creator-partners">
             <h2>Créateurs partenaires</h2>
-            <div class="container flex justify-center">
+            <div class="container flex">
                 <a href="https://www.youtube.com/@VincentTrodrig">
                     <div class="creator-box">
                         <img src="_img/trodrig.jpg" alt="Trodrig">
@@ -26,6 +26,10 @@
                         <h3>Aventus</h3>
                         <p>Youtuber</p>
                     </div>
+                </a>
+
+                <a href="news/devenez-partenaire" class="cta-partner" title="Devenez partenaire !">
+                    Devenez partenaire !
                 </a>
             </div>
         </div>
