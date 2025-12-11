@@ -11,14 +11,14 @@ header {
 
   .logo-title {
     img {
-      width: 145px;
-      margin: 0 20px;
+      width: 80px;
+      margin: 0 10px;
       display: block;
     }
 
     h1 {
       font-family: TF2Secondary;
-      font-size: 2.8em;
+      font-size: 1.8em;
       text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
       text-transform: uppercase;
       text-align: left;
@@ -31,30 +31,18 @@ header {
 
     h2 {
       font-family: TF2Secondary;
-      font-size: 1.6em;
+      font-size: 1.4em;
       color: #f0f0f0;
       text-align: center;
       margin: 0 auto 20px auto;
     }
 
     a {
-      font-family: TF2Build;
+      @include tf2button(230px, 12px, 30px, 1.3em, 11px);
       display: inherit;
-      color: #353535;
-      background: #c7ba9f;
-      background: linear-gradient(0deg, rgba(199, 186, 159, 1) 35%, rgba(255, 249, 235, 1) 100%);
-      padding: 12px 30px;
-      border-radius: 11px;
-      width: 230px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1.3em;
-      font-weight: bold;
-      box-shadow: 0px 0px 15px #00000061;
-      transition: .4s;
 
       &:hover {
-        background: #0082aa;
+        background: #c7ba9f;
         transform: scale(0.99);
       }
     }

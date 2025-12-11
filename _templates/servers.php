@@ -16,7 +16,7 @@
                         </div>
                         <div class="server-connect flex align-center holiday">
                             <a class="link-holiday" href="steam://connect/jeu.reconnexion.tf:27045">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="server-connect flex align-center vanilla">
                             <a class="link-vanilla" href="steam://connect/jeu.reconnexion.tf:27015">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27025">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27035">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27055">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="#">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="#">
-                                Se connecter
+                                Rejoindre
                             </a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a class="link-custom" href="#">
-                                Se connecter<br>
+                                Rejoindre
                             </a>
                         </div>
                     </div>

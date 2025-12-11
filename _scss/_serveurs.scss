@@ -2,7 +2,6 @@
 
 #serveurs {
   width: 100%;
-  padding: 32px 0;
   box-sizing: border-box;
 
   .container {
@@ -100,9 +99,9 @@
     }
 
     .server-connect {
+      margin: 5px;
       a {
-        @include tf2button(120px, 6px, 12px);
-        text-decoration: none;
+        @include tf2button(110px, 6px, 0, 1em, 4px);
       }
     }
   }
@@ -129,8 +128,8 @@
     z-index: -1;
 
     .character {
-      padding-left: 55%;
-      padding-top: 280px;
+      padding-left: 30%;
+      padding-top: 350px;
       position: absolute;
       width: 100%;
       z-index: 1;
