@@ -25,11 +25,11 @@ function loadStreams(container, lang) {
 
           container.innerHTML += `
             <div class="stream_line">
-              <a class="stream-link" href="https://twitch.tv/${stream.user_login}" target="_blank" title="${stream.title}">
-                <span class="stream-title">
+              <a class="stream-link flex align-center" href="https://twitch.tv/${stream.user_login}" target="_blank" title="${stream.title}">
+                <span class="stream-info flex align-center">
                   <img class="stream-thumb" src="${thumb}" alt="Thumbnail de ${stream.user_name}" />
                   <span class="streamer-name">${stream.user_name}</span>
-                  ${stream.title}
+                  <span class="stream-title">${stream.title}</span>
                 </span>
                 <span class="viewercount">${stream.viewer_count}</span>
               </a>
@@ -82,10 +82,11 @@ fetch('_script/yt_streams.php')
 
       const html = `
         <div class="stream_line">
-          <a class="stream-link" href="https://www.youtube.com/watch?v=${vid}" target="_blank" title="${title}">
-            <span class="stream-title">
+          <a class="stream-link flex align-center" href="https://www.youtube.com/watch?v=${vid}" target="_blank" title="${title}">
+            <span class="stream-info flex align-center">
+              <img class="stream-thumb" src="${video.thumbnail}" alt="Thumbnail de ${channel}" />
               <span class="streamer-name">${channel}</span>
-                ${title}
+              <span class="stream-title">${title}</span>
               </span>
             <span class="viewercount">${viewCount}</span>
           </a>

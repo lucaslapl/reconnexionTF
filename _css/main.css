@@ -322,7 +322,7 @@ header {
 #box-stream #streams {
   padding: 10px 0;
 }
-#box-stream #streams #streams-all {
+#box-stream #streams #streams-all, #box-stream #streams #streams-fr, #box-stream #streams #streams-yt {
   max-height: 300px;
   overflow-y: scroll;
   padding: 0 8px;
@@ -359,14 +359,27 @@ header {
   margin: 3px 0;
 }
 
-/**.stream-link {
+.stream-link {
+  width: 100%;
+}
 
-}**/
+.stream-info {
+  font-family: TF2Secondary;
+  text-overflow: ellipsis;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 430px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
 .stream-thumb {
-  width: 120px;
+  width: 85px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-right: 10px;
 }
 
 .streamer-name {
@@ -378,21 +391,19 @@ header {
 
 .stream-title {
   font-family: TF2Secondary;
-  text-overflow: ellipsis;
-  float: left;
+  font-size: 0.9em;
   overflow: hidden;
   white-space: nowrap;
-  width: 430px;
-  color: #fff;
-  font-size: 1.2em;
+  text-overflow: ellipsis;
 }
 
 .viewercount {
   float: right;
   color: #fff;
-  margin-left: 10px;
   font-family: TF2Build;
   font-size: 1.5em;
+  position: absolute;
+  right: 0;
 }
 
 .tabs {

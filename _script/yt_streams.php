@@ -68,6 +68,7 @@ foreach ($videosData['items'] as $item) {
         'videoId' => $item['id'],
         'title' => $item['snippet']['title'],
         'channelTitle' => $item['snippet']['channelTitle'],
+        'thumbnail' => $item['snippet']['thumbnails']['medium']['url'],
         'viewCount' => $item['liveStreamingDetails']['concurrentViewers'] ?? null
     ];
 }
