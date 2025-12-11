@@ -11,8 +11,9 @@
 @import 'mixins';
 @import 'fonts';
 @import 'defaults';
-@import  'nav';
+@import 'nav';
 @import 'header';
+@import 'streams';
 @import 'presentation';
 @import 'serveurs';
 @import 'partners';
@@ -23,7 +24,7 @@
 html {
   width: 100%;
   height: 100%;
-  background: #262626;
+  background: #18202b;
   color: #f6f4f2;
   overflow-x: hidden !important;
   scroll-behavior: smooth;

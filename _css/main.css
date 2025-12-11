@@ -299,140 +299,6 @@ header {
   transform: scale(0.99);
 }
 
-.side-info {
-  margin: 0 10px;
-}
-
-#box-stream {
-  background: rgba(0, 0, 0, 0.35);
-  width: 510px;
-  min-height: 100px;
-  padding-top: 5px;
-  margin: 0 auto;
-}
-#box-stream h1 {
-  margin: 5px auto 10px auto;
-  text-align: center;
-  font-size: 1.4em;
-  font-family: TF2Build;
-}
-#box-stream #streams {
-  padding: 10px 0;
-}
-#box-stream #streams #streams-all, #box-stream #streams #streams-fr, #box-stream #streams #streams-yt {
-  max-height: 300px;
-  overflow-y: scroll;
-  padding: 0 8px;
-}
-
-.no-stream {
-  font-size: 0.9em;
-  text-align: center;
-  color: #fff;
-}
-
-#streams {
-  text-align: center;
-  min-height: 100px;
-}
-
-.loading {
-  width: 30px;
-  height: 30px;
-  margin: 10px auto;
-}
-
-.stream_line {
-  width: 100%;
-  height: 60px;
-  font-size: 0.7em;
-  text-align: left;
-  padding: 6px 8px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #333;
-  margin: 3px 0;
-}
-.stream_line:hover {
-  background-color: #444;
-}
-
-.stream-link {
-  width: 100%;
-}
-
-.stream-info {
-  font-family: TF2Secondary;
-  text-overflow: ellipsis;
-  float: left;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 430px;
-  color: #fff;
-  font-size: 1.2em;
-}
-
-.stream-thumb {
-  width: 85px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 10px;
-}
-
-.streamer-name {
-  font-family: TF2Build;
-  margin-right: 5px;
-  color: #fff;
-  font-size: 1.2em;
-}
-
-.stream-title {
-  font-family: TF2Secondary;
-  font-size: 0.9em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.viewercount {
-  float: right;
-  color: #fff;
-  font-family: TF2Build;
-  font-size: 1.5em;
-  position: absolute;
-  right: 0;
-}
-
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.tab-button {
-  font-family: TF2Build;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: none;
-  background: #ddd;
-  border-radius: 4px;
-}
-.tab-button.active {
-  background: #fff;
-  color: #000;
-  border-bottom: 2px solid #37b4ff;
-}
-
-.stream-tab {
-  display: none;
-}
-.stream-tab.active {
-  display: block;
-}
-
 .news_home {
   width: 100%;
 }
@@ -539,6 +405,126 @@ header {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+
+#box-stream {
+  background: rgba(0, 0, 0, 0.35);
+  width: 510px;
+  min-height: 100px;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+#box-stream h1 {
+  margin: 5px auto 10px auto;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: TF2Build;
+}
+#box-stream #streams {
+  padding: 10px 0;
+  text-align: center;
+  min-height: 100px;
+}
+#box-stream #streams .tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#box-stream #streams .tabs .tab-button {
+  font-family: TF2Build;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background: #ddd;
+  border-radius: 4px;
+}
+#box-stream #streams .tabs .tab-button.active {
+  background: #fff;
+  color: #000;
+  border-bottom: 2px solid #37b4ff;
+}
+#box-stream #streams .stream-tab {
+  display: none;
+}
+#box-stream #streams .stream-tab.active {
+  display: block;
+}
+#box-stream #streams #streams-all, #box-stream #streams #streams-fr, #box-stream #streams #streams-yt {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 0 8px;
+}
+#box-stream #streams #streams-all .loading, #box-stream #streams #streams-fr .loading, #box-stream #streams #streams-yt .loading {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+}
+#box-stream #streams #streams-all .stream_line, #box-stream #streams #streams-fr .stream_line, #box-stream #streams #streams-yt .stream_line {
+  width: 100%;
+  height: 60px;
+  font-size: 0.7em;
+  text-align: left;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  margin: 3px 0;
+}
+#box-stream #streams #streams-all .stream_line:hover, #box-stream #streams #streams-fr .stream_line:hover, #box-stream #streams #streams-yt .stream_line:hover {
+  background-color: #444;
+}
+#box-stream #streams #streams-all .stream_line .stream-link, #box-stream #streams #streams-fr .stream_line .stream-link, #box-stream #streams #streams-yt .stream_line .stream-link {
+  width: 100%;
+}
+#box-stream #streams #streams-all .stream_line .stream-link .stream-info, #box-stream #streams #streams-fr .stream_line .stream-link .stream-info, #box-stream #streams #streams-yt .stream_line .stream-link .stream-info {
+  font-family: TF2Secondary;
+  text-overflow: ellipsis;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 430px;
+  color: #fff;
+  font-size: 1.2em;
+}
+#box-stream #streams #streams-all .stream_line .stream-link .stream-info .stream-thumb, #box-stream #streams #streams-fr .stream_line .stream-link .stream-info .stream-thumb, #box-stream #streams #streams-yt .stream_line .stream-link .stream-info .stream-thumb {
+  width: 85px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+#box-stream #streams #streams-all .stream_line .stream-link .stream-info .streamer-name, #box-stream #streams #streams-fr .stream_line .stream-link .stream-info .streamer-name, #box-stream #streams #streams-yt .stream_line .stream-link .stream-info .streamer-name {
+  font-family: TF2Build;
+  margin-right: 5px;
+  color: #fff;
+  font-size: 1.2em;
+}
+#box-stream #streams #streams-all .stream_line .stream-link .stream-info .stream-title, #box-stream #streams #streams-fr .stream_line .stream-link .stream-info .stream-title, #box-stream #streams #streams-yt .stream_line .stream-link .stream-info .stream-title {
+  font-family: TF2Secondary;
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#box-stream #streams #streams-all .stream_line .stream-link .viewercount, #box-stream #streams #streams-fr .stream_line .stream-link .viewercount, #box-stream #streams #streams-yt .stream_line .stream-link .viewercount {
+  float: right;
+  color: #fff;
+  font-family: TF2Build;
+  font-size: 1.5em;
+  position: absolute;
+  right: 0;
+}
+
+.no-stream {
+  font-family: TF2Secondary;
+  font-size: 1.1em;
+  text-align: center;
+  color: #fff;
+}
+.no-stream button {
+  font-family: TF2Build;
 }
 
 /****** PRESENTATION *******/
@@ -663,11 +649,11 @@ header {
   border-left: 8px solid gold;
 }
 
-.wrap-vanilla {
+.wrap-reconntf {
   border-left: 8px solid #6b8dc4;
 }
 
-.wrap-custom {
+.wrap-fff {
   border-left: 8px solid #c4996b;
 }
 
@@ -730,18 +716,6 @@ header {
 }
 #serveurs .server .server-connect a:hover {
   background: #c7ba9f;
-}
-
-.link-holiday {
-  color: gold;
-}
-
-.link-vanilla {
-  color: #7ef9ff;
-}
-
-.link-custom {
-  color: #ffc17e;
 }
 
 #serveurs .serveurs-bg {
@@ -892,7 +866,7 @@ footer #copyright .copyright a:hover {
 html {
   width: 100%;
   height: 100%;
-  background: #262626;
+  background: #18202b;
   color: #f6f4f2;
   overflow-x: hidden !important;
   scroll-behavior: smooth;

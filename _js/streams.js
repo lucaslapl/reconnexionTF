@@ -15,7 +15,7 @@ function loadStreams(container, lang) {
       console.log("Réponse Twitch:", data);
 
       if (!data || !Array.isArray(data.data) || data.data.length === 0) {
-        container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment :(</p>`;
+        container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment :(<br><button class="tab-button" data-tab="all"><i class="fa-brands fa-twitch" style="color: #ca95ff;"></i> Voir les streamers internationaux</button></p>`;
       } else {
         data.data.forEach(stream => {
 
@@ -109,4 +109,17 @@ document.querySelectorAll(".tab-button").forEach(button => {
     const tabId = button.getAttribute("data-tab");
     document.getElementById(`streams-${tabId}`).classList.add("active");
   });
+});
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".tab-button");
+  if (!btn) return;
+
+  const tabId = btn.dataset.tab;
+
+  document.querySelectorAll(".tab-button").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".stream-tab").forEach(tab => tab.classList.remove("active"));
+
+  document.getElementById(`streams-${tabId}`).classList.add("active");
+  document.getElementById(`btn-${tabId}`).classList.add("active");
 });

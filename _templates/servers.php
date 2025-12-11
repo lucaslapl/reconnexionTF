@@ -15,13 +15,13 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center holiday">
-                            <a class="link-holiday" href="steam://connect/jeu.reconnexion.tf:27045">
+                            <a href="steam://connect/jeu.reconnexion.tf:27045">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
                     -->
-                    <div id="vanilla-srv" class="server flex wrap-vanilla">
+                    <div id="vanilla-srv" class="server flex wrap-reconntf">
                         <div class="server-title flex align-center">
                             <h3>Vanilla #1</h3>
                             <p>
@@ -29,12 +29,12 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center vanilla">
-                            <a class="link-vanilla" href="steam://connect/jeu.reconnexion.tf:27015">
+                            <a href="steam://connect/jeu.reconnexion.tf:27015">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
-                    <div id="custom-srv" class="server flex wrap-custom">
+                    <div id="custom-srv" class="server flex wrap-reconntf">
                         <div class="server-title flex align-center">
                             <h3>Custom #1</h3>
                             <p>
@@ -42,12 +42,12 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27025">
+                            <a href="steam://connect/jeu.reconnexion.tf:27025">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
-                    <div id="mvm-srv" class="server flex wrap-custom">
+                    <div id="mvm-srv" class="server flex wrap-reconntf">
                         <div class="server-title flex align-center">
                             <h3>MvM #1</h3>
                             <p>
@@ -55,12 +55,12 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27035">
+                            <a href="steam://connect/jeu.reconnexion.tf:27035">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
-                    <div id="tfdb-srv" class="server flex wrap-custom">
+                    <div id="tfdb-srv" class="server flex wrap-reconntf">
                         <div class="server-title flex align-center">
                             <h3>Dodgeball #1</h3>
                             <p>
@@ -68,7 +68,7 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="steam://connect/jeu.reconnexion.tf:27055">
+                            <a href="steam://connect/jeu.reconnexion.tf:27055">
                                 Rejoindre
                             </a>
                         </div>
@@ -79,7 +79,7 @@
             <div id="fff-servers">
                 <h2>Fun Fortress Family</h2>
                 <div class="container flex justify-center align-center">
-                    <div id="casu-fff-srv" class="server flex wrap-custom">
+                    <div id="casu-fff-srv" class="server flex wrap-fff">
                         <div class="server-title flex align-center">
                             <h3>Casual</h3>
                             <p>
@@ -87,12 +87,12 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="#">
+                            <a href="#">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
-                    <div id="jump-fff-srv" class="server flex wrap-custom">
+                    <div id="jump-fff-srv" class="server flex wrap-fff">
                         <div class="server-title flex align-center">
                             <h3>Jump</h3>
                             <p>
@@ -100,12 +100,12 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="#">
+                            <a href="#">
                                 Rejoindre
                             </a>
                         </div>
                     </div>
-                    <div id="mge-fff-srv" class="server flex wrap-custom">
+                    <div id="mge-fff-srv" class="server flex wrap-fff">
                         <div class="server-title flex align-center">
                             <h3>MGE</h3>
                             <p>
@@ -113,7 +113,7 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="#">
+                            <a href="#">
                                 Rejoindre
                             </a>
                         </div>

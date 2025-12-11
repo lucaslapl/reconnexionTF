@@ -1,0 +1,133 @@
+#box-stream {
+    background: rgba(0, 0, 0, 0.35);
+    width: 510px;
+    min-height: 100px;
+    padding-top: 5px;
+    margin: 0 auto;
+
+    h1 {
+        margin: 5px auto 10px auto;
+        text-align: center;
+        font-size: 1.4em;
+        font-family: TF2Build;
+    }
+
+    #streams {
+        padding: 10px 0;
+        text-align: center;
+        min-height: 100px;
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            .tab-button {
+            font-family: TF2Build;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            background: #ddd;
+            border-radius: 4px;
+
+                &.active {
+                    background: #fff;
+                    color: #000;
+                    border-bottom: 2px solid #37b4ff;
+                }
+            }
+        }
+
+        .stream-tab {
+        display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        #streams-all, #streams-fr, #streams-yt {
+        max-height: 300px;
+        overflow-y: scroll;
+        padding: 0 8px;
+
+            .loading {
+                @include square(30px);
+                margin: 10px auto;
+            }
+
+            .stream_line {
+                @include rectangle(100%, 60px);
+                font-size: 0.7em;
+                text-align: left;
+                padding: 6px 8px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #333;
+                margin: 3px 0;
+                &:hover {
+                    background-color: #444;
+                }
+
+                .stream-link {
+                    width: 100%;
+
+                    .stream-info {
+                        font-family: TF2Secondary;
+                        text-overflow: ellipsis;
+                        float: left;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        width: 430px;
+                        color: #fff;
+                        font-size: 1.2em;
+
+                        .stream-thumb {
+                            width: 85px;
+                            height: auto;
+                            object-fit: cover;
+                            margin-right: 10px;
+                        }
+
+                        .streamer-name {
+                            font-family: TF2Build;
+                            margin-right: 5px;
+                            color: #fff;
+                            font-size: 1.2em;
+                        }
+
+                        .stream-title {
+                            font-family: TF2Secondary;
+                            font-size: .9em;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    .viewercount {
+                        float: right;
+                        color: #fff;
+                        font-family: TF2Build;
+                        font-size: 1.5em;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.no-stream {
+    font-family: TF2Secondary;
+    font-size: 1.1em;
+    text-align: center;
+    color: #fff;
+
+    button {
+        font-family: TF2Build;
+    }
+}
