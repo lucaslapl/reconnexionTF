@@ -269,7 +269,7 @@ header {
   text-transform: uppercase;
   text-align: left;
 }
-.hero .logo-title span {
+.hero .logo-title span.tf {
   font-size: 1.5em;
   line-height: 0.9em;
   font-family: TF2Build;
@@ -277,17 +277,17 @@ header {
 .hero .logo-title h2 {
   font-family: TF2Secondary;
   font-size: 1.4em;
-  color: #f0f0f0;
+  color: #fff;
   text-align: center;
   margin: 0 auto 20px auto;
 }
 .hero .logo-title a {
-  width: 230px;
-  padding: 12px 30px;
+  width: 370px;
+  padding: 14px 24px;
   font-family: TF2Build;
   color: #353535;
   background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
-  border-radius: 11px;
+  border-radius: 9px;
   margin: 0 auto;
   text-align: center;
   font-size: 1.3em;
@@ -298,14 +298,20 @@ header {
   background: #c7ba9f;
   transform: scale(0.99);
 }
+.hero .logo-title a span.cta-join {
+  font-family: TF2Build;
+}
 
 .news_home {
-  width: 100%;
+  width: 90%;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding: 15px 0;
+  box-shadow: 1px 1px 2px #000;
 }
 .news_home .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 15px 0;
+  padding: 5px 20px 15px 20px;
 }
 .news_home .container h1 {
   margin: 0;
@@ -318,18 +324,20 @@ header {
   text-decoration: underline;
 }
 .news_home .news-list {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding: 0 15px;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .news_home .news-list a {
   margin: 2px 0;
+  background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+  border-radius: 7px;
 }
 .news_home .news-list .news {
   width: 100%;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 50px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -337,17 +345,18 @@ header {
   filter: brightness(0.8);
 }
 .news_home .news-list .news p.date-news {
-  color: lightgray;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-family: TF2Secondary;
   margin: 0 10px;
+  color: #1c1a19;
 }
 .news_home .news-list .news p.titre-news {
+  font-family: TF2Secondary;
   font-weight: bold;
-  color: #e6e6e6;
-  text-shadow: 3px 3px 3px #000;
+  color: #1c1a19;
 }
 .news_home .news-list .news .news-img {
-  width: 110px;
+  width: 85px;
   filter: brightness(0.3);
   transition: 0.3s;
 }
@@ -391,6 +400,7 @@ header {
   height: 100%;
   width: 100%;
   z-index: -1;
+  opacity: 0.8;
 }
 .header_background img {
   height: 100%;
@@ -408,9 +418,11 @@ header {
 }
 
 #box-stream {
-  background: rgba(0, 0, 0, 0.35);
-  width: 510px;
-  min-height: 100px;
+  background: #1c1a19;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #000;
+  width: 90%;
+  min-height: 200px;
   padding-top: 5px;
   margin: 0 auto;
 }
@@ -450,7 +462,7 @@ header {
   display: block;
 }
 #box-stream #streams #streams-all, #box-stream #streams #streams-fr, #box-stream #streams #streams-yt {
-  max-height: 300px;
+  max-height: 270px;
   overflow-y: scroll;
   padding: 0 8px;
 }
@@ -461,7 +473,7 @@ header {
 }
 #box-stream #streams #streams-all .stream_line, #box-stream #streams #streams-fr .stream_line, #box-stream #streams #streams-yt .stream_line {
   width: 100%;
-  height: 60px;
+  height: 50px;
   font-size: 0.7em;
   text-align: left;
   padding: 6px 8px;
@@ -489,7 +501,7 @@ header {
   font-size: 1.2em;
 }
 #box-stream #streams #streams-all .stream_line .stream-link .stream-info .stream-thumb, #box-stream #streams #streams-fr .stream_line .stream-link .stream-info .stream-thumb, #box-stream #streams #streams-yt .stream_line .stream-link .stream-info .stream-thumb {
-  width: 85px;
+  width: 75px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -609,19 +621,22 @@ header {
 } **/
 /****** SERVEURS *******/
 #serveurs {
-  width: 100%;
   box-sizing: border-box;
+  z-index: 10;
+  width: 90%;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px auto;
+  box-shadow: 1px 1px 2px #000;
+  padding: 5px 20px;
 }
 #serveurs .container {
-  width: 90%;
-  margin: 0 auto;
   flex-direction: column;
 }
 #serveurs h1 {
   font-family: TF2Build;
-  width: 80%;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 #serveurs #reconntf-servers .server,
 #serveurs #fff-servers .server {
@@ -674,7 +689,7 @@ header {
 
 #serveurs .server .server-title {
   justify-content: space-between;
-  width: 280px;
+  width: 300px;
   padding: 0 20px;
 }
 #serveurs .server .server-title h3 {
@@ -683,6 +698,7 @@ header {
 }
 #serveurs .server .server-title p {
   font-size: 0.8em;
+  font-family: TF2Secondary;
 }
 #serveurs .server .server-connect {
   text-align: center;
@@ -737,8 +753,13 @@ header {
 
 /******* PARTNERS *******/
 #partners {
-  padding: 15px 0 25px 0;
   align-items: flex-start;
+  width: 90%;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding: 20px 0;
+  box-shadow: 1px 1px 2px #000;
 }
 #partners #commu-partners h1 {
   font-family: TF2Build;
@@ -800,6 +821,7 @@ header {
   color: #f6f4f2;
 }
 #partners #creator-partners .container .creator-box p {
+  font-family: TF2Secondary;
   color: #f6f4f2;
   font-size: 0.8em;
   margin: 0;
@@ -866,7 +888,7 @@ footer #copyright .copyright a:hover {
 html {
   width: 100%;
   height: 100%;
-  background: #18202b;
+  background: #000;
   color: #f6f4f2;
   overflow-x: hidden !important;
   scroll-behavior: smooth;

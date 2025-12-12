@@ -22,7 +22,7 @@
                     <div class="news flex space-between align-center <?= $news_type ?>">
                         <img class="news-img" src="<?= $thumbnail_clean ?>" alt="thumbnail" loading="lazy">
                         <p class="titre-news"><?= $titre ?></p>
-                        <p class="date-news">Le <?= date('d/m/Y', strtotime($date_publi)) ?></p>
+                        <p class="date-news"><?= date('d/m/Y', strtotime($date_publi)) ?></p>
                     </div>
                 </a>
 

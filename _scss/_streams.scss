@@ -1,7 +1,9 @@
 #box-stream {
-    background: rgba(0, 0, 0, 0.35);
-    width: 510px;
-    min-height: 100px;
+    background: #1c1a19;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #000;
+    width: 90%;
+    min-height: 200px;
     padding-top: 5px;
     margin: 0 auto;
 
@@ -47,7 +49,7 @@
         }
 
         #streams-all, #streams-fr, #streams-yt {
-        max-height: 300px;
+        max-height: 270px;
         overflow-y: scroll;
         padding: 0 8px;
 
@@ -57,7 +59,7 @@
             }
 
             .stream_line {
-                @include rectangle(100%, 60px);
+                @include rectangle(100%, 50px);
                 font-size: 0.7em;
                 text-align: left;
                 padding: 6px 8px;
@@ -85,7 +87,7 @@
                         font-size: 1.2em;
 
                         .stream-thumb {
-                            width: 85px;
+                            width: 75px;
                             height: auto;
                             object-fit: cover;
                             margin-right: 10px;

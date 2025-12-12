@@ -78,12 +78,8 @@ require "_src/news_model.php";
                 
                 <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
-                <!--<div class="header_background">
-                    <img src="_img/poster.webp" alt="">
-                </div>-->
+                
             </header>
-
-            <?php //require_once __DIR__ . '/_templates/presentation.php'; ?>
 
             <?php require_once __DIR__ . '/_templates/partners.php'; ?>
         </section>
@@ -95,7 +91,9 @@ require "_src/news_model.php";
         </section>
 
     </main>
-    
+    <div class="header_background">
+        <img src="_img/poster.webp" alt="">
+    </div>
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>

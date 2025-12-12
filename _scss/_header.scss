@@ -23,7 +23,7 @@ header {
       text-transform: uppercase;
       text-align: left;
     }
-    span {
+    span.tf {
       font-size: 1.5em;
       line-height: .9em;
       font-family: TF2Build;
@@ -32,18 +32,22 @@ header {
     h2 {
       font-family: TF2Secondary;
       font-size: 1.4em;
-      color: #f0f0f0;
+      color: #fff;
       text-align: center;
       margin: 0 auto 20px auto;
     }
 
     a {
-      @include tf2button(230px, 12px, 30px, 1.3em, 11px);
+      @include tf2button(370px, 14px, 24px, 1.3em, 9px);
       display: inherit;
 
       &:hover {
         background: #c7ba9f;
         transform: scale(0.99);
+      }
+
+      span.cta-join {
+        font-family: TF2Build;
       }
     }
   }
@@ -51,12 +55,15 @@ header {
 
 
 .news_home {
-  width: 100%;
+  width: 90%;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding: 15px 0;
+  box-shadow: 1px 1px 2px #000;
 
   .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0;
+    padding: 5px 20px 15px 20px;
 
     h1 {
       margin: 0;
@@ -72,18 +79,20 @@ header {
   }
 
   .news-list {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding: 0 15px;
     flex-direction: column;
+    box-sizing: border-box;
 
     a {
       margin: 2px 0;
+      background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+      border-radius: 7px
     }
 
     .news {
-      @include rectangle(100%, 60px);
-      background-color: rgba(0, 0, 0, 0.4);
+      @include rectangle(100%, 50px);
       box-sizing: border-box;
       overflow: hidden;
 
@@ -92,19 +101,20 @@ header {
       }
 
       p.date-news {
-        color: lightgray;
-        font-size: .9em;
+        font-size: 1em;
+        font-family: TF2Secondary;
         margin: 0 10px;
+        color: #1c1a19;
       }
 
       p.titre-news {
+        font-family: TF2Secondary;
         font-weight: bold;
-        color: #e6e6e6;
-        text-shadow: 3px 3px 3px #000;
+        color: #1c1a19;
       }
 
       .news-img {
-        width: 110px;
+        width: 85px;
         filter: brightness(0.3);
         transition: .3s;
       }
@@ -150,6 +160,7 @@ header {
   height: 100%;
   width: 100%;
   z-index: -1;
+  opacity: 0.8;
 
   img {
     height: 100%;
