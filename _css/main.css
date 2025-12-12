@@ -668,7 +668,7 @@ header {
   font-size: 1em;
   text-align: left;
   color: #7ef9ff;
-  margin: 5px 130px;
+  margin: 5px 0;
 }
 
 .wrap-holiday {
@@ -772,13 +772,14 @@ header {
   background-color: #1c1a19;
   border-radius: 3px;
   margin: 15px auto;
-  padding: 20px 0;
+  padding: 20px 10px;
   box-shadow: 1px 1px 2px #000;
 }
 #partners #commu-partners h1 {
   font-family: TF2Build;
   font-size: 1.2em;
   margin: 0 auto 15px auto;
+  text-align: center;
 }
 #partners #commu-partners .container {
   text-align: center;
@@ -808,6 +809,7 @@ header {
   font-family: TF2Build;
   font-size: 1.2em;
   margin: 0 auto 15px auto;
+  text-align: center;
 }
 #partners #creator-partners .container {
   flex-wrap: wrap;
@@ -904,19 +906,18 @@ html {
   height: 100%;
   background: #000;
   color: #f6f4f2;
-  overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
 html body {
   width: 100%;
   height: 100%;
-  overflow: hidden !important;
   background-position: bottom;
   background-attachment: fixed;
 }
 html body main {
   width: 1450px;
   margin: 0 auto;
+  min-height: 100%;
 }
 html body main #left-content, html body main #right-content {
   width: 50%;

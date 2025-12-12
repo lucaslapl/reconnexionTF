@@ -92,10 +92,13 @@ require "_src/news_model.php";
 
     
     </main>
+
+    <?php require_once __DIR__ . '/_templates/footer.php'; ?>
+
     <div class="header_background">
         <img src="_img/poster.webp" alt="">
     </div>
-    <?php require_once __DIR__ . '/_templates/footer.php'; ?>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>

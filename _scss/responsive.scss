@@ -8,147 +8,31 @@
 ======================================================================================
 */
 
-/********* NAVIGATION BAR *************/
+/********* MAIN *********/
 
-@media all and (max-width: 1620px) {
-  nav .nav-links {
-    margin-left: unset;
-
-    li {
-      margin: 0 25px;
-    }
-  }
-}
-
-@media all and (max-width: 1220px) {
-  nav {
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 0;
-
-    .nav-logo {
-      border-radius: 0;
-    }
-
-    .nav-links li {
-      margin: 0 20px;
-    }
-
-    .nav-socials li {
-      margin: 0 5px;
-
-      a {
-        border-radius: 0;
-      }
-
-      .nav-discord, .nav-twitter {
-        padding: 10px 13px;
-      }
-    }
-  }
-
-  .bbq-overlay {
-    top: 55px;
-    left: 0;
-    right: 0;
-    padding: 5px 32px 0 32px;
+@media all and (max-width: 1450px) {
+  html body main {
     width: 100%;
   }
+}
 
-  nav:hover + .bbq-overlay {
-    top: 55px;
-  }
-
-  .bbq-overlay {
-    &:hover {
-      top: 55px;
-    }
-
-    p {
-      margin: 15px 0 10px 0;
-    }
+@media all and (max-width: 1200px) {
+  html body {
+    overflow-x: unset;
   }
 }
 
-@media all and (max-width: 955px) {
-  nav {
-    justify-content: unset !important;
+@media all and (max-width: 1050px) {
+  html body main {
+    flex-direction: column;
 
-    .nav-links li {
-      margin: 0 18px;
+    #left-content,
+    #right-content {
+      width: 100%;
     }
 
-    .nav-socials span {
-      display: none;
-    }
-  }
-}
-
-@media all and (max-width: 800px) {
-  nav .nav-links li {
-    margin: 0 10px;
-  }
-}
-
-@media all and (max-width: 720px) {
-  .nav-links {
-    ul {
-      flex-direction: column;
-      background: #2a4a5e;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 1rem;
-      margin: 0;
-      display: none;
-    }
-
-    &.active ul {
-      display: flex;
-    }
-  }
-
-  .nav-toggle {
-    display: flex;
-    margin: 0 20px;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-
-  nav {
-    &.flex {
-      flex-wrap: wrap;
-    }
-
-    .nav-links li {
-      margin: 5px 10px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 2px;
-        top: 25px;
-      }
-    }
-
-    .nav-socials {
-      position: absolute;
-      right: 0;
-      margin: 0 15px;
-    }
-  }
-
-  .bbq-overlay {
-    padding: 5px 16px 0 16px;
-
-    p {
-      font-size: .95em;
+    #right-content {
+      margin-top: unset;
     }
   }
 }
@@ -243,18 +127,9 @@
 
 /****** SERVEURS *******/
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1050px) {
   #serveurs {
-    .container {
-      width: 100%;
-    }
-    #server-wrapper {
-      flex-direction: column;
-
-      .server {
-        width: 90%;
-      }
-    }
+    margin: 15px auto 60px auto;
   }
 }
 
@@ -297,6 +172,12 @@
 }
 
 /****** FOOTER *******/
+
+@media all and (max-width: 1050px) {
+  footer {
+    position: fixed;
+  }
+}
 
 @media all and (max-width: 650px) {
   footer #copyright {
