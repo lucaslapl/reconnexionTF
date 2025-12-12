@@ -90,6 +90,7 @@ require "_src/news_model.php";
             <?php require_once __DIR__ . '/_templates/servers.php'; ?>
         </section>
 
+    
     </main>
     <div class="header_background">
         <img src="_img/poster.webp" alt="">

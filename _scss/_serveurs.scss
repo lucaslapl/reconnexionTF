@@ -22,7 +22,7 @@
 
   #reconntf-servers .server,
   #fff-servers .server {
-    width: 80%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: space-between;
     height: 40px;
@@ -122,11 +122,15 @@
     z-index: -1;
 
     .character {
-      padding-left: 30%;
-      padding-top: 350px;
+      padding-left: 40%;
       position: absolute;
-      width: 100%;
+      width: 280px;
+      bottom: 0;
       z-index: 1;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

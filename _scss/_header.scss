@@ -7,7 +7,7 @@ header {
 .hero {
   width: 85%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 5px 0;
 
   .logo-title {
     img {
@@ -110,7 +110,9 @@ header {
       p.titre-news {
         font-family: TF2Secondary;
         font-weight: bold;
+        font-size: 1em;
         color: #1c1a19;
+        margin: 0 10px;
       }
 
       .news-img {
