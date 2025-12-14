@@ -38,8 +38,7 @@ header {
     }
 
     a {
-      @include tf2button(370px, 14px, 24px, 1.3em, 9px);
-      display: inherit;
+      @include tf2button(380px, 14px, 24px, 1.3em, 9px);
 
       &:hover {
         background: #c7ba9f;

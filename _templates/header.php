@@ -10,8 +10,8 @@
                 <h2>
                     La plateforme communautaire au service de la francophonie sur Team Fortress 2
                 </h2>
-                <a class="flex align-center" href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">
-                    <i class="fa-brands fa-discord" style="color: #7A6B5F;font-size:1.3em;"></i> <span class="cta-join">Rejoignez-nous maintenant !</span>
+                <a class="flex align-center justify-center" href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">
+                    <i class="fa-brands fa-discord" style="color: #7A6B5F;font-size:1.3em;margin-right:10px;"></i> <span class="cta-join">Rejoignez-nous maintenant !</span>
                 </a>
             </div>
         </div>

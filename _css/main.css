@@ -290,7 +290,7 @@ header {
   margin: 0 auto 20px auto;
 }
 .hero .logo-title a {
-  width: 370px;
+  width: 380px;
   padding: 14px 24px;
   font-family: TF2Build;
   color: #353535;
@@ -300,7 +300,6 @@ header {
   text-align: center;
   font-size: 1.3em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
-  display: inherit;
 }
 .hero .logo-title a:hover {
   background: #c7ba9f;
@@ -744,6 +743,12 @@ header {
 #serveurs .server .server-connect a:hover {
   background: #c7ba9f;
 }
+#serveurs .server .server-connect a .fa-right-to-bracket {
+  display: none;
+}
+#serveurs .server .server-connect a span {
+  font-family: TF2Build;
+}
 
 #serveurs .serveurs-bg {
   position: absolute;
@@ -824,6 +829,7 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 1px 0;
   padding: 4px 5px;
+  box-sizing: border-box;
 }
 #partners #creator-partners .container .creator-box img {
   width: 30px;
@@ -833,7 +839,7 @@ header {
 }
 #partners #creator-partners .container .creator-box h3 {
   font-family: TF2Secondary;
-  margin: 5px 0;
+  margin: 5px;
   color: #f6f4f2;
 }
 #partners #creator-partners .container .creator-box p {
@@ -880,7 +886,7 @@ footer #copyright {
   width: 100%;
 }
 footer #copyright .foot-links {
-  margin: 0 20px;
+  margin: 0 auto;
 }
 footer #copyright .foot-links a {
   color: #bcddff;
@@ -904,7 +910,7 @@ footer #copyright .copyright a:hover {
 html {
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #080b13;
   color: #f6f4f2;
   scroll-behavior: smooth;
 }

@@ -16,7 +16,8 @@
                         </div>
                         <div class="server-connect flex align-center holiday">
                             <a href="steam://connect/jeu.reconnexion.tf:27045">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -30,7 +31,8 @@
                         </div>
                         <div class="server-connect flex align-center vanilla">
                             <a href="steam://connect/jeu.reconnexion.tf:27015">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -43,7 +45,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="steam://connect/jeu.reconnexion.tf:27025">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -56,7 +59,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="steam://connect/jeu.reconnexion.tf:27035">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -69,7 +73,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="steam://connect/jeu.reconnexion.tf:27055">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -88,7 +93,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="#">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -101,7 +107,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="#">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>
@@ -114,7 +121,8 @@
                         </div>
                         <div class="server-connect flex align-center custom">
                             <a href="#">
-                                Rejoindre
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
                             </a>
                         </div>
                     </div>

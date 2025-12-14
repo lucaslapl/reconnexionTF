@@ -69,6 +69,7 @@
       background-color: rgba(0, 0, 0, 0.4);
       margin: 1px 0;
       padding: 4px 5px;
+      box-sizing: border-box;
 
       img {
         width: 30px;
@@ -79,7 +80,7 @@
 
       h3 {
         font-family: TF2Secondary;
-        margin: 5px 0;
+        margin: 5px;
         color: #f6f4f2;
       }
       p {

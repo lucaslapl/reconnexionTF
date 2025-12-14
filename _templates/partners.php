@@ -13,18 +13,11 @@
         <div id="creator-partners">
             <h2>Créateurs partenaires</h2>
             <div class="container flex">
-                <a href="https://www.youtube.com/@VincentTrodrig">
+                <a class="creator-link" href="https://www.youtube.com/@VincentTrodrig">
                     <div class="creator-box">
                         <img src="_img/trodrig.jpg" alt="Trodrig">
                         <h3>Trodrig</h3>
                         <p>Doubleur Pack VF</p>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/@aventus66">
-                    <div class="creator-box">
-                        <img src="_img/aventus2.jpg" alt="Aventus">
-                        <h3>Aventus</h3>
-                        <p>Youtuber</p>
                     </div>
                 </a>
 
