@@ -16,13 +16,10 @@
   }
 }
 
-@media all and (max-width: 1200px) {
-  html body {
-    overflow-x: unset;
-  }
-}
-
 @media all and (max-width: 1050px) {
+  body {
+    overflow: scroll !important;
+  }
   html body main {
     flex-direction: column;
 

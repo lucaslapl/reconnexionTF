@@ -919,6 +919,7 @@ html body {
   height: 100%;
   background-position: bottom;
   background-attachment: fixed;
+  overflow: hidden;
 }
 html body main {
   width: 1450px;
