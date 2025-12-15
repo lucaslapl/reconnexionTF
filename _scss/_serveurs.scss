@@ -40,6 +40,17 @@
     text-align: left;
     color: #7ef9ff;
     margin: 5px 0;
+
+    a {
+      color: #fff;
+      font-size: .8em;
+      text-decoration: underline;
+
+      img {
+        width: 20px;
+        vertical-align: middle;
+      }
+    }
   }
 }
 

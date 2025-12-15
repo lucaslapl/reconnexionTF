@@ -4,7 +4,12 @@
         </div>
         <div id="server-wrapper">
             <div id="reconntf-servers">  
-                <h2>reconnexion.tf</h2>
+                <h2>reconnexion.tf |
+                    <a class="link-sban" href="https://bans.reconnexion.tf/">
+                        <span>SourceBans</span>
+                        <img src="_img/sb.png" alt="">
+                    </a>    
+                </h2>
                 <div class="container flex justify-center align-center">
                     <!--
                     <div id="holiday-srv" class="server flex wrap-holiday">

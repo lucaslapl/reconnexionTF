@@ -664,6 +664,17 @@ header {
   color: #7ef9ff;
   margin: 5px 0;
 }
+#reconntf-servers h2 a,
+#fff-servers h2 a {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+#reconntf-servers h2 a img,
+#fff-servers h2 a img {
+  width: 20px;
+  vertical-align: middle;
+}
 
 .wrap-holiday {
   border-left: 8px solid gold;
