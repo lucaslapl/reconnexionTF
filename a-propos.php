@@ -51,6 +51,7 @@ require "_src/news_model.php";
 
 
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
+    <link rel="stylesheet" type="text/css" href="_css/a-propos.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
 
     <!-- Cookie Manager (Tarteaucitron.io) 
@@ -67,6 +68,40 @@ require "_src/news_model.php";
 
 <body>
     
+    <main id="a-propos">
+        <?php require_once __DIR__ . '/_templates/header.php'; ?>
+
+        <section id="content">
+            <h1>À propos de reconnexion.tf</h1>
+            <div id="socials" class="flex">
+                <a href="https://discord.gg/ShWmhQDb7H" title="Rejoindre le Discord">
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <br>
+                    <small>Discord</small>
+                </a>
+                <a href="" title="Groupe Steam">
+                    <i class="fa-brands fa-steam fa-2x"></i>
+                    <br>
+                    <small>Groupe Steam</small>
+                </a>
+                <a href="https://twitter.com/reconnexion_tf" title="Rejoindre le Twitter">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <br>
+                    <small>@reconnexionTF</small>
+                </a>
+            </div>
+            <img src="_img/favicon2.webp" alt="Logo reconnexion.tf">
+            <p>reconnexion.tf est une plateforme communautaire dédiée à Team Fortress 2 en France. Notre mission est de rassembler les joueurs, les serveurs et les communautés francophones autour d'un même point de repère officiel.</p>
+            <p>Que vous soyez un joueur cherchant des serveurs de qualité, un administrateur de serveur souhaitant promouvoir votre communauté, ou simplement un passionné de TF2, reconnexion.tf est là pour vous.</p>
+            <p>Nous croyons en la force de la communauté et nous nous efforçons de créer un espace où chacun peut se connecter, partager et profiter pleinement de l'expérience Team Fortress 2.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+        </section>
+    </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
 

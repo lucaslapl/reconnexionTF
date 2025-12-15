@@ -11,10 +11,10 @@
                     <a href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">
                         Discord
                     </a>
-                    <a href="https://twitter.com/reconnexion_tf" target="_blank" title="Rejoindre le Twitter">
+                    <a href="https://twitter.com/reconnexionTF" target="_blank" title="Rejoindre le Twitter">
                         Twitter
                     </a>
-                    <p class="copyright">© Copyright 2025 <a href="https://reconnexion.tf/">reconnexion.tf</a></p>
+                    <p class="copyright">© Copyright 2026 <a href="https://reconnexion.tf/">reconnexion.tf</a></p>
                 </div>
             </div>
             

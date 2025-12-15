@@ -1,0 +1,50 @@
+body {
+    overflow: scroll !important;
+}
+
+#a-propos {
+    #content {
+        width: 90%;
+        background-color: #1c1a19;
+        border-radius: 3px;
+        margin: 15px auto;
+        padding: 20px 30px;
+        box-shadow: 1px 1px 2px #000;
+        box-sizing: border-box;
+
+        h1 {
+            font-family: TF2Build;
+            font-size: 2.5em;
+            color: #f6f4f2;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 180px;
+            float: right;
+            margin: 10px;
+        }
+
+        p {
+            font-family: TF2Secondary;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #f6f4f2;
+            font-weight: bold;
+        }
+
+        #socials {
+            margin: 25px;
+
+            a {
+                text-align: center;
+                color: #f6f4f2;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+footer {
+    position: static !important;
+}
