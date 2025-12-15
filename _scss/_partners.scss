@@ -24,10 +24,6 @@
       margin-bottom: 20px;
     }
 
-    a:hover img {
-      filter: saturate(1);
-    }
-
     .commu-box {
       background: rgba(0, 0, 0, 0.4);
       padding: 10px;
@@ -36,7 +32,6 @@
       img {
         width: 70px;
         border-radius: 9999px;
-        filter: saturate(0);
         transition: .2s;
       }
 
@@ -74,7 +69,6 @@
       img {
         width: 30px;
         border-radius: 9999px;
-        filter: saturate(0);
         transition: .2s;
       }
 
@@ -99,10 +93,6 @@
       &:hover {
         background: #ffe19b;
       }
-    }
-
-    a:hover img {
-      filter: saturate(1);
     }
     }
   }

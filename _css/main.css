@@ -791,9 +791,6 @@ header {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-#partners #commu-partners a:hover img {
-  filter: saturate(1);
-}
 #partners #commu-partners .commu-box {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
@@ -802,7 +799,6 @@ header {
 #partners #commu-partners .commu-box img {
   width: 70px;
   border-radius: 9999px;
-  filter: saturate(0);
   transition: 0.2s;
 }
 #partners #commu-partners .commu-box h3 {
@@ -834,7 +830,6 @@ header {
 #partners #creator-partners .container .creator-box img {
   width: 30px;
   border-radius: 9999px;
-  filter: saturate(0);
   transition: 0.2s;
 }
 #partners #creator-partners .container .creator-box h3 {
@@ -865,9 +860,6 @@ header {
 }
 #partners #creator-partners .container .cta-partner:hover {
   background: #ffe19b;
-}
-#partners #creator-partners .container a:hover img {
-  filter: saturate(1);
 }
 
 /******* FOOTER **********/
