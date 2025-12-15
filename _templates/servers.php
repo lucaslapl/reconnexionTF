@@ -137,7 +137,7 @@
 
         <div class="serveurs-bg flex justify-center align-center">
             <div class="character flex justify-center">
-                <img src="_img/engineer_noel.webp" alt="">
+                <img src="_img/engineer_noel.webp" alt="" fetchpriority="high">
             </div>
             <!--<div class="bg"></div>-->
         </div>
