@@ -49,6 +49,7 @@ require "_src/news_model.php";
     <link rel="preload" href="/_fonts/TF2.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/_fonts/TF2Professor.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
 
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
     <link rel="stylesheet" type="text/css" href="_css/a-propos.css">
@@ -108,9 +109,6 @@ require "_src/news_model.php";
     <div class="header_background"></div>
     
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
-    <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
-	<script src="_js/main.js"></script>
 </body>
 </html>
