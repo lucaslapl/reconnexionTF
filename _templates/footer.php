@@ -4,8 +4,9 @@
                 <div id="recontf-links" class="flex foot-links">
                     <a href="a-propos.php">À propos</a>
                     <a href="mailto:contact@reconnexion.tf">Contact</a>
-                    <a href="https://reconnexion.tf/confidentialite.php">Confidentialité</a>
+                    <a href="confidentialite.php">Confidentialité</a>
                     <a href="https://statut.reconn.tf/">État des services</a>
+                    <a href="https://fr.tipeee.com/reconnexiontf">Nous soutenir</a>
                 </div>
                 <div id="social-links" class="flex align-center foot-links">
                     <a href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">

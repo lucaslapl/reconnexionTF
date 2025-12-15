@@ -108,7 +108,7 @@ require "_src/news_model.php";
             </p>
             <p>
                 Si le projet vous intéresse et que vous souhaitez nous soutenir, n'hésitez pas à rejoindre notre <a href="https://discord.gg/ShWmhQDb7H" title="Rejoindre le Discord">serveur Discord</a> ou à nous suivre sur <a href="https://twitter.com/reconnexion_tf" title="Rejoindre le Twitter">Twitter</a> pour rester informé des dernières nouveautés.<br>
-                Nous avons aussi lancé une page Tipeee pour ceux qui souhaitent nous soutenir financièrement : <a href="https://www.tipeee.com/reconnexion-tf" title="Soutenir reconnexion.tf sur Tipeee">www.tipeee.com/reconnexion-tf</a>. Les dons nous aident à couvrir les coûts d'hébergement pour notre site et les serveurs de jeu.<br>
+                Nous avons aussi lancé une page Tipeee pour ceux qui souhaitent nous soutenir financièrement : <a href="https://fr.tipeee.com/reconnexiontf" title="Soutenir reconnexion.tf sur Tipeee">www.tipeee.com/reconnexion-tf</a>. Les dons nous aident à couvrir les coûts d'hébergement pour notre site et les serveurs de jeu.<br>
                 Vous pouvez également nous aider en parlant de <b>reconnexion.tf</b> autour de vous et en partageant notre site web et nos réseaux sociaux avec vos amis et votre communauté !
             </p>
             <p>
