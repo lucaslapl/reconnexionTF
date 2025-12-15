@@ -105,9 +105,7 @@ require "_src/news_model.php";
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
 
-    <div class="header_background">
-        <img src="_img/poster.webp" alt="">
-    </div>
+    <div class="header_background"></div>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>

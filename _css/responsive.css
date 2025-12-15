@@ -120,12 +120,12 @@
 /****** FOOTER *******/
 @media all and (max-width: 1050px) {
   footer {
-    position: static;
+    position: inherit;
   }
 }
 @media all and (max-width: 860px) {
   footer {
-    position: static;
+    position: inherit;
   }
   footer #copyright {
     padding-top: 10px;

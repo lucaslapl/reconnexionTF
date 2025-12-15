@@ -39,5 +39,5 @@ body {
 }
 
 footer {
-  position: static !important;
+  position: inherit !important;
 }/*# sourceMappingURL=a-propos.css.map */

@@ -149,13 +149,13 @@
 
 @media all and (max-width: 1050px) {
   footer {
-    position: static;
+    position: inherit;
   }
 }
 
 @media all and (max-width: 860px) {
   footer {
-    position: static;
+    position: inherit;
 
     #copyright {
       padding-top: 10px;
