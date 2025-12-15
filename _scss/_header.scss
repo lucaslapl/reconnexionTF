@@ -22,6 +22,7 @@ header {
       text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
       text-transform: uppercase;
       text-align: left;
+      color: #fff;
     }
     span.tf {
       font-size: 1.5em;
@@ -37,7 +38,7 @@ header {
       margin: 0 auto 20px auto;
     }
 
-    a {
+    #hero-cta {
       @include tf2button(380px, 14px, 24px, 1.3em, 9px);
 
       &:hover {

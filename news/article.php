@@ -61,13 +61,13 @@
 
     <link rel="stylesheet" type="text/css" href="../_css/main.css">
     <link rel="stylesheet" type="text/css" href="../_css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="_css/news.css">
+    <link rel="stylesheet" type="text/css" href="../_css/news.css">
 
-    <!-- Cookie Manager (Tarteaucitron.io) -->
+    <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="../tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="../_js/tac_init.js"></script>
+    <script src="../_js/tac_init.js"></script>-->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) 
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () { 
@@ -75,9 +75,9 @@
                 article_title: "<?= htmlspecialchars($article['titre'], ENT_QUOTES) ?>",
                 article_slug: "<?= htmlspecialchars($article['slug'], ENT_QUOTES) ?>"
             });
-         };
+            };
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+    </script>-->
 
     <script type="application/ld+json">
         {
@@ -105,27 +105,30 @@
 </head>
 
 <body>
-    
-    <?php require_once '../_templates/nav_sub.php'; ?>
+    <main id="news-article">
+        <?php require_once '../_templates/header_sub.php'; ?>
 
-    <section id="news-head">
-    	<div class="news-title">
-    		<h1><?= htmlspecialchars($article['titre']) ?></h1>
-    		<span>Par <?= htmlspecialchars($article['auteur']) ?>, le <?= date('d/m/Y', strtotime($article['date_publi'])) ?></span>
-    	</div>
-    </section>
+        <section id="news-head">
+            <div class="news-title">
+                <h1><?= htmlspecialchars($article['titre']) ?></h1>
+                <span>Par <?= htmlspecialchars($article['auteur']) ?>, le <?= date('d/m/Y', strtotime($article['date_publi'])) ?></span>
+            </div>
+        </section>
 
-    <section id="news-content">
-    	<div class="article">
-            <img src="<?= str_replace('../news/', '', $article['thumbnail']) ?>" alt="Thumbnail">
-    		<?= $article['contenu'] ?>
-    	</div>
-    </section>
+        <section id="news-content">
+            <div class="article">
+                <img src="<?= str_replace('../news/', '', $article['thumbnail']) ?>" alt="Thumbnail">
+                <?= $article['contenu'] ?>
+            </div>
+        </section>
+    </main>
 
     <?php require_once '../_templates/footer_sub.php'; ?>
 
+    <div class="header_background"></div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2f306d349c.js" integrity="sha384-tV2bAJu/9vD0QXTOJWG5kJSnOg7VXobKXr8q75CXDyIrT+wB/vwkMb8ABdmknyUr" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
 	<script src="_js/news.js"></script>
 </body>

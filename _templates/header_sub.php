@@ -2,7 +2,7 @@
             <div class="logo-title">
                 <div class="flex justify-center align-center">
                     <a class="flex justify-center align-center" href="https://reconnexion.tf/" title="reconnexion.tf">
-                        <img src="_img/favicon.webp" alt="Logo reconnexion.tf" fetchpriority="high">
+                        <img src="../_img/favicon.webp" alt="Logo reconnexion.tf" fetchpriority="high">
                         <h1>
                             reconnexion<br>
                             <span class="tf">.tf</span>
