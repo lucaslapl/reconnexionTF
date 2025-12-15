@@ -29,6 +29,13 @@ body {
   color: #f6f4f2;
   font-weight: bold;
 }
+#a-propos #content p a {
+  color: #f6f4f2;
+  text-decoration: underline;
+}
+#a-propos #content p a:hover {
+  color: #5abccc;
+}
 #a-propos #content #socials {
   margin: 25px;
 }

@@ -92,15 +92,29 @@ require "_src/news_model.php";
                 </a>
             </div>
             <img src="_img/favicon2.webp" alt="Logo reconnexion.tf">
-            <p>reconnexion.tf est une plateforme communautaire dédiée à Team Fortress 2 en France. Notre mission est de rassembler les joueurs, les serveurs et les communautés francophones autour d'un même point de repère officiel.</p>
-            <p>Que vous soyez un joueur cherchant des serveurs de qualité, un administrateur de serveur souhaitant promouvoir votre communauté, ou simplement un passionné de TF2, reconnexion.tf est là pour vous.</p>
-            <p>Nous croyons en la force de la communauté et nous nous efforçons de créer un espace où chacun peut se connecter, partager et profiter pleinement de l'expérience Team Fortress 2.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam. Nemo, exercitationem magni ut neque, aliquam, eius quae libero quidem itaque sapiente a earum! Laborum ducimus quidem vitae quam blanditiis!</p>
+            <p>
+                <b>reconnexion.tf</b> est une plateforme communautaire lancée en mai 2025, dédiée à Team Fortress 2 pour la communauté francophone.<br>
+                Son but est de s'instaurer comme le point de repère officiel pour tous les joueurs français et toutes les communautés francophones sur Team Fortress 2.<br>
+                Ainsi, vous pourrez retrouver facilement toutes les informations et actualités concernant TF2 en France, ainsi que les serveurs de jeu francophones des communautés partenaires.
+            </p>
+            <p>
+                Cette plateforme a également pour but de valoriser et mettre en lumière tous les créateurs de contenu, les organisateurs d'événements et les communautés qui le souhaitent.<br>
+                C'est pour cette raison que nous avons mis en place un <a href="https://beta.reconnexion.tf/news/devenez-partenaire" title="Devenir Partenaire">Programme Partenaire</a> pour avoir la possibilité d'être mis en avant gratuitement sur nos réseaux et notre site web.
+            </p>
+            <p>
+                Pour résumer, notre rôle n'est pas de rassembler les joueurs ou les communautés, mais d'agir comme un hub d'informations utiles pour tout le monde sur l'univers de Team Fortress 2.<br>
+                Voyez cela comme un annuaire communautaire, un journal d'actualités et une vitrine pour les créateurs de contenu et les événements francophones liés à TF2.<br>
+                Un peu comme les Pages Jaunes mais en mieux !
+            </p>
+            <p>
+                Si le projet vous intéresse et que vous souhaitez nous soutenir, n'hésitez pas à rejoindre notre <a href="https://discord.gg/ShWmhQDb7H" title="Rejoindre le Discord">serveur Discord</a> ou à nous suivre sur <a href="https://twitter.com/reconnexion_tf" title="Rejoindre le Twitter">Twitter</a> pour rester informé des dernières nouveautés.<br>
+                Nous avons aussi lancé une page Tipeee pour ceux qui souhaitent nous soutenir financièrement : <a href="https://www.tipeee.com/reconnexion-tf" title="Soutenir reconnexion.tf sur Tipeee">www.tipeee.com/reconnexion-tf</a>. Les dons nous aident à couvrir les coûts d'hébergement pour notre site et les serveurs de jeu.<br>
+                Vous pouvez également nous aider en parlant de <b>reconnexion.tf</b> autour de vous et en partageant notre site web et nos réseaux sociaux avec vos amis et votre communauté !
+            </p>
+            <p>
+                Enfin, si le coeur vous en dit et que vous avez des compétences bien particulières que vous souhaitez partager avec nous, n'hésitez pas à postuler pour rejoindre l'équipe via notre Discord !<br>
+                Nous sommes toujours à la recherche de personnes motivées pour nous aider à faire grandir le projet, que ce soit en tant que rédacteur, développeur, designer, modérateur, ou toute autre compétence utile !
+            </p>
         </section>
     </main>
 

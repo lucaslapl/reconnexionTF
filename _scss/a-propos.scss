@@ -31,6 +31,15 @@ body {
             line-height: 1.6;
             color: #f6f4f2;
             font-weight: bold;
+
+            a {
+                color: #f6f4f2;
+                text-decoration: underline;
+
+                &:hover {
+                    color: #5abccc;
+                }
+            }
         }
 
         #socials {
