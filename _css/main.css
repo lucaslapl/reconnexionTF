@@ -915,9 +915,8 @@ html {
 html body {
   width: 100%;
   min-height: 100%;
-  background-position: bottom;
   background-attachment: fixed;
-  background-image: url("../_img/poster.webp");
+  background-image: url("../_img/reconnexion_noel_e000000.webp");
   background-size: cover;
   overflow: hidden;
 }
