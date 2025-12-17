@@ -785,6 +785,7 @@ header {
   margin: 15px auto;
   padding: 20px 10px;
   box-shadow: 1px 1px 2px #000;
+  box-sizing: border-box;
 }
 #partners #commu-partners h1 {
   font-family: TF2Build;
