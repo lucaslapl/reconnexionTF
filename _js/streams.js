@@ -10,9 +10,8 @@ function loadStreams(container, lang) {
   fetch(url)
     .then(res => res.json())
     .then(data => {
-      //console.log("Twitch API response:", data);
       container.innerHTML = "";
-      console.log("Réponse Twitch:", data);
+      //console.log("Réponse Twitch:", data);
 
       if (!data || !Array.isArray(data.data) || data.data.length === 0) {
         container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment.<br>Soyez le premier de la liste !<br><button class="tab-button" data-tab="all"><i class="fa-brands fa-twitch" style="color: #ca95ff;"></i> Voir les streamers internationaux</button></p>`;
