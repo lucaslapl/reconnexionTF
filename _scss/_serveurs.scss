@@ -12,13 +12,19 @@
 
   .container {
     flex-direction: column;
+
+    h1 {
+      font-family: TF2Build;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+
+      .fa-server {
+        margin-right: 10px;
+      }
+    }
   }
 
-  h1 {
-    font-family: TF2Build;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-  }
+  
 
   #reconntf-servers .server,
   #fff-servers .server {

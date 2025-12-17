@@ -1,6 +1,6 @@
     <section id="serveurs">
         <div class="container">
-            <h1>Nos serveurs</h1>
+            <h1><i class="fa-solid fa-server"></i>Nos serveurs</h1>
         </div>
         <div id="server-wrapper">
             <div id="reconntf-servers">  

@@ -8,12 +8,12 @@
 ======================================================================================
 */
 /********* MAIN *********/
-@media all and (max-width: 1450px) {
+@media all and (max-width: 1250px) {
   html body main {
-    width: 100%;
+    width: 95%;
   }
 }
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1150px) {
   body {
     overflow: scroll !important;
   }
@@ -118,7 +118,7 @@
   }
 }
 /****** FOOTER *******/
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1150px) {
   footer {
     position: inherit;
   }
@@ -129,6 +129,9 @@
   }
   footer #copyright {
     padding-top: 10px;
+  }
+  footer #copyright .foot-links a {
+    text-align: center;
   }
   footer #copyright .container {
     flex-direction: column;

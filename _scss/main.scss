@@ -37,16 +37,14 @@ html {
     overflow: hidden;
 
     main {
-      width: 1450px;
+      width: 1250px;
       margin: 0 auto;
-      min-height: 100%;
+      min-height: 100vh;
       z-index: 2;
 
       #left-content, #right-content {
         width: 50%;
-      }
-      #right-content {
-        margin-top: 25px;
+        background-color: #262626;
       }
     }
   }
