@@ -131,6 +131,20 @@
                             </a>
                         </div>
                     </div>
+                    <div id="tf2c-fff-srv" class="server flex wrap-fff">
+                        <div class="server-title flex align-center">
+                            <h3>TF2 Classified</h3>
+                            <p>
+                                Chargement...
+                            </p>
+                        </div>
+                        <div class="server-connect flex align-center custom">
+                            <a href="#">
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
