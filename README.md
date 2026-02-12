@@ -1,5 +1,9 @@
 # reconnexion.tf
 
+![banniere](https://github.com/user-attachments/assets/46fa3afc-6e7b-49e9-8c5d-389ab4161adf)
+
+[reconnexion.tf](https://reconnexion.tf)
+
 Plateforme communautaire francophone dédiée à Team Fortress 2 et à ses joueurs.  
 Actualités, événements, serveurs, contenus créés par la communauté.
 
