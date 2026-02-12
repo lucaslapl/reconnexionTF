@@ -1,28 +1,28 @@
 # reconnexion.tf
 
-🎮 Plateforme communautaire francophone dédiée à Team Fortress 2.  
-📢 Actualités, événements, serveurs, contenus créés par la communauté.
+Plateforme communautaire francophone dédiée à Team Fortress 2 et à ses joueurs.  
+Actualités, événements, serveurs, contenus créés par la communauté.
 
 ---
 
-## 🚀 Fonctionnalités principales
+## Fonctionnalités principales
 
 - 🎙️ Articles et podcasts communautaires
 - 📺 Intégration des streams en direct de TF2
 - 🧭 Liste des serveurs publics actifs
 - 👥 Annuaire des créateurs francophones
-- 🛠️ Back-office de gestion (articles, médias, utilisateurs)
+- 🛠️ Back-office de gestion (seulement pour les articles pour le moment)
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-- **PHP** (natif)
-- **PDO MySQL** (base de données distante)
+- **PHP**
+- **PDO MySQL**
 - **HTML / SCSS / JavaScript, jQuery**
-- [SourceQuery](https://github.com/xPaw/PHP-Source-Query) (pour interroger les serveurs TF2)
-- YouTube et Twitch Data API (pour récupérer les lives TF2)
-- Git / GitHub pour la gestion du code
+- [SourceQuery](https://github.com/xPaw/PHP-Source-Query)
+- YouTube et Twitch Data API
+- Git
 
 ---
 
