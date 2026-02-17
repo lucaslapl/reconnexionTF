@@ -67,8 +67,6 @@ strong {
   color: #46b2c0;
 }
 
-<<<<<<< HEAD
-=======
 a {
   text-decoration: none;
 }
@@ -77,7 +75,6 @@ b {
   color: #5abccc;
 }
 
->>>>>>> reconnTF-2
 .clear {
   clear: both;
 }
@@ -98,20 +95,11 @@ b {
 a, img {
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
-<<<<<<< HEAD
-  -ms-user-select: none;
-=======
->>>>>>> reconnTF-2
   user-select: none;
 }
 
 /* FLEX */
 .flex {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> reconnTF-2
   display: flex;
 }
 
@@ -146,33 +134,18 @@ a, img {
 /********* NAVIGATION BAR *************/
 nav {
   margin: 0 auto;
-<<<<<<< HEAD
-  left: 15px;
-  right: 15px;
-  top: 10px;
-=======
   width: 100%;
->>>>>>> reconnTF-2
   height: 70px;
   background: #2a4a5e;
   position: fixed;
   z-index: 999;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3803921569);
-<<<<<<< HEAD
-  border-radius: 10px;
-=======
->>>>>>> reconnTF-2
   transition: 0.4s;
 }
 nav ul {
   list-style: none;
 }
 nav .nav-logo {
-<<<<<<< HEAD
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-=======
->>>>>>> reconnTF-2
   background-color: #1d3851;
 }
 nav .nav-logo a {
@@ -188,10 +161,7 @@ nav .nav-links {
 }
 nav .nav-links li {
   margin: 0 35px;
-<<<<<<< HEAD
-=======
   text-transform: uppercase;
->>>>>>> reconnTF-2
 }
 nav .nav-links li::before {
   width: 80px;
@@ -209,12 +179,9 @@ nav .nav-links li::before {
 nav .nav-links li:hover::before {
   opacity: 1;
 }
-<<<<<<< HEAD
-=======
 nav .nav-links .link-sban {
   font-family: TF2Build !important;
 }
->>>>>>> reconnTF-2
 nav .nav-links .link-sban:hover::before {
   background: #ff9c9c;
   opacity: 1;
@@ -222,10 +189,7 @@ nav .nav-links .link-sban:hover::before {
 nav .nav-links li a {
   color: #fff;
   font-weight: bold;
-<<<<<<< HEAD
-=======
   font-family: TF2Build;
->>>>>>> reconnTF-2
 }
 nav .nav-socials li a {
   color: #fff;
@@ -294,199 +258,6 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 /********* HEADER ***********/
 header {
   width: 100%;
-<<<<<<< HEAD
-  min-height: 980px;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.main {
-  width: 85%;
-  min-height: 500px;
-  margin: 0 auto;
-  padding: 150px 0 45px 0;
-}
-.main .logo-title img {
-  width: 200px;
-  margin: 0 auto;
-  display: block;
-}
-.main .logo-title h1 {
-  font-family: TF2Secondary;
-  font-size: 3.9em;
-  text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0 auto;
-  text-align: center;
-}
-.main .logo-title h2 {
-  font-family: TF2Secondary;
-  font-size: 1.8em;
-  color: #f0f0f0;
-  text-align: center;
-}
-.main .logo-title a {
-  font-family: TF2Secondary;
-  display: inherit;
-  color: #fff;
-  background: #00c3ff;
-  padding: 16px 30px;
-  border-radius: 11px;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.25em;
-  font-weight: bold;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3803921569);
-  transition: 0.4s;
-}
-.main .logo-title a:hover {
-  background: #0082aa;
-  transform: scale(0.99);
-}
-
-.side-info {
-  margin: 0 10px;
-}
-
-#box-stream {
-  background: rgba(0, 0, 0, 0.35);
-  width: 285px;
-  min-height: 100px;
-  padding-top: 5px;
-  border-radius: 15px;
-}
-#box-stream h1 {
-  margin: 5px auto 10px auto;
-  text-align: center;
-  font-size: 1.4em;
-}
-#box-stream #streams {
-  background: #fff;
-  padding: 10px 0;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-#box-stream #streams #streams-all {
-  max-height: 300px;
-  overflow-y: scroll;
-}
-
-.no-stream {
-  font-size: 0.9em;
-  text-align: center;
-  color: #000;
-}
-
-#streams {
-  text-align: center;
-  min-height: 100px;
-}
-
-.loading {
-  width: 30px;
-  height: 30px;
-  margin: 10px auto;
-}
-
-.stream_line {
-  width: 100%;
-  height: 30px;
-  font-size: 0.7em;
-  text-align: left;
-  padding: 6px 8px;
-  box-sizing: border-box;
-}
-
-/**.stream-link {
-
-}**/
-.streamer-name {
-  margin-right: 5px;
-  color: #000;
-}
-
-.stream-title {
-  font-family: TF2Secondary;
-  text-overflow: ellipsis;
-  float: left;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 240px;
-  color: gray;
-}
-
-.viewercount {
-  float: right;
-  color: gray;
-}
-
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.tab-button {
-  font-family: TF2Build;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: none;
-  background: #ddd;
-  border-radius: 4px;
-}
-.tab-button.active {
-  background: #fff;
-  color: #000;
-  border-bottom: 2px solid #37b4ff;
-}
-
-.stream-tab {
-  display: none;
-}
-.stream-tab.active {
-  display: block;
-}
-
-.news_home {
-  width: 100%;
-  padding-bottom: 35px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-.news_home .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-.news_home .container h2 {
-  font-family: TF2Build;
-  letter-spacing: 0.05em;
-  color: #bbe9ff;
-}
-.news_home .container a {
-  color: #5abccc;
-}
-.news_home .news-list {
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 35px;
-  flex-wrap: wrap;
-}
-.news_home .news-list a {
-  margin: 5px 10px;
-}
-.news_home .news-list .news {
-  width: 325px;
-  height: 205px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 10px;
-  margin: 10px auto;
-  box-sizing: border-box;
-  z-index: 10;
-=======
   z-index: 10;
   height: 365px;
 }
@@ -595,30 +366,10 @@ header::before {
   height: 50px;
   box-sizing: border-box;
   overflow: hidden;
->>>>>>> reconnTF-2
 }
 .news_home .news-list .news:hover > .news-img {
   filter: brightness(0.8);
 }
-<<<<<<< HEAD
-.news_home .news-list .news span {
-  color: lightgray;
-  font-size: 0.9em;
-}
-.news_home .news-list .news p {
-  font-weight: bold;
-  color: #e6e6e6;
-  text-shadow: 3px 3px 3px #000;
-}
-.news_home .news-list .news .news-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  filter: brightness(0.3);
-  border-radius: 10px;
-=======
 .news_home .news-list .news p.date-news {
   font-size: 1em;
   font-family: TF2Secondary;
@@ -635,22 +386,10 @@ header::before {
 .news_home .news-list .news .news-img {
   width: 85px;
   filter: brightness(0.3);
->>>>>>> reconnTF-2
   transition: 0.3s;
 }
 
 .mod {
-<<<<<<< HEAD
-  border: 2px solid #315e31;
-}
-
-.commu {
-  border: 2px solid #4a779f;
-}
-
-.offi {
-  border: 2px solid orange;
-=======
   border-left: 8px solid #315e31;
 }
 
@@ -660,7 +399,6 @@ header::before {
 
 .offi {
   border-left: 8px solid orange;
->>>>>>> reconnTF-2
 }
 
 .news_home .news-all {
@@ -689,17 +427,8 @@ header::before {
   left: 0;
   height: 100%;
   width: 100%;
-<<<<<<< HEAD
-  z-index: -1;
-}
-.header_background img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-=======
   z-index: 1;
   opacity: 0.8;
->>>>>>> reconnTF-2
 }
 .header_background::before {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(6, 14, 23, 0.7882352941));
@@ -710,8 +439,6 @@ header::before {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-=======
 #box-stream {
   background: #1c1a19;
   border-radius: 3px;
@@ -932,7 +659,6 @@ header::before {
   background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
 }
 
->>>>>>> reconnTF-2
 /****** PRESENTATION *******/
 #presentation {
   width: 100%;
@@ -994,12 +720,8 @@ header::before {
 }
 #presentation .pres-bg img {
   height: 100%;
-<<<<<<< HEAD
-  object-fit: cover;
-=======
   -o-object-fit: cover;
      object-fit: cover;
->>>>>>> reconnTF-2
   width: 100%;
 }
 #presentation .pres-bg::before {
@@ -1019,41 +741,6 @@ header::before {
 } **/
 /****** SERVEURS *******/
 #serveurs {
-<<<<<<< HEAD
-  width: 100%;
-  min-height: 650px;
-  background: linear-gradient(transparent, rgb(26, 35, 47));
-  padding: 32px 0;
-  box-sizing: border-box;
-}
-#serveurs .container {
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
-}
-#serveurs h1 {
-  font-family: TF2Secondary;
-  width: 80%;
-  margin: 0 auto 20px auto;
-  color: #7ef9ff;
-  font-size: 3em;
-}
-#serveurs #reconntf-servers .server,
-#serveurs #fff-servers .server {
-  width: 85%;
-  min-height: 50px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin: 15px;
-  justify-content: space-between;
-  z-index: 50;
-}
-#serveurs #reconntf-servers .server {
-  cursor: pointer;
-}
-#serveurs #fff-servers.servers {
-  cursor: default;
-=======
   box-sizing: border-box;
   z-index: 10;
   background-color: #1c1a19;
@@ -1079,48 +766,16 @@ header::before {
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: space-between;
   height: 50px;
->>>>>>> reconnTF-2
 }
 
 #reconntf-servers,
 #fff-servers {
   width: 100%;
-<<<<<<< HEAD
-=======
   margin-bottom: 10px;
->>>>>>> reconnTF-2
 }
 #reconntf-servers h2,
 #fff-servers h2 {
   font-family: TF2Secondary;
-<<<<<<< HEAD
-  font-size: 1.3em;
-  text-align: center;
-  color: #7ef9ff;
-}
-
-.wrap-holiday {
-  border: 1px solid gold;
-}
-
-.wrap-vanilla {
-  border: 1px solid #6b8dc4;
-}
-
-.wrap-custom {
-  border: 1px solid #c4996b;
-}
-
-#serveurs .container .server .server-title {
-  text-align: center;
-}
-#serveurs .container .server .server-title .fa-chevron-right {
-  margin: 0 15px;
-}
-
-.srv-holiday {
-  border: 1px solid gold;
-=======
   font-size: 1.2em;
   text-align: left;
   color: #7ef9ff;
@@ -1148,7 +803,6 @@ header::before {
 
 .wrap-fff {
   border-left: 8px solid #c4996b;
->>>>>>> reconnTF-2
 }
 
 #holiday-srv h3::before {
@@ -1166,40 +820,6 @@ header::before {
   background-image: url("../_img/palmtree.png");
 }
 
-<<<<<<< HEAD
-.srv-vanilla {
-  border: 1px solid #2eebff;
-}
-
-.srv-custom {
-  border: 1px solid #ff7c2e;
-}
-
-#serveurs .container .server .server-title h3 {
-  font-family: TF2Build;
-  font-size: 1.5em;
-  margin: 0 25px;
-}
-
-#holiday-feat, #vanilla-feat, #custom-feat, #mvm-feat, #tfdb-feat {
-  display: none;
-}
-
-#serveurs .server-features {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  top: -16px;
-  width: 75%;
-  padding: 5px 25px;
-  box-sizing: border-box;
-}
-#serveurs .server-features ul {
-  list-style: inside;
-  padding: 0;
-}
-#serveurs .server-features li {
-  margin: 10px auto;
-=======
 #serveurs .server .server-title {
   justify-content: space-between;
   width: 365px;
@@ -1212,17 +832,10 @@ header::before {
 #serveurs .server .server-title p {
   font-size: 0.8em;
   font-family: TF2Secondary;
->>>>>>> reconnTF-2
 }
 #serveurs .server .server-connect {
   text-align: center;
   background: rgba(0, 0, 0, 0);
-<<<<<<< HEAD
-  width: 200px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-=======
->>>>>>> reconnTF-2
   transition: 0.3s;
   flex-direction: row-reverse;
 }
@@ -1235,41 +848,6 @@ header::before {
 #serveurs .server .custom:hover {
   background: rgba(164, 115, 62, 0.1294117647);
 }
-<<<<<<< HEAD
-#serveurs .server .server-connect img {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 3px;
-  left: 0;
-  right: initial;
-  opacity: 0.2;
-  transition: 0.4s;
-}
-#serveurs .server .server-connect a {
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: 0.4s;
-}
-
-.link-holiday {
-  color: gold;
-}
-
-.link-vanilla {
-  color: #7ef9ff;
-}
-
-.link-custom {
-  color: #ffc17e;
-}
-
-#serveurs .container .server .server-connect a:hover img {
-  left: -20px;
-  transform: rotate(180deg);
-  opacity: 0.8;
-}
-=======
 #serveurs .server .server-connect {
   margin: 5px;
 }
@@ -1296,7 +874,6 @@ header::before {
   font-family: TF2Build;
 }
 
->>>>>>> reconnTF-2
 #serveurs .serveurs-bg {
   position: absolute;
   top: 0;
@@ -1304,25 +881,6 @@ header::before {
   height: 100%;
   overflow: hidden;
   width: 100%;
-<<<<<<< HEAD
-  box-shadow: inset 0px 0px 35px #000;
-  z-index: -1;
-}
-#serveurs .serveurs-bg .character {
-  padding-left: 65%;
-  padding-top: 200px;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-#serveurs .serveurs-bg .bg {
-  background-image: url("../_img/gorgeblog_cap2.webp");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  height: 100%;
-=======
   z-index: -1;
 }
 #serveurs .serveurs-bg .character {
@@ -1333,22 +891,11 @@ header::before {
   z-index: 1;
 }
 #serveurs .serveurs-bg .character img {
->>>>>>> reconnTF-2
   width: 100%;
 }
 
 /******* PARTNERS *******/
 #partners {
-<<<<<<< HEAD
-  padding: 15px 0 25px 0;
-  text-align: center;
-  background-color: #051e33;
-}
-#partners #commu-partners h1 {
-  font-family: TF2Secondary;
-  font-size: 2em;
-  margin: 0 auto 35px auto;
-=======
   align-items: flex-start;
   background-color: #1c1a19;
   border-radius: 3px;
@@ -1362,33 +909,20 @@ header::before {
   font-size: 1.1em;
   margin: 0 auto 15px auto;
   text-align: center;
->>>>>>> reconnTF-2
 }
 #partners #commu-partners .container {
   text-align: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
-#partners #commu-partners a:hover img {
-  filter: saturate(1);
-}
-#partners #commu-partners .commu-box {
-  margin: 0 25px;
-=======
 #partners #commu-partners .commu-box {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   box-sizing: border-box;
->>>>>>> reconnTF-2
 }
 #partners #commu-partners .commu-box img {
   width: 70px;
   border-radius: 9999px;
-<<<<<<< HEAD
-  filter: saturate(0);
-=======
->>>>>>> reconnTF-2
   transition: 0.2s;
 }
 #partners #commu-partners .commu-box h3 {
@@ -1397,35 +931,6 @@ header::before {
   color: #f6f4f2;
 }
 #partners #creator-partners h2 {
-<<<<<<< HEAD
-  font-family: TF2Secondary;
-  font-size: 1.7em;
-  margin: 0 auto 15px auto;
-}
-#partners #creator-partners .container {
-  text-align: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-#partners #creator-partners a:hover img {
-  filter: saturate(1);
-}
-#partners #creator-partners .creator-box {
-  margin: 0 25px;
-}
-#partners #creator-partners .creator-box img {
-  width: 50px;
-  border-radius: 9999px;
-  filter: saturate(0);
-  transition: 0.2s;
-}
-#partners #creator-partners .creator-box h3 {
-  font-family: TF2Secondary;
-  margin: 5px 0;
-  color: #f6f4f2;
-}
-#partners #creator-partners .creator-box p {
-=======
   font-family: TF2Build;
   font-size: 1.1em;
   margin: 0 auto 15px auto;
@@ -1458,13 +963,10 @@ header::before {
 }
 #partners #creator-partners .container .creator-box p {
   font-family: TF2Secondary;
->>>>>>> reconnTF-2
   color: #f6f4f2;
   font-size: 0.8em;
   margin: 0;
 }
-<<<<<<< HEAD
-=======
 #partners #creator-partners .container .cta-partner {
   width: 230px;
   padding: 11px 15px;
@@ -1483,74 +985,11 @@ header::before {
 #partners #creator-partners .container .cta-partner:hover {
   background: #ffe19b;
 }
->>>>>>> reconnTF-2
 
 /******* FOOTER **********/
 footer {
   width: 100%;
   background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
-<<<<<<< HEAD
-  overflow: hidden;
-  position: relative;
-  z-index: 100;
-}
-footer #foot-socials {
-  text-align: center;
-  margin: 120px auto;
-  width: 80%;
-}
-footer #foot-socials h1 {
-  font-family: TF2Secondary;
-  font-size: 2.5em;
-}
-footer #foot-socials a {
-  width: 60px;
-  height: 60px;
-  border-radius: 13px;
-  background: #33496c;
-  color: #fff;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-}
-footer #foot-socials a:hover {
-  background: #6387c1;
-}
-footer #copyright {
-  background-color: #2a4a5e;
-  font-size: 0.9em;
-  margin: 0 auto;
-  width: 100%;
-  padding: 40px 0 20px 0;
-}
-footer #copyright .foot-links h4 {
-  font-family: TF2Secondary;
-  color: #bbe9ff;
-  margin: 0 0 10px 0;
-}
-footer #copyright a {
-  color: #bcddff;
-}
-footer #copyright a:hover {
-  text-decoration: underline;
-}
-footer #copyright .foot-links {
-  margin: 0 20px;
-}
-footer #copyright .copyright {
-  margin: 10px 0;
-  text-align: center;
-}
-footer .foot-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  z-index: -1;
-=======
   z-index: 100;
 }
 footer #copyright {
@@ -1578,38 +1017,12 @@ footer #copyright .copyright a {
 }
 footer #copyright .copyright a:hover {
   text-decoration: underline;
->>>>>>> reconnTF-2
 }
 
 /********** * **********/
 html {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background: #262626;
-  color: #f6f4f2;
-  overflow-x: hidden !important;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden !important;
-  background-position: bottom;
-  background-attachment: fixed;
-}
-
-a {
-  text-decoration: none;
-}
-
-b {
-  color: #5abccc;
-}
-
-/*# sourceMappingURL=main.css.map */
-=======
   background: #666;
   color: #f6f4f2;
   scroll-behavior: smooth;
@@ -1647,4 +1060,3 @@ html body main #content #right-content {
   width: 400px;
   background-color: #333335;
 }/*# sourceMappingURL=main.css.map */
->>>>>>> reconnTF-2
