@@ -10,20 +10,25 @@ function loadStreams(container, lang) {
   fetch(url)
     .then(res => res.json())
     .then(data => {
-      //console.log("Twitch API response:", data);
       container.innerHTML = "";
-      console.log("Réponse Twitch:", data);
+      //console.log("Réponse Twitch:", data);
 
       if (!data || !Array.isArray(data.data) || data.data.length === 0) {
-        container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment :(</p>`;
+        container.innerHTML = `<p class='no-stream'>Aucun streamer TF2${lang === 'fr' ? ' FR' : ''} sur Twitch en ce moment.<br>Soyez le premier de la liste !<br><button class="tab-button" data-tab="all"><i class="fa-brands fa-twitch" style="color: #ca95ff;"></i> Voir les streamers internationaux</button></p>`;
       } else {
         data.data.forEach(stream => {
+
+          const thumb = stream.thumbnail_url
+            .replace('{width}', '320')
+            .replace('{height}', '180');
+
           container.innerHTML += `
             <div class="stream_line">
-              <a class="stream-link" href="https://twitch.tv/${stream.user_login}" target="_blank" title="${stream.title}">
-                <span class="stream-title">
+              <a class="stream-link flex align-center" href="https://twitch.tv/${stream.user_login}" target="_blank" title="${stream.title}">
+                <span class="stream-info flex align-center">
+                  <img class="stream-thumb" src="${thumb}" alt="Thumbnail de ${stream.user_name}" />
                   <span class="streamer-name">${stream.user_name}</span>
-                  ${stream.title}
+                  <span class="stream-title">${stream.title}</span>
                 </span>
                 <span class="viewercount">${stream.viewer_count}</span>
               </a>
@@ -76,10 +81,11 @@ fetch('_script/yt_streams.php')
 
       const html = `
         <div class="stream_line">
-          <a class="stream-link" href="https://www.youtube.com/watch?v=${vid}" target="_blank" title="${title}">
-            <span class="stream-title">
+          <a class="stream-link flex align-center" href="https://www.youtube.com/watch?v=${vid}" target="_blank" title="${title}">
+            <span class="stream-info flex align-center">
+              <img class="stream-thumb" src="${video.thumbnail}" alt="Thumbnail de ${channel}" />
               <span class="streamer-name">${channel}</span>
-                ${title}
+              <span class="stream-title">${title}</span>
               </span>
             <span class="viewercount">${viewCount}</span>
           </a>
@@ -102,4 +108,17 @@ document.querySelectorAll(".tab-button").forEach(button => {
     const tabId = button.getAttribute("data-tab");
     document.getElementById(`streams-${tabId}`).classList.add("active");
   });
+});
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".tab-button");
+  if (!btn) return;
+
+  const tabId = btn.dataset.tab;
+
+  document.querySelectorAll(".tab-button").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".stream-tab").forEach(tab => tab.classList.remove("active"));
+
+  document.getElementById(`streams-${tabId}`).classList.add("active");
+  document.getElementById(`btn-${tabId}`).classList.add("active");
 });

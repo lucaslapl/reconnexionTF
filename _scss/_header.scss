@@ -2,233 +2,142 @@
 
 header {
   width: 100%;
-  min-height: 980px;
-  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  height: 365px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #151a26;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
 }
 
-.main {
-  width: 85%;
-  min-height: 500px;
+.hero {
+  width: 1250px;
   margin: 0 auto;
-  padding: 150px 0 45px 0;
+  padding: 20px;
+  box-sizing: border-box;
 
   .logo-title {
     img {
-      width: 200px;
-      margin: 0 auto;
+      width: 120px;
+      margin: 0 10px;
       display: block;
     }
 
     h1 {
       font-family: TF2Secondary;
-      font-size: 3.9em;
-      text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
-      letter-spacing: 0.1em;
+      font-size: 2.3em;
+      /**text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;**/
+      text-shadow: 7px 7px 6px #00000096;
       text-transform: uppercase;
-      margin: 0 auto;
-      text-align: center;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+    }
+    span.tf {
+      font-size: 1.5em;
+      line-height: .9em;
+      font-family: TF2Build;
     }
 
     h2 {
       font-family: TF2Secondary;
-      font-size: 1.8em;
-      color: #f0f0f0;
+      font-size: 1.4em;
+      color: #fff;
       text-align: center;
+      margin: 0 auto 20px auto;
     }
 
-    a {
-      font-family: TF2Secondary;
-      display: inherit;
-      color: #fff;
-      background: #00c3ff;
-      padding: 16px 30px;
-      border-radius: 11px;
-      width: 300px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1.25em;
-      font-weight: bold;
-      box-shadow: 0px 0px 15px #00000061;
-      transition: .4s;
+    #hero-cta {
+      @include tf2button(380px, 14px, 24px, 1.3em, 9px);
+      height: 35px;
+      margin: unset;
 
       &:hover {
-        background: #0082aa;
-        transform: scale(0.99);
+        color: #ECE3CB;
+        background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
+      }
+
+      span.cta-join {
+        font-family: TF2Build;
       }
     }
   }
 }
 
-.side-info {
-  margin: 0 10px;
-}
-
-#box-stream {
-  background: rgba(0, 0, 0, 0.35);
-  width: 285px;
-  min-height: 100px;
-  padding-top: 5px;
-  border-radius: 15px;
-
-  h1 {
-    margin: 5px auto 10px auto;
-    text-align: center;
-    font-size: 1.4em;
-  }
-
-  #streams {
-    background: #fff;
-    padding: 10px 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-
-    #streams-all {
-      max-height: 300px;
-      overflow-y: scroll;
-    }
-  }
-}
-
-.no-stream {
-  font-size: 0.9em;
-  text-align: center;
-  color: #000;
-}
-
-#streams {
-  text-align: center;
-  min-height: 100px;
-}
-
-.loading {
-  @include square(30px);
-  margin: 10px auto;
-}
-
-.stream_line {
-  @include rectangle(100%, 30px);
-  font-size: 0.7em;
-  text-align: left;
-  padding: 6px 8px;
-  box-sizing: border-box;
-}
-
-/**.stream-link {
-
-}**/
-
-.streamer-name {
-  margin-right: 5px;
-  color: #000;
-}
-
-.stream-title {
-  font-family: TF2Secondary;
-  text-overflow: ellipsis;
-  float: left;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 240px;
-  color: gray;
-}
-
-.viewercount {
-  float: right;
-  color: gray;
-}
-
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.tab-button {
-  font-family: TF2Build;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: none;
-  background: #ddd;
-  border-radius: 4px;
-
-  &.active {
-    background: #fff;
-    color: #000;
-    border-bottom: 2px solid #37b4ff;
-  }
-}
-
-.stream-tab {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
 
 .news_home {
-  width: 100%;
-  padding-bottom: 35px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px;
+  padding: 15px 0;
+  box-shadow: 1px 1px 2px #000;
 
   .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0;
+    padding: 5px 20px 15px 20px;
 
-    h2 {
+    h1 {
+      margin: 0;
+      font-size: 1.5em;
       font-family: TF2Build;
-      letter-spacing: 0.05em;
-      color: #bbe9ff;
-    }
 
-    a {
-      color: #5abccc;
+      .fa-rss {
+        margin-right: 10px;
+      }
+
+      a {
+        font-family: TF2Secondary;
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
 
   .news-list {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 35px;
-    flex-wrap: wrap;
+    padding: 0 15px;
+    flex-direction: column;
+    box-sizing: border-box;
 
     a {
-      margin: 5px 10px;
+      margin: 4px 0;
+      background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+      border-radius: 7px
     }
 
     .news {
-      @include rectangle(325px, 205px);
-      border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.4);
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 10px;
-      margin: 10px auto;
+      @include rectangle(100%, 50px);
       box-sizing: border-box;
-      z-index: 10;
+      overflow: hidden;
 
       &:hover > .news-img {
         filter: brightness(0.8);
       }
 
-      span {
-        color: lightgray;
-        font-size: .9em;
+      p.date-news {
+        font-size: 1em;
+        font-family: TF2Secondary;
+        margin: 0 10px;
+        color: #1c1a19;
       }
 
-      p {
+      p.titre-news {
+        font-family: TF2Secondary;
         font-weight: bold;
-        color: #e6e6e6;
-        text-shadow: 3px 3px 3px #000;
+        font-size: 1.2em;
+        color: #1c1a19;
+        margin: 0 10px;
       }
 
       .news-img {
-        @include absolute-0;
-        width: 100%;
-        z-index: -1;
+        width: 85px;
         filter: brightness(0.3);
-        border-radius: 10px;
         transition: .3s;
       }
     }
@@ -236,15 +145,15 @@ header {
 }
 
 .mod {
-  border: 2px solid #315e31;
+  border-left: 8px solid #315e31;
 }
 
 .commu {
-  border: 2px solid #4a779f;
+  border-left: 8px solid #4a779f;
 }
 
 .offi {
-  border: 2px solid orange;
+  border-left: 8px solid orange;
 }
 
 .news_home .news-all {
@@ -272,13 +181,8 @@ header {
   @include absolute-0;
   height: 100%;
   width: 100%;
-  z-index: -1;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
+  z-index: 1;
+  opacity: 0.8;
 
   &::before {
     background: linear-gradient(rgba(0, 0, 0, 0.25), #060e17c9);

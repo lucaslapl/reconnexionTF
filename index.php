@@ -49,65 +49,62 @@ require "_src/news_model.php";
     <link rel="preload" href="/_fonts/TF2.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/_fonts/TF2Professor.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
+
 
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
 
-    <!-- Cookie Manager (Tarteaucitron.io) -->
+    <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="_js/tac_init.js"></script>
+    <script src="_js/tac_init.js"></script>-->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () {};
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+    </script> -->
 </head>
 
 <body>
     
-    <?php require_once __DIR__ . '/_templates/nav.php'; ?>
+    <?php require_once __DIR__ . '/_templates/header.php'; ?>
+    
+    <main id="main">
 
-    <header id="accueil">
-        
-        <?php require_once __DIR__ . '/_templates/header.php'; ?>
+        <div id="content" class="flex">
 
-        <section id="beta-text" class="news_home">
-            <div class="container">
-                <h2>Notre plateforme se construit...</h2>
-                <p>
-                    <b>reconnexion.tf</b> est un projet d'envergure <i>en cours de développement</i>. Cela signifie que le contenu visible sur ce site, notre serveur Discord, ainsi que nos serveurs de jeu, est susceptible d'évoluer dans le temps.
-                    <br>
-                    Cette <a href="https://i.imgur.com/bXMr1cC.jpeg" target="_blank">roadmap</a> résume assez globalement nos objectifs et ambitions par rapport à notre projet.
-                </p>
-                <p>
-                    Dans le cadre de ce projet, nous sommes à la recherche de volontaires motivés et ambitieux pour nous aider à construire une plateforme communautaire solide pour Team Fortress 2.
-                    <br>
-                    Si participer à un tel projet vous intéresse, n'hésitez pas à nous contacter directement sur Discord avec les liens mis à disposition sur cette page. Vous êtes les bienvenus !
-                </p>
-            </div>
-        </section>
-        
-        <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+            <?php //require_once __DIR__ . '/_templates/nav.php'; ?>
 
-        <div class="header_background">
-            <img src="_img/poster.webp" alt="">
+            <section id="left-content">
+                    
+                <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/partners.php'; ?>
+
+            </section>
+
+            <section id="right-content">
+
+                <?php require_once __DIR__ . '/_templates/streamlist.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/side-links.php'; ?>
+                
+            </section>
+
         </div>
-    </header>
 
-    <?php require_once __DIR__ . '/_templates/presentation.php'; ?>
-
-    <?php require_once __DIR__ . '/_templates/partners.php'; ?>
-
-    <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+    </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <div class="header_background"></div>
+    
+
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
-    <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
-	<script src="_js/main.js"></script>
     <script src="_js/streams.js" defer></script>
 </body>
 </html>

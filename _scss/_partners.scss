@@ -1,16 +1,21 @@
 /******* PARTNERS *******/
 
 #partners {
-  padding: 15px 0 25px 0;
-  text-align: center;
-  background-color: #051e33;
+  align-items: flex-start;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px;
+  padding: 20px 10px;
+  box-shadow: 1px 1px 2px #000;
+  box-sizing: border-box;
 
   #commu-partners {
 
     h1 {
-      font-family: TF2Secondary;
-      font-size: 2em;
-      margin: 0 auto 35px auto;
+      font-family: TF2Build;
+      font-size: 1.1em;
+      margin: 0 auto 15px auto;
+      text-align: center;
     }
 
     .container {
@@ -19,17 +24,14 @@
       margin-bottom: 20px;
     }
 
-    a:hover img {
-      filter: saturate(1);
-    }
-
     .commu-box {
-      margin: 0 25px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      box-sizing: border-box;
 
       img {
         width: 70px;
         border-radius: 9999px;
-        filter: saturate(0);
         transition: .2s;
       }
 
@@ -43,41 +45,55 @@
 
   #creator-partners {
     h2 {
-      font-family: TF2Secondary;
-      font-size: 1.7em;
+      font-family: TF2Build;
+      font-size: 1.1em;
       margin: 0 auto 15px auto;
+      text-align: center;
     }
 
     .container {
-      text-align: center;
       flex-wrap: wrap;
       align-items: flex-start;
-    }
+      flex-direction: column;
 
-    a:hover img {
-      filter: saturate(1);
-    }
-
-    .creator-box {
-      margin: 0 25px;
+      .creator-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin: 1px 0;
+      padding: 4px 5px;
+      box-sizing: border-box;
 
       img {
-        width: 50px;
+        width: 30px;
         border-radius: 9999px;
-        filter: saturate(0);
         transition: .2s;
       }
 
       h3 {
         font-family: TF2Secondary;
-        margin: 5px 0;
+        margin: 5px;
         color: #f6f4f2;
       }
       p {
+        font-family: TF2Secondary;
         color: #f6f4f2;
         font-size: 0.8em;
         margin: 0;
       }
+    }
+
+    .cta-partner {
+      @include tf2button(230px, 11px, 15px, 1.2em, 6px);
+      background: linear-gradient(0deg, rgb(255, 253, 144) 35%, rgb(255, 249, 235) 100%);
+      margin: 15px 0 0 0;
+      cursor: pointer;
+      &:hover {
+        background: #ffe19b;
+      }
+    }
     }
   }
 }

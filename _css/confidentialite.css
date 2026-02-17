@@ -1,18 +1,41 @@
-a {
-  color: #6de862;
+body {
+  overflow: scroll !important;
 }
 
-.privacy-policy {
-  padding: 90px 64px;
-  width: 100%;
+a {
+  color: #00bad9;
+}
+
+#privacy-policy {
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding: 20px 30px 100px 30px;
+  box-shadow: 1px 1px 2px #000;
   box-sizing: border-box;
-  background: #263048;
+}
+#privacy-policy h1 {
+  font-family: TF2Build;
+  font-size: 2.5em;
+  color: #f6f4f2;
+  margin-top: 20px;
+}
+#privacy-policy h2 {
+  font-family: TF2Secondary;
+  font-size: 1.8em;
+  color: #7ef9ff;
+  margin-top: 30px;
+}
+#privacy-policy p, #privacy-policy li {
+  font-family: TF2Secondary;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #f6f4f2;
+  font-weight: bold;
 }
 
 @media all and (max-width: 555px) {
-  .privacy-policy {
+  #privacy-policy {
     padding: 90px 25px;
   }
-}
-
-/*# sourceMappingURL=confidentialite.css.map */
+}/*# sourceMappingURL=confidentialite.css.map */
