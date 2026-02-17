@@ -49,30 +49,33 @@ require "_src/news_model.php";
     <link rel="preload" href="/_fonts/TF2.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/_fonts/TF2Professor.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
+
 
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
 
-    <!-- Cookie Manager (Tarteaucitron.io) -->
+    <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="_js/tac_init.js"></script>
+    <script src="_js/tac_init.js"></script>-->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () {};
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+    </script> -->
 </head>
 
 <body>
     
-    <?php require_once __DIR__ . '/_templates/nav.php'; ?>
+    <?php require_once __DIR__ . '/_templates/header.php'; ?>
+    
+    <main id="main">
 
-    <header id="accueil">
-        
-        <?php require_once __DIR__ . '/_templates/header.php'; ?>
+        <div id="content" class="flex">
 
+<<<<<<< HEAD
         <section id="beta-text" class="news_home">
             <div class="container">
                 <h2>Notre plateforme se construit...</h2>
@@ -90,24 +93,45 @@ require "_src/news_model.php";
         </section>
         
         <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+=======
+            <?php //require_once __DIR__ . '/_templates/nav.php'; ?>
 
-        <div class="header_background">
-            <img src="_img/poster.webp" alt="">
+            <section id="left-content">
+                    
+                <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/partners.php'; ?>
+
+            </section>
+
+            <section id="right-content">
+
+                <?php require_once __DIR__ . '/_templates/streamlist.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/side-links.php'; ?>
+                
+            </section>
+>>>>>>> reconnTF-2
+
         </div>
-    </header>
 
-    <?php require_once __DIR__ . '/_templates/presentation.php'; ?>
-
-    <?php require_once __DIR__ . '/_templates/partners.php'; ?>
-
-    <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+    </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
 	<script src="_js/main.js"></script>
+=======
+    <div class="header_background"></div>
+    
+
+    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
+>>>>>>> reconnTF-2
     <script src="_js/streams.js" defer></script>
 </body>
 </html>

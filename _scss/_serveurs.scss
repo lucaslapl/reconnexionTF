@@ -1,78 +1,74 @@
 /****** SERVEURS *******/
 
 #serveurs {
-  width: 100%;
-  min-height: 650px;
-  background: linear-gradient(transparent, rgb(26, 35, 47));
-  padding: 32px 0;
   box-sizing: border-box;
+  z-index: 10;
+  background-color: #1c1a19;
+  border-radius: 3px;
+  margin: 15px;
+  box-shadow: 1px 1px 2px #000;
+  padding: 5px 20px;
 
   .container {
-    width: 90%;
-    margin: 0 auto;
     flex-direction: column;
+
+    h1 {
+      font-family: TF2Build;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+
+      .fa-server {
+        margin-right: 10px;
+      }
+    }
   }
 
-  h1 {
-    font-family: TF2Secondary;
-    width: 80%;
-    margin: 0 auto 20px auto;
-    color: #7ef9ff;
-    font-size: 3em;
-  }
+  
 
   #reconntf-servers .server,
   #fff-servers .server {
-    width: 85%;
-    min-height: 50px;
-    border-radius: 10px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 15px;
     justify-content: space-between;
-    z-index: 50;
-  }
-  #reconntf-servers .server {
-    cursor: pointer;
-  }
-  #fff-servers.servers {
-    cursor: default;
+    height: 50px;
   }
 }
 
 #reconntf-servers,
 #fff-servers {
   width: 100%;
+  margin-bottom: 10px;
 
   h2 {
     font-family: TF2Secondary;
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1.2em;
+    text-align: left;
     color: #7ef9ff;
+    margin: 5px 0;
+
+    a {
+      color: #fff;
+      font-size: .8em;
+      text-decoration: underline;
+
+      img {
+        width: 20px;
+        vertical-align: middle;
+      }
+    }
   }
 }
 
 .wrap-holiday {
-  border: 1px solid gold;
+  border-left: 8px solid gold;
 }
 
-.wrap-vanilla {
-  border: 1px solid #6b8dc4;
+.wrap-reconntf {
+  border-left: 8px solid #6b8dc4;
 }
 
-.wrap-custom {
-  border: 1px solid #c4996b;
-}
-
-#serveurs .container .server .server-title {
-  text-align: center;
-
-  .fa-chevron-right {
-    margin: 0 15px;
-  }
-}
-
-.srv-holiday {
-  border: 1px solid gold;
+.wrap-fff {
+  border-left: 8px solid #c4996b;
 }
 
 #holiday-srv h3::before {
@@ -86,50 +82,25 @@
   background-image: url("../_img/palmtree.png");
 }
 
-.srv-vanilla {
-  border: 1px solid #2eebff;
-}
-
-.srv-custom {
-  border: 1px solid #ff7c2e;
-}
-
-#serveurs .container .server .server-title h3 {
-  font-family: TF2Build;
-  font-size: 1.5em;
-  margin: 0 25px;
-}
-
-#holiday-feat, #vanilla-feat, #custom-feat, #mvm-feat, #tfdb-feat {
-  display: none;
-}
-
 #serveurs {
-  .server-features {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    top: -16px;
-    width: 75%;
-    padding: 5px 25px;
-    box-sizing: border-box;
-
-    ul {
-      list-style: inside;
-      padding: 0;
-    }
-
-    li {
-      margin: 10px auto;
-    }
-  }
-
   .server {
+    .server-title {
+      justify-content: space-between;
+      width: 365px;
+      padding: 0 20px;
+
+      h3 {
+        font-family: TF2Build;
+        font-size: 1em;
+      }
+      p {
+        font-size: .8em;
+        font-family: TF2Secondary;
+      }
+    }
     .server-connect {
       text-align: center;
       background: rgba(0, 0, 0, 0);
-      width: 200px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
       transition: .3s;
       flex-direction: row-reverse;
     }
@@ -147,65 +118,42 @@
     }
 
     .server-connect {
-      img {
-        @include square(35px);
-        @include absolute(3px, 0, initial);
-        opacity: .2;
-        transition: .4s;
-      }
-
+      margin: 5px;
       a {
-        font-weight: bold;
-        padding: 10px 20px;
-        transition: .4s;
+        @include tf2button(110px, 6px, 0, 1em, 4px);
+        &:hover {
+          color: #ECE3CB;
+          background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
+        }
+        .fa-right-to-bracket {
+          display: none;
+        }
+        span {
+          font-family: TF2Build;
+        }
       }
     }
   }
 }
 
-.link-holiday {
-  color: gold;
-}
-
-.link-vanilla {
-  color: #7ef9ff;
-}
-
-.link-custom {
-  color: #ffc17e;
-}
-
 #serveurs {
-  .container .server .server-connect a:hover img {
-    left: -20px;
-    transform: rotate(180deg);
-    opacity: .8;
-  }
-
   .serveurs-bg {
     @include absolute-0;
     height: 100%;
     overflow: hidden;
     width: 100%;
-    box-shadow: inset 0px 0px 35px #000;
     z-index: -1;
 
     .character {
-      padding-left: 65%;
-      padding-top: 200px;
+      padding-left: 50%;
       position: absolute;
-      width: 100%;
+      width: 285px;
+      bottom: 0;
       z-index: 1;
-    }
 
-    .bg {
-      background-image: url("../_img/gorgeblog_cap2.webp");
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: .4;
-      height: 100%;
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

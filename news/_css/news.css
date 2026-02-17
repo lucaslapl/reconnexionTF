@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /***** ARTICLE.PHP *****/
 #news-head {
   width: 100%;
@@ -7,23 +8,53 @@
 }
 #news-head .news-title {
   padding-top: 70px;
+=======
+.hero {
+  z-index: 2;
+}
+
+/***** ARTICLE.PHP *****/
+#news-head {
+  width: 100%;
+  margin-top: 20px;
+  padding: 32px;
+  box-sizing: border-box;
+  background-color: #312e2c;
+}
+#news-head .news-title {
+>>>>>>> reconnTF-2
   width: 80%;
   margin: 0 auto;
 }
 #news-head .news-title h1 {
   font-size: 3em;
+<<<<<<< HEAD
+=======
+  font-family: TF2Build;
+}
+#news-head .news-title span {
+  font-family: TF2Secondary;
+>>>>>>> reconnTF-2
 }
 
 #news-content {
   width: 100%;
   box-sizing: border-box;
+<<<<<<< HEAD
   background-color: #263048;
+=======
+  background-color: #1c1a19;
+>>>>>>> reconnTF-2
 }
 #news-content .article {
   width: 850px;
   margin: 0 auto;
   color: #000;
+<<<<<<< HEAD
   background: #f9f9f9;
+=======
+  background: #f6f6f6;
+>>>>>>> reconnTF-2
   padding: 50px;
   box-shadow: 0 15px 15px 0 #000;
 }
@@ -57,19 +88,31 @@
   #news-head .news-title {
     width: 100%;
   }
+<<<<<<< HEAD
   #news-content .article {
     width: 100%;
     box-sizing: border-box;
   }
+=======
+>>>>>>> reconnTF-2
   #news-content .article img {
     width: 100%;
     height: 100%;
   }
+<<<<<<< HEAD
 }
 @media all and (max-width: 540px) {
   #news-head .news-title {
     padding-top: 125px;
   }
+=======
+  #news-content .article {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media all and (max-width: 540px) {
+>>>>>>> reconnTF-2
   #news-head .news-title h1 {
     font-size: 2em;
   }
@@ -79,16 +122,34 @@
 }
 /***** INDEX.PHP *****/
 #news {
+<<<<<<< HEAD
   width: 100%;
   background-color: #263048;
   padding: 130px 0 32px 0;
+=======
+  background-color: #1c1a19;
+  border-radius: 3px;
+  padding: 20px 30px;
+  box-shadow: 1px 1px 2px #000;
+  box-sizing: border-box;
+>>>>>>> reconnTF-2
 }
 #news .container {
   margin: 0 64px;
 }
+<<<<<<< HEAD
 #news .news-list {
   width: 1200px;
   background-color: #f9f9f9;
+=======
+#news .container h1 {
+  font-family: TF2Build;
+  font-size: 1.5em;
+}
+#news .news-list {
+  width: 1200px;
+  background-color: #f6f6f6;
+>>>>>>> reconnTF-2
   padding: 25px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -127,9 +188,12 @@
   }
 }
 @media all and (max-width: 750px) {
+<<<<<<< HEAD
   #news {
     padding: 150px 0 32px 0;
   }
+=======
+>>>>>>> reconnTF-2
   #news .news-list .news {
     margin: 30px auto;
     flex-direction: column-reverse;
@@ -145,6 +209,10 @@
   .news-tease {
     display: none;
   }
+<<<<<<< HEAD
 }
 
 /*# sourceMappingURL=news.css.map */
+=======
+}/*# sourceMappingURL=news.css.map */
+>>>>>>> reconnTF-2

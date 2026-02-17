@@ -43,26 +43,28 @@ require '../_src/news_model.php';
     <!-- Web App Manifest -->
     <link rel="manifest" href="../site.webmanifest">
 
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
+
 	<link rel="stylesheet" type="text/css" href="../_css/main.css">
     <link rel="stylesheet" type="text/css" href="../_css/responsive.css">
     <link rel="stylesheet" type="text/css" href="_css/news.css">
 
-    <!-- Cookie Manager (Tarteaucitron.io) -->
+    <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="../tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="../_js/tac_init.js"></script>
+    <script src="../_js/tac_init.js"></script>-->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) 
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () {};
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script>
+    </script>-->
 </head>
 
 <body>
-    <?php include '../_templates/nav_sub.php'; ?>
-
+    <?php require_once '../_templates/header_sub.php'; ?>
     <section id="news">
+        
         <div class="container">
             <h1>Actualités communautaires</h1>
         </div>
@@ -106,10 +108,15 @@ require '../_src/news_model.php';
     </section>
 
     <?php include '../_templates/footer_sub.php'; ?>
+<<<<<<< HEAD
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
     <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
+=======
+    
+    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
+>>>>>>> reconnTF-2
 	<script src="_js/news.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
 
 ======================================================================================
 */
+<<<<<<< HEAD
 /********* NAVIGATION BAR *************/
 @media all and (max-width: 1620px) {
   nav .nav-links {
@@ -122,13 +123,63 @@
 /********* HEADER ***********/
 @media all and (max-width: 1100px) {
   .main {
+=======
+/********* MAIN *********/
+@media all and (max-width: 1270px) {
+  html body main #content {
+    width: 100%;
+    background-image: none;
+  }
+  html body main #content #left-content {
+    width: 70%;
+  }
+  html body main #content #right-content {
+    width: 350px;
+  }
+}
+@media all and (max-width: 970px) {
+  html body main #content {
+    flex-direction: column-reverse;
+  }
+  html body main #content #left-content, html body main #content #right-content {
+    width: 100%;
+    padding: 15px 0;
+  }
+  html body main #content .sm-flex {
+    display: flex;
+    justify-content: center;
+  }
+}
+/********* HEADER ***********/
+@media all and (max-width: 1270px) {
+  body {
+    background-size: initial !important;
+  }
+  .sm-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero .logo-title #hero-cta {
+    margin: 20px auto;
+  }
+}
+@media all and (max-width: 1100px) {
+  .hero {
+>>>>>>> reconnTF-2
     display: block;
   }
   .side-info {
     margin: 25px 10px;
   }
   #box-stream {
+<<<<<<< HEAD
     width: 85%;
+=======
+    width: 90%;
+>>>>>>> reconnTF-2
     margin: 0 auto;
   }
   #streams {
@@ -139,6 +190,7 @@
   }
 }
 @media all and (max-width: 726px) {
+<<<<<<< HEAD
   .main {
     width: 95%;
   }
@@ -238,3 +290,121 @@
 }
 
 /*# sourceMappingURL=responsive.css.map */
+=======
+  .news_home .news-list .news p.titre-news {
+    font-size: 0.9em;
+  }
+}
+@media all and (max-width: 550px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .logo-title h2 {
+    width: 90%;
+  }
+  .hero .logo-title h1 {
+    font-size: 1.8em;
+  }
+  .hero .logo-title img {
+    width: 100px;
+  }
+  .hero .logo-title #hero-cta {
+    width: 80%;
+  }
+  .news_home .news-list .news .news-img {
+    display: none;
+  }
+}
+/********** SIDE LINKS **********/
+@media all and (max-width: 550px) {
+  #side-links, #side-social-links {
+    margin: 15px auto;
+  }
+  #side-links h2, #side-social-links h2 {
+    font-size: 1.2em;
+  }
+  #side-links hr, #side-social-links hr {
+    margin: 15px auto;
+  }
+  #side-links ul li a, #side-social-links ul li a {
+    font-size: 0.9em;
+  }
+}
+/****** SERVEURS *******/
+@media all and (max-width: 1050px) {
+  #serveurs {
+    margin: 15px auto 20px auto;
+  }
+}
+@media all and (max-width: 550px) {
+  #serveurs .server .server-title {
+    padding: 0 7px;
+  }
+  #serveurs .server .server-title h3 {
+    font-size: 0.9em;
+  }
+  #serveurs .server .server-connect a {
+    width: 35px;
+  }
+  #serveurs .server .server-connect a .fa-right-to-bracket {
+    display: block;
+    margin: 0 auto;
+  }
+  #serveurs .server .server-connect a span {
+    display: none;
+  }
+}
+@media all and (max-width: 430px) {
+  #serveurs .server .server-title {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #serveurs .server .server-title h3, #serveurs .server .server-title p {
+    margin: 0;
+  }
+  #serveurs .server .server-connect a {
+    width: 50px;
+  }
+}
+/****** PARTNERS ******/
+@media all and (max-width: 550px) {
+  #partners {
+    flex-direction: column;
+  }
+  #partners #commu-partners, #partners #creator-partners {
+    margin: 0 auto;
+  }
+  #partners #creator-partners .container .cta-partner {
+    margin: 15px auto;
+  }
+  #partners #creator-partners .container .creator-link {
+    margin: 0 auto;
+  }
+}
+/****** FOOTER *******/
+@media all and (max-width: 1150px) {
+  footer {
+    position: inherit;
+  }
+}
+@media all and (max-width: 860px) {
+  footer {
+    position: inherit;
+  }
+  footer #copyright {
+    padding-top: 10px;
+  }
+  footer #copyright .foot-links a {
+    text-align: center;
+  }
+  footer #copyright .container {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 410px) {
+  footer #copyright .foot-links a {
+    margin: 0 5px;
+    font-size: 0.9em;
+  }
+}/*# sourceMappingURL=responsive.css.map */
+>>>>>>> reconnTF-2

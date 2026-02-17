@@ -1,8 +1,8 @@
         <section id="actualites" class="news_home">
             <div class="container">
-                <h1>Actualités communautaires</h1>
+                <h1><i class="fa-solid fa-rss"></i>Actualités communautaires <a href="/news/" title="Voir les actualités communautaires">(Voir tout)</a></h1>
             </div>
-             <div class="news-list flex space-evenly">
+                <div class="news-list flex">
             <?php 
 
                 $results = getNews(4);
@@ -19,10 +19,12 @@
             ?>
 
                 <a id="news-nb<?= $id ?>" href="news/<?= $slug ?>">
-                    <div class="news flex <?= $news_type ?>">
-                        <span>Le <?= date('d/m/Y', strtotime($date_publi)) ?></span>
-                        <p><?= $titre ?></p>
-                        <img class="news-img" src="<?= $thumbnail_clean ?>" alt="thumbnail" loading="lazy">
+                    <div class="news flex space-between align-center <?= $news_type ?>">
+                        <div class="flex align-center">
+                            <img class="news-img" src="<?= $thumbnail_clean ?>" alt="thumbnail" loading="lazy">
+                            <p class="titre-news"><?= $titre ?></p>
+                        </div>
+                        <p class="date-news"><?= date('d/m/Y', strtotime($date_publi)) ?></p>
                     </div>
                 </a>
 
@@ -30,8 +32,4 @@
                 } //end foreach
             ?>
             </div>
-
-            <a href="/news/" title="Voir les actualités communautaires" class="news-all">
-                Toutes les actualités
-            </a>
         </section>

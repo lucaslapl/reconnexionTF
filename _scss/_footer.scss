@@ -3,70 +3,37 @@
 footer {
   width: 100%;
   background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
-  overflow: hidden;
-  position: relative;
   z-index: 100;
 
-  #foot-socials {
-    text-align: center;
-    margin: 120px auto;
-    width: 80%;
-
-    h1 {
-      font-family: TF2Secondary;
-      font-size: 2.5em;
-    }
-
-    a {
-      @include square(60px, $radius:  13px);
-      background: #33496c;
-      color: #fff;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      transition: .3s;
-
-      &:hover {
-        background: #6387c1;
-      }
-    }
-  }
-
   #copyright {
-    background-color: #2a4a5e;
+    background-color: #151a26;
     font-size: .9em;
     margin: 0 auto;
     width: 100%;
-    padding: 40px 0 20px 0;
 
-    .foot-links h4 {
-      font-family: TF2Secondary;
-      color: #bbe9ff;
-      margin: 0 0 10px 0;
-    }
+    .foot-links {
+      margin: 0 auto;
 
-    a {
-      color: #bcddff;
+      a {
+        color: #dbedff;
+        margin: 0 10px;
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
-    .foot-links {
-      margin: 0 20px;
-    }
-
     .copyright {
-      margin: 10px 0;
-      text-align: center;
-    }
-  }
+      font-family: TF2Secondary;
+      a {
+        color: #dbedff;
+        font-family: TF2Secondary;
 
-  .foot-bg {
-    @include absolute-0;
-    @include rectangle(100%, 100%);
-    opacity: .2;
-    z-index: -1;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

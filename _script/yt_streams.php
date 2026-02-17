@@ -54,7 +54,8 @@ $videosData = json_decode($videosResponse, true);
 $results = [];
 
 $blacklist = [
-    'UC0FV4-s5hxvBwZvmHlQkRUg'
+    'UC0FV4-s5hxvBwZvmHlQkRUg',
+    'UCJPNl4LTHYv0-EYS5sNcwXA'
 ];
 
 foreach ($videosData['items'] as $item) {
@@ -68,6 +69,7 @@ foreach ($videosData['items'] as $item) {
         'videoId' => $item['id'],
         'title' => $item['snippet']['title'],
         'channelTitle' => $item['snippet']['channelTitle'],
+        'thumbnail' => $item['snippet']['thumbnails']['medium']['url'],
         'viewCount' => $item['liveStreamingDetails']['concurrentViewers'] ?? null
     ];
 }

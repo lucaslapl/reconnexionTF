@@ -18,9 +18,11 @@
                     <li>Le but de <b>reconnexion.tf</b> est de continuer à se développer avec ambition, et que notre plateforme devienne reconnue pour, qu'à terme, nous puissions entrer en partenariat avec d'autres communautés européennes, voire internationales lors de certains évènements (par exemple)</li>
                 </ul>
             </div>
+            <!--
             <div class="img-pres">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8nTjYXaX8w?si=kpmuylLR0PmyaOkX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+                -->
         </div>
         
         <div class="pres-bg"></div>
