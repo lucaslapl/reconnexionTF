@@ -113,13 +113,6 @@ require '_src/config.php';
 
     <?php include '_templates/footer.php'; ?>
 
-<<<<<<< HEAD
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
-    <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
-	<script src="_js/main.js"></script>
-=======
-    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
->>>>>>> reconnTF-2
 </body>
 </html>

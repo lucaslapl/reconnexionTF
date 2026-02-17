@@ -77,11 +77,7 @@
                 article_title: "<?= htmlspecialchars($article['titre'], ENT_QUOTES) ?>",
                 article_slug: "<?= htmlspecialchars($article['slug'], ENT_QUOTES) ?>"
             });
-<<<<<<< HEAD
-        };
-=======
             };
->>>>>>> reconnTF-2
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
     </script>-->
 
@@ -131,13 +127,7 @@
 
     <?php require_once '../_templates/footer_sub.php'; ?>
 
-<<<<<<< HEAD
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
-    <!-- <script src="_js/jquery-3.3.1.min.js"></script> -->
-=======
-    <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
->>>>>>> reconnTF-2
 	<script src="_js/news.js"></script>
 </body>
 </html>

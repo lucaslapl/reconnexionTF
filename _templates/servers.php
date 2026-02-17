@@ -103,24 +103,7 @@
                             </a>
                         </div>
                     </div>
-<<<<<<< HEAD
-                    <div id="jump-fff-srv" class="server flex wrap-custom">
-                        <div class="server-title flex align-center">
-                            <h3>Jump</h3>
-                            <p>
-                                Chargement...
-                            </p>
-                        </div>
-                        <div class="server-connect flex align-center custom">
-                            <a class="link-custom" href="#">
-                                Se connecter
-                            </a>
-                        </div>
-                    </div>
-                    <div id="mge-fff-srv" class="server flex wrap-custom">
-=======
                     <div id="jump-fff-srv" class="server flex wrap-fff">
->>>>>>> reconnTF-2
                         <div class="server-title flex align-center">
                             <h3>MGE</h3>
                             <p>
@@ -128,10 +111,6 @@
                             </p>
                         </div>
                         <div class="server-connect flex align-center custom">
-<<<<<<< HEAD
-                            <a class="link-custom" href="#">
-                                Se connecter<br>
-=======
                             <a href="#">
                                 <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
                                 <span>Rejoindre</span>
@@ -163,7 +142,6 @@
                             <a href="#">
                                 <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
                                 <span>Rejoindre</span>
->>>>>>> reconnTF-2
                             </a>
                         </div>
                     </div>
