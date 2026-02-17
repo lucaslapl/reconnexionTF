@@ -14,6 +14,7 @@
 @import 'nav';
 @import 'header';
 @import 'streams';
+@import 'side-links';
 @import 'presentation';
 @import 'serveurs';
 @import 'partners';
@@ -24,27 +25,43 @@
 html {
   width: 100%;
   height: 100%;
-  background: #080b13;
+  background: #666;
   color: #f6f4f2;
   scroll-behavior: smooth;
 
   body {
     width: 100%;
     min-height: 100%;
+    background-image: url(../_img/ac_spy.webp);
     background-attachment: fixed;
-    background-image: url("../_img/foot-bg.webp");
-    background-size: cover;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     main {
-      width: 1250px;
-      margin: 0 auto;
-      min-height: 100vh;
-      z-index: 2;
+      width: 100%;
+      min-height: 100%;
+      background-color: #e9f1ff;
+      background-image: url(../_img/gun_mettle_2560x1600.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px -5px 30px #0000008f;
 
-      #left-content, #right-content {
-        width: 50%;
-        background-color: #262626;
+      #content {
+        width: 1250px;
+        margin: 0 auto;
+        min-height: 100vh;
+        z-index: 2;
+        box-shadow: 0px 0px 30px black;
+
+        #left-content {
+          width: 850px;
+          background-color: #262626;
+        }
+        #right-content {
+          width: 400px;
+          background-color: #333335;
+        }
       }
     }
   }

@@ -8,27 +8,47 @@
 ======================================================================================
 */
 /********* MAIN *********/
-@media all and (max-width: 1250px) {
-  html body main {
-    width: 95%;
+@media all and (max-width: 1270px) {
+  html body main #content {
+    width: 100%;
+    background-image: none;
+  }
+  html body main #content #left-content {
+    width: 70%;
+  }
+  html body main #content #right-content {
+    width: 350px;
   }
 }
-@media all and (max-width: 1150px) {
-  body {
-    overflow: scroll !important;
+@media all and (max-width: 970px) {
+  html body main #content {
+    flex-direction: column-reverse;
   }
-  html body main {
-    flex-direction: column;
-  }
-  html body main #left-content,
-  html body main #right-content {
+  html body main #content #left-content, html body main #content #right-content {
     width: 100%;
+    padding: 15px 0;
   }
-  html body main #right-content {
-    margin-top: unset;
+  html body main #content .sm-flex {
+    display: flex;
+    justify-content: center;
   }
 }
 /********* HEADER ***********/
+@media all and (max-width: 1270px) {
+  body {
+    background-size: initial !important;
+  }
+  .sm-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero .logo-title #hero-cta {
+    margin: 20px auto;
+  }
+}
 @media all and (max-width: 1100px) {
   .hero {
     display: block;
@@ -59,11 +79,32 @@
   .hero .logo-title h2 {
     width: 90%;
   }
+  .hero .logo-title h1 {
+    font-size: 1.8em;
+  }
+  .hero .logo-title img {
+    width: 100px;
+  }
   .hero .logo-title #hero-cta {
     width: 80%;
   }
   .news_home .news-list .news .news-img {
     display: none;
+  }
+}
+/********** SIDE LINKS **********/
+@media all and (max-width: 550px) {
+  #side-links, #side-social-links {
+    margin: 15px auto;
+  }
+  #side-links h2, #side-social-links h2 {
+    font-size: 1.2em;
+  }
+  #side-links hr, #side-social-links hr {
+    margin: 15px auto;
+  }
+  #side-links ul li a, #side-social-links ul li a {
+    font-size: 0.9em;
   }
 }
 /****** SERVEURS *******/

@@ -2,27 +2,42 @@
 
 header {
   width: 100%;
+  z-index: 10;
+  height: 365px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #151a26;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
 }
 
 .hero {
-  width: 85%;
+  width: 1250px;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 20px;
+  box-sizing: border-box;
 
   .logo-title {
     img {
-      width: 80px;
+      width: 120px;
       margin: 0 10px;
       display: block;
     }
 
     h1 {
       font-family: TF2Secondary;
-      font-size: 1.8em;
-      text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
+      font-size: 2.3em;
+      /**text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;**/
+      text-shadow: 7px 7px 6px #00000096;
       text-transform: uppercase;
       text-align: left;
       color: #fff;
+      margin: 0;
     }
     span.tf {
       font-size: 1.5em;
@@ -40,10 +55,12 @@ header {
 
     #hero-cta {
       @include tf2button(380px, 14px, 24px, 1.3em, 9px);
+      height: 35px;
+      margin: unset;
 
       &:hover {
-        background: #c7ba9f;
-        transform: scale(0.99);
+        color: #ECE3CB;
+        background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
       }
 
       span.cta-join {
@@ -55,10 +72,9 @@ header {
 
 
 .news_home {
-  width: 90%;
   background-color: #1c1a19;
   border-radius: 3px;
-  margin: 15px auto;
+  margin: 15px;
   padding: 15px 0;
   box-shadow: 1px 1px 2px #000;
 
@@ -67,7 +83,7 @@ header {
 
     h1 {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-family: TF2Build;
 
       .fa-rss {
@@ -90,7 +106,7 @@ header {
     box-sizing: border-box;
 
     a {
-      margin: 2px 0;
+      margin: 4px 0;
       background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
       border-radius: 7px
     }
@@ -114,7 +130,7 @@ header {
       p.titre-news {
         font-family: TF2Secondary;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 1.2em;
         color: #1c1a19;
         margin: 0 10px;
       }

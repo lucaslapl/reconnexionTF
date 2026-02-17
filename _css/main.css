@@ -258,25 +258,39 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 /********* HEADER ***********/
 header {
   width: 100%;
+  z-index: 10;
+  height: 365px;
+}
+header::before {
+  content: "";
+  position: absolute;
+  background-color: #151a26;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .hero {
-  width: 85%;
+  width: 1250px;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .hero .logo-title img {
-  width: 80px;
+  width: 120px;
   margin: 0 10px;
   display: block;
 }
 .hero .logo-title h1 {
   font-family: TF2Secondary;
-  font-size: 1.8em;
-  text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;
+  font-size: 2.3em;
+  /**text-shadow: -2px -2px 0 #373737, 2px -2px 0 #373737, -2px 2px 0 #373737, 2px 2px 0 #373737;**/
+  text-shadow: 7px 7px 6px rgba(0, 0, 0, 0.5882352941);
   text-transform: uppercase;
   text-align: left;
   color: #fff;
+  margin: 0;
 }
 .hero .logo-title span.tf {
   font-size: 1.5em;
@@ -301,20 +315,21 @@ header {
   text-align: center;
   font-size: 1.3em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
+  height: 35px;
+  margin: unset;
 }
 .hero .logo-title #hero-cta:hover {
-  background: #c7ba9f;
-  transform: scale(0.99);
+  color: #ECE3CB;
+  background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
 }
 .hero .logo-title #hero-cta span.cta-join {
   font-family: TF2Build;
 }
 
 .news_home {
-  width: 90%;
   background-color: #1c1a19;
   border-radius: 3px;
-  margin: 15px auto;
+  margin: 15px;
   padding: 15px 0;
   box-shadow: 1px 1px 2px #000;
 }
@@ -323,7 +338,7 @@ header {
 }
 .news_home .container h1 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: TF2Build;
 }
 .news_home .container h1 .fa-rss {
@@ -342,7 +357,7 @@ header {
   box-sizing: border-box;
 }
 .news_home .news-list a {
-  margin: 2px 0;
+  margin: 4px 0;
   background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
   border-radius: 7px;
 }
@@ -364,7 +379,7 @@ header {
 .news_home .news-list .news p.titre-news {
   font-family: TF2Secondary;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #1c1a19;
   margin: 0 10px;
 }
@@ -427,16 +442,27 @@ header {
 #box-stream {
   background: #1c1a19;
   border-radius: 3px;
-  box-shadow: 1px 1px 2px #000;
-  width: 90%;
+  box-shadow: 0px 0px 5px #000;
   min-height: 200px;
   padding-top: 10px;
-  margin: 20px auto 0 auto;
+  margin: -60px 15px 0 15px;
+}
+#box-stream::before {
+  content: "";
+  background-image: url("../_img/Scout_Director.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -130px;
+  left: 10px;
+  width: 360px;
+  height: 360px;
+  z-index: -1;
 }
 #box-stream h1 {
   margin: 5px auto 10px auto;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: TF2Build;
 }
 #box-stream h1 .fa-tv {
@@ -549,6 +575,90 @@ header {
   margin: 10px auto;
 }
 
+#side-links {
+  background: #1c1a19;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #000;
+  min-height: 200px;
+  padding: 10px;
+  margin: 20px 15px 0 15px;
+}
+#side-links h2 {
+  margin: 5px auto 25px auto;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: TF2Build;
+}
+#side-links hr {
+  border: none;
+  background: #bbb;
+  height: 2px;
+  margin: 35px auto 15px auto;
+}
+#side-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#side-links ul li a {
+  width: unset;
+  padding: 12px 20px;
+  font-family: TF2Build;
+  color: #353535;
+  background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 20px;
+}
+#side-links ul li a:hover {
+  color: #ECE3CB;
+  background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
+}
+
+#side-social-links {
+  background: #1c1a19;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #000;
+  min-height: 200px;
+  padding: 10px;
+  margin: 20px 15px 0 15px;
+}
+#side-social-links h2 {
+  margin: 5px auto 25px auto;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: TF2Build;
+}
+#side-social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#side-social-links ul li a {
+  width: unset;
+  padding: 12px 20px;
+  font-family: TF2Build;
+  color: #353535;
+  background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 20px;
+}
+#side-social-links ul li a:hover {
+  color: #ECE3CB;
+  background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
+}
+
 /****** PRESENTATION *******/
 #presentation {
   width: 100%;
@@ -633,10 +743,9 @@ header {
 #serveurs {
   box-sizing: border-box;
   z-index: 10;
-  width: 90%;
   background-color: #1c1a19;
   border-radius: 3px;
-  margin: 15px auto;
+  margin: 15px;
   box-shadow: 1px 1px 2px #000;
   padding: 5px 20px;
 }
@@ -646,7 +755,7 @@ header {
 #serveurs .container h1 {
   font-family: TF2Build;
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 #serveurs .container h1 .fa-server {
   margin-right: 10px;
@@ -656,7 +765,7 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   justify-content: space-between;
-  height: 40px;
+  height: 50px;
 }
 
 #reconntf-servers,
@@ -667,7 +776,7 @@ header {
 #reconntf-servers h2,
 #fff-servers h2 {
   font-family: TF2Secondary;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: left;
   color: #7ef9ff;
   margin: 5px 0;
@@ -713,7 +822,7 @@ header {
 
 #serveurs .server .server-title {
   justify-content: space-between;
-  width: 300px;
+  width: 365px;
   padding: 0 20px;
 }
 #serveurs .server .server-title h3 {
@@ -755,7 +864,8 @@ header {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
 }
 #serveurs .server .server-connect a:hover {
-  background: #c7ba9f;
+  color: #ECE3CB;
+  background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
 }
 #serveurs .server .server-connect a .fa-right-to-bracket {
   display: none;
@@ -776,7 +886,7 @@ header {
 #serveurs .serveurs-bg .character {
   padding-left: 50%;
   position: absolute;
-  width: 220px;
+  width: 285px;
   bottom: 0;
   z-index: 1;
 }
@@ -787,10 +897,9 @@ header {
 /******* PARTNERS *******/
 #partners {
   align-items: flex-start;
-  width: 90%;
   background-color: #1c1a19;
   border-radius: 3px;
-  margin: 15px auto;
+  margin: 15px;
   padding: 20px 10px;
   box-shadow: 1px 1px 2px #000;
   box-sizing: border-box;
@@ -859,15 +968,15 @@ header {
   margin: 0;
 }
 #partners #creator-partners .container .cta-partner {
-  width: 200px;
-  padding: 6px 0;
+  width: 230px;
+  padding: 11px 15px;
   font-family: TF2Build;
   color: #353535;
   background: linear-gradient(0deg, rgb(199, 186, 159) 35%, rgb(255, 249, 235) 100%);
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 0 auto;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
   background: linear-gradient(0deg, rgb(255, 253, 144) 35%, rgb(255, 249, 235) 100%);
   margin: 15px 0 0 0;
@@ -881,13 +990,10 @@ header {
 footer {
   width: 100%;
   background: linear-gradient(rgb(79, 139, 213), rgba(98, 98, 98, 0.67));
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
   z-index: 100;
 }
 footer #copyright {
-  background-color: #2a4a5e;
+  background-color: #151a26;
   font-size: 0.9em;
   margin: 0 auto;
   width: 100%;
@@ -917,25 +1023,40 @@ footer #copyright .copyright a:hover {
 html {
   width: 100%;
   height: 100%;
-  background: #080b13;
+  background: #666;
   color: #f6f4f2;
   scroll-behavior: smooth;
 }
 html body {
   width: 100%;
   min-height: 100%;
+  background-image: url(../_img/ac_spy.webp);
   background-attachment: fixed;
-  background-image: url("../_img/foot-bg.webp");
-  background-size: cover;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 html body main {
+  width: 100%;
+  min-height: 100%;
+  background-color: #e9f1ff;
+  background-image: url(../_img/gun_mettle_2560x1600.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5607843137);
+}
+html body main #content {
   width: 1250px;
   margin: 0 auto;
   min-height: 100vh;
   z-index: 2;
+  box-shadow: 0px 0px 30px black;
 }
-html body main #left-content, html body main #right-content {
-  width: 50%;
+html body main #content #left-content {
+  width: 850px;
   background-color: #262626;
+}
+html body main #content #right-content {
+  width: 400px;
+  background-color: #333335;
 }/*# sourceMappingURL=main.css.map */

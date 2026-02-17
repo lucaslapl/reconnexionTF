@@ -63,7 +63,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_css/main.css">
     <link rel="stylesheet" type="text/css" href="../_css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="../_css/news.css">
+    <link rel="stylesheet" type="text/css" href="_css/news.css">
 
     <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="../tarteaucitron/tarteaucitron.min.js"></script>
@@ -107,7 +107,7 @@
 </head>
 
 <body>
-    <main id="news-article">
+    <div id="news-article">
         <?php require_once '../_templates/header_sub.php'; ?>
 
         <section id="news-head">
@@ -123,11 +123,9 @@
                 <?= $article['contenu'] ?>
             </div>
         </section>
-    </main>
+    </div>
 
     <?php require_once '../_templates/footer_sub.php'; ?>
-
-    <div class="header_background"></div>
 
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
 	<script src="_js/news.js"></script>

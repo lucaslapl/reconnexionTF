@@ -69,30 +69,34 @@ require "_src/news_model.php";
 
 <body>
     
-    <main id="main" class="flex">
+    <?php require_once __DIR__ . '/_templates/header.php'; ?>
+    
+    <main id="main">
 
-        <?php //require_once __DIR__ . '/_templates/nav.php'; ?>
+        <div id="content" class="flex">
 
-        <section id="left-content">
-            <header id="accueil">
-                
-                <?php require_once __DIR__ . '/_templates/header.php'; ?>
-                
+            <?php //require_once __DIR__ . '/_templates/nav.php'; ?>
+
+            <section id="left-content">
+                    
                 <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
+                <?php require_once __DIR__ . '/_templates/servers.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/partners.php'; ?>
+
+            </section>
+
+            <section id="right-content">
+
+                <?php require_once __DIR__ . '/_templates/streamlist.php'; ?>
+
+                <?php require_once __DIR__ . '/_templates/side-links.php'; ?>
                 
-            </header>
+            </section>
 
-            <?php require_once __DIR__ . '/_templates/partners.php'; ?>
-        </section>
+        </div>
 
-        <section id="right-content">
-            <?php require_once __DIR__ . '/_templates/streamlist.php'; ?>
-
-            <?php require_once __DIR__ . '/_templates/servers.php'; ?>
-        </section>
-
-    
     </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>

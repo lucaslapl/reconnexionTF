@@ -2,7 +2,6 @@
         <div id="copyright">
             <div class="container flex justify-center align-center">
                 <div id="recontf-links" class="flex foot-links">
-                    <a href="a-propos.php">À propos</a>
                     <a href="mailto:contact@reconnexion.tf">Contact</a>
                     <a href="confidentialite.php">Confidentialité</a>
                     <a href="https://statut.reconn.tf/">État des services</a>
