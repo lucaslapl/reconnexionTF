@@ -4,7 +4,7 @@
 
 $maintenance = true;
 
-if ($maintenance && $_SERVER["REMOTE_ADDR"] !== "37.65.22.206") {
+if ($maintenance && $_SERVER["REMOTE_ADDR"] !== "37.65.20.248") {
     header('Location: maintenance.php');
     exit;
 }
