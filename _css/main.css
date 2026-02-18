@@ -449,7 +449,7 @@ header::before {
 }
 #box-stream::before {
   content: "";
-  background-image: url("../_img/Scout_Director.webp");
+  background-image: url("../_img/Scout_Director_shadow.webp");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
