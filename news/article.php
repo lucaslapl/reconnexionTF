@@ -128,6 +128,5 @@
     <?php require_once '../_templates/footer_sub.php'; ?>
 
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
-	<script src="_js/news.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 <?php 
-// Connexion à la DB
 function dbConnect() {
     error_reporting(E_ALL);
     $env = parse_ini_file(__DIR__ . '/.env');

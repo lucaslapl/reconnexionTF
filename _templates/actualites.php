@@ -7,7 +7,6 @@
 
                 $results = getNews(4);
 
-                // Affichage des résultats
                 foreach ($results as $row) {
                     $id = $row["id"];
                     $titre = $row["titre"];
@@ -29,7 +28,7 @@
                 </a>
 
             <?php
-                } //end foreach
+                }
             ?>
             </div>
         </section>
