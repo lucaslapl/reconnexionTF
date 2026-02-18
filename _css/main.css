@@ -490,6 +490,7 @@ header::before {
   font-size: 0.9em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.38);
   margin: 5px 10px;
+  cursor: pointer;
 }
 #box-stream #streams .tabs .tab-button:hover {
   color: #ECE3CB;

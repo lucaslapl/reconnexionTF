@@ -42,6 +42,7 @@
             .tab-button {
                 @include tf2button(unset, 7px, 10px, .9em, 4px);
                 margin: 5px 10px;
+                cursor: pointer;
                 &:hover {
                     color: #ECE3CB;
                     background: linear-gradient(180deg, #9D4F3F, #70392D, #512A20) padding-box, linear-gradient(180deg, #DA9C77, #AD5444 10%, #572D22 90%, #2C1813 100%) border-box;
