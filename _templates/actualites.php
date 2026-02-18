@@ -1,6 +1,6 @@
         <section id="actualites" class="news_home">
             <div class="container">
-                <h1><i class="fa-solid fa-rss"></i>Actualités communautaires <a href="/news/" title="Voir les actualités communautaires">(Voir tout)</a></h1>
+                <h1><i class="fa-solid fa-rss"></i>Actualités communautaires <a href="news/" title="Voir les actualités communautaires">(Voir tout)</a></h1>
             </div>
                 <div class="news-list flex">
             <?php 
