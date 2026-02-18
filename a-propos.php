@@ -52,8 +52,9 @@ require "_src/news_model.php";
     <link rel="preconnect" href="https://ka-f.fontawesome.com">
 
 	<link rel="stylesheet" type="text/css" href="_css/main.css">
-    <link rel="stylesheet" type="text/css" href="_css/a-propos.css">
     <link rel="stylesheet" type="text/css" href="_css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="_css/a-propos.css">
+    
 
     <!-- Cookie Manager (Tarteaucitron.io) 
     <script src="tarteaucitron/tarteaucitron.min.js"></script>
@@ -68,9 +69,9 @@ require "_src/news_model.php";
 </head>
 
 <body>
-    
+    <?php include '_templates/header.php'; ?>
     <main id="a-propos">
-        <?php require_once __DIR__ . '/_templates/header.php'; ?>
+        
 
         <section id="content">
             <h1>À propos de reconnexion.tf</h1>
@@ -119,8 +120,6 @@ require "_src/news_model.php";
     </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
-
-    <div class="header_background"></div>
     
 
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>

@@ -65,6 +65,7 @@ require '_src/config.php';
     <?php include '_templates/header.php'; ?>
 
     <main id="privacy-policy">
+      <section id="content">
       <h1>Politique de confidentialité</h1>
 
       <p>Dernière mise à jour : Le 15 décembre 2025</p>
@@ -109,7 +110,9 @@ require '_src/config.php';
 
       <h2>8. Modifications</h2>
       <p>Cette politique de confidentialité peut être mise à jour à tout moment. La date de mise à jour sera indiquée en haut de cette page.</p>
+      </section>
     </main>
+      
 
     <?php include '_templates/footer.php'; ?>
 

@@ -1,12 +1,9 @@
-body {
-  overflow: scroll !important;
-}
-
 a {
   color: #00bad9;
 }
 
-#privacy-policy {
+#privacy-policy #content {
+  width: 90%;
   background-color: #1c1a19;
   border-radius: 3px;
   margin: 15px auto;
@@ -36,6 +33,9 @@ a {
 
 @media all and (max-width: 555px) {
   #privacy-policy {
-    padding: 90px 25px;
+    width: 100%;
+  }
+  #privacy-policy #content {
+    width: 100%;
   }
 }/*# sourceMappingURL=confidentialite.css.map */
