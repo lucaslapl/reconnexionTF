@@ -49,7 +49,8 @@ $results = [];
 // channel IDs à blacklist (pas le bon jeu, scam, etc.)
 $blacklist = [
     'UC0FV4-s5hxvBwZvmHlQkRUg',
-    'UCJPNl4LTHYv0-EYS5sNcwXA'
+    'UCJPNl4LTHYv0-EYS5sNcwXA',
+    'UCV6g5Taa6MgWAnW2aey9hXw'
 ];
 
 foreach ($videosData['items'] as $item) {
