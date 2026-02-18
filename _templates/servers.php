@@ -105,7 +105,7 @@
                     </div>
                     <div id="jump-fff-srv" class="server flex wrap-fff">
                         <div class="server-title flex align-center">
-                            <h3>MGE</h3>
+                            <h3>Jump</h3>
                             <p>
                                 Chargement...
                             </p>
