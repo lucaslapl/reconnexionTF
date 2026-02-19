@@ -40,17 +40,17 @@
     <link rel="icon" type="image/png" sizes="512x512" href="https://reconnexion.tf/_img/android-chrome-512x512.png">
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="../site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="preload" href="../_fonts/TF2Build.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../_fonts/TF2Secondary.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../_fonts/TF2.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../_fonts/TF2Professor.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/_fonts/TF2Build.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/_fonts/TF2Secondary.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/_fonts/TF2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/_fonts/TF2Professor.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="preconnect" href="https://ka-f.fontawesome.com">
 
-	<link rel="stylesheet" type="text/css" href="../_css/main.css">
-    <link rel="stylesheet" type="text/css" href="../_css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/_css/main.css">
+    <link rel="stylesheet" type="text/css" href="/_css/responsive.css">
 
     <style>
         #error {
@@ -83,15 +83,15 @@
 </head>
 
 <body>
-    <?php include '../_templates/header_sub.php'; ?>
+    <?php include '/_templates/header_sub.php'; ?>
     <main id="error">
         <section id="error-content">
             <h1>403 - Accès non autorisé</h1>
             <h3>Vous vous êtes perdus en chemin ?</h3>
             <p style="font-size: 0.6em;">(ou est-ce que vous essayez de nous faire du mal ?)</p>
-            <img src="../_img/3x.gif" style="margin-top: 30px;">
+            <img src="/_img/3x.gif" style="margin-top: 30px;">
             <br>
-            <a href="../" style="color: #f0c040;">> Retour à l'accueil</a>
+            <a href="/" style="color: #f0c040;">> Retour à l'accueil</a>
         </section>
     </main>
 
