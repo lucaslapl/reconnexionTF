@@ -11,8 +11,8 @@
     $articleSlug = htmlspecialchars($article['slug'], ENT_QUOTES);
 
     if (!$article) {
-        http_response_code(404);
-        echo "Article non trouvé.";
+        header("location: ../errors/404");
+        //echo "Article non trouvé.";
         exit;
     }
 ?>
