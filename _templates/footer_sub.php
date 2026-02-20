@@ -3,7 +3,7 @@
             <div class="container flex justify-center align-center">
                 <div id="recontf-links" class="flex foot-links">
                     <a href="mailto:contact@reconnexion.tf">Contact</a>
-                    <a href="../confidentialite.php">Confidentialité</a>
+                    <a href="../confidentialite">Confidentialité</a>
                     <a href="https://statut.reconn.tf/">État des services</a>
                     <a href="https://fr.tipeee.com/reconnexiontf">Nous soutenir</a>
                 </div>

@@ -20,10 +20,11 @@
                         <p>Doubleur Pack VF</p>
                     </div>
                 </a>
-
+                <!--
                 <a href="news/devenez-partenaire" class="cta-partner" title="Devenez partenaire !">
                     Devenez partenaire !
                 </a>
+                -->
             </div>
         </div>
     </section>

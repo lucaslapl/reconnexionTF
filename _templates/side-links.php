@@ -5,7 +5,10 @@
         </h2>
         <ul>
             <li>
-                <a href="a-propos.php">À propos</a>
+                <a href="a-propos">À propos</a>
+            </li>
+            <li>
+                <a href="https://reconnexion.tf/news/telechargez-le-pack-vf-de-tf2">Pack VF TF2</a>
             </li>
         </ul>    
         <hr>
@@ -15,6 +18,9 @@
         <ul>
             <li>
                 <a href="https://reconnexion.tf/news/rejoignez-l-equipe-reconnexion-tf">Rejoindre l'équipe</a>
+            </li>
+            <li>
+                <a href="https://reconnexion.tf/news/devenez-partenaire" title="Devenez partenaire !">Devenir partenaire</a>
             </li>
             <li>
                 <a href="https://fr.tipeee.com/reconnexiontf" target="_blank">Nous soutenir</a>
