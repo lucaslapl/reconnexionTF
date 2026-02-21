@@ -22,20 +22,20 @@
     <meta charset="utf-8">
     <meta property="og:title" content="reconnexion.tf - <?= htmlspecialchars($article['titre']) ?>">
     <meta property="og:description" content="<?= $description ?>">
-    <meta property="og:image" content="https://beta.reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>">
+    <meta property="og:image" content="https://reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://beta.reconnexion.tf/news/<?= htmlspecialchars($article['slug']) ?>">
+    <meta property="og:url" content="https://reconnexion.tf/news/<?= htmlspecialchars($article['slug']) ?>">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="reconnexion.tf - <?= htmlspecialchars($article['titre']) ?>">
     <meta name="twitter:description" content="<?= $description ?>">
-    <meta name="twitter:image" content="https://beta.reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>">
+    <meta name="twitter:image" content="https://reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>">
 
 
     <meta name="author" content="Lucas Laplanche - lucaslaplanche.fr">
-    <meta name="description" content="reconnexion.tf est le point de repère officiel pour tous les joueurs et toutes les communautés sur Team Fortress 2.">
-    <meta name="keywords" content="reconnexion.tf, reconnexion, communauté, TF2, Team Fortress 2, France, français, serveurs, commu, commu fr, communautaire, plateforme">
+	<meta name="description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
+	<meta name="keywords" content="reconnexion.tf, reconnexion, communauté, TF2, Team Fortress 2, France, français, serveurs, commu, commu fr, communautaire, plateforme, francophone">
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -87,7 +87,7 @@
         "@type": "NewsArticle",
         "headline": "<?= htmlspecialchars($article['titre']) ?>",
         "image": [
-            "https://beta.reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>"
+            "https://reconnexion.tf/<?= str_replace('../', '', $article['thumbnail']) ?>"
         ],
         "datePublished": "<?= date('Y-m-d', strtotime($article['date_publi'])) ?>",
         "author": {

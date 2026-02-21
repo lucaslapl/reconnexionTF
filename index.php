@@ -7,26 +7,26 @@ require "_src/news_model.php";
 <head>
     <meta charset="utf-8">
 	<meta property="og:url" content="https://reconnexion.tf/">
-    <meta property="og:title" content="reconnexion.tf - La Platforme Communautaire pour TF2 en France">
-    <meta property="og:description" content="reconnexion.tf est le point de repère officiel pour tous les joueurs et toutes les communautés sur Team Fortress 2.">
+    <meta property="og:title" content="reconnexion.tf - La Référence Communautaire pour TF2 en France">
+    <meta property="og:description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
     <meta property="og:image" content="https://reconnexion.tf/_img/favicon2.webp">
 	<meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="reconnexion.tf - La Plateforme Communautaire pour TF2 en France">
-    <meta name="twitter:description" content="reconnexion.tf est le point de repère officiel pour tous les joueurs et toutes les communautés sur Team Fortress 2.">
+    <meta name="twitter:title" content="reconnexion.tf - La Référence Communautaire pour TF2 en France">
+    <meta name="twitter:description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
     <meta name="twitter:image" content="https://reconnexion.tf/_img/favicon2.webp">
 
 	<meta name="author" content="Lucas Laplanche - lucaslaplanche.fr">
-	<meta name="description" content="reconnexion.tf est le point de repère officiel pour tous les joueurs et toutes les communautés sur Team Fortress 2.">
-	<meta name="keywords" content="reconnexion.tf, reconnexion, communauté, TF2, Team Fortress 2, France, français, serveurs, commu, commu fr, communautaire, plateforme">
+	<meta name="description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
+	<meta name="keywords" content="reconnexion.tf, reconnexion, communauté, TF2, Team Fortress 2, France, français, serveurs, commu, commu fr, communautaire, plateforme, francophone">
 	
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="HOl6S97eZJt8AXy2Dfh4qqCY27b-7mPPABtnGjW6jk8" />
 
-	<title>reconnexion.tf - La Plateforme Communautaire pour TF2 en France</title>
+	<title>reconnexion.tf - La Référence Communautaire pour TF2 en France</title>
 
     <!-- Favicon standard -->
     <link rel="shortcut icon" href="https://reconnexion.tf/_img/favicon.ico">
