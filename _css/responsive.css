@@ -26,7 +26,6 @@
   }
   html body main #content #left-content, html body main #content #right-content {
     width: 100%;
-    padding: 15px 0;
   }
   html body main #content .sm-flex {
     display: flex;
@@ -56,8 +55,12 @@
   .side-info {
     margin: 25px 10px;
   }
+  .news_home {
+    width: 100%;
+    margin: 0;
+  }
   #box-stream {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   #streams {
