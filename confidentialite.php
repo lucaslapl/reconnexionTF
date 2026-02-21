@@ -8,13 +8,13 @@ require '_src/config.php';
 	<meta property="og:url" content="https://reconnexion.tf/">
     <meta property="og:title" content="reconnexion.tf - La Référence Communautaire pour TF2 en France">
     <meta property="og:description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
-    <meta property="og:image" content="https://reconnexion.tf/_img/favicon2.webp">
+    <meta property="og:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 	<meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="reconnexion.tf - La Référence Communautaire pour TF2 en France">
     <meta name="twitter:description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
-    <meta name="twitter:image" content="https://reconnexion.tf/_img/favicon2.webp">
+    <meta name="twitter:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 
 	<meta name="author" content="Lucas Laplanche - lucaslaplanche.fr">
 	<meta name="description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
