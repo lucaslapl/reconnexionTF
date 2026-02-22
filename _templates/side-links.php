@@ -23,7 +23,7 @@
                 <a href="https://reconnexion.tf/news/devenez-partenaire" title="Devenez partenaire !">Devenir partenaire</a>
             </li>
             <li>
-                <a href="https://fr.tipeee.com/reconnexiontf" target="_blank">Nous soutenir</a>
+                <a href="nous-soutenir">Nous soutenir</a>
             </li>
         </ul>
     </div>
