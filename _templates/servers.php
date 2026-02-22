@@ -83,6 +83,20 @@
                             </a>
                         </div>
                     </div>
+                    <div id="classified-srv" class="server flex wrap-reconntf">
+                        <div class="server-title flex align-center">
+                            <h3>Classified #1</h3>
+                            <p>
+                                Chargement...
+                            </p>
+                        </div>
+                        <div class="server-connect flex align-center custom">
+                            <a href="steam://connect/jeu.reconnexion.tf:28015">
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 

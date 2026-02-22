@@ -1,4 +1,4 @@
 <?php
-header('Location: steam://connect/152.53.183.126:27055');
+header('Location: steam://connect/jeu.reconnexion.tf:27095');
 exit;
 ?>
