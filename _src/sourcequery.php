@@ -1,7 +1,7 @@
 <?php
 
 	$cache_file = __DIR__ . '/cache_servers.json';
-	$cache_lifetime = 5; // en secondes (5 min)
+	$cache_lifetime = 300; // en secondes (5 min)
 
 
 	error_reporting(E_ALL);
