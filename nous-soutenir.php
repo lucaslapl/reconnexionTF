@@ -75,15 +75,19 @@ require "_src/news_model.php";
         <section id="content">
             <h1>Soutenir reconnexion.tf</h1>
 
-            <div class="flex flex-reverse">
+            <div class="flex flex-reverse space-around">
                 <div id="soutiens">
                     <h2>Nos bienfaiteurs</h2>
-                    <p>Soyez le premier !</p>
+                    <h3>Tier 1 : Mécènes</h3>
+                    <p class="befirst">Soyez le premier !</p>
+                    <h3>Tier 2 : Ambassadeurs</h3>
+                    <p class="befirst">Soyez le premier !</p>
                 </div>
                 <div id="soutenir">
                     <h2>Comment nous soutenir ?</h2>
-                    <p>reconnexion.tf est une plateforme communautaire 100% gratuite, sans publicité, et qui ne génère aucun revenu. Son financement repose entièrement sur la générosité de ses utilisateurs et de ses partenaires. Si vous souhaitez nous soutenir, vous pouvez faire un don via le lien ci-dessous :</p>
-                    <a href="https://fr.tipeee.com/reconnexiontf" target="_blank" class="donate-button">Faire un don</a>
+                    <p>reconnexion.tf est une plateforme communautaire 100% gratuite, sans publicité, et qui ne génère aucun revenu. Son financement repose entièrement sur la générosité de ses utilisateurs et de ses partenaires. Pour en savoir plus sur nos objectifs et si vous souhaitez nous soutenir, vous pouvez le faire en cliquant sur l'encadré Tipeee ci-dessous :</p>
+                    <a href="https://fr.tipeee.com/reconnexiontf" class="tipeee-goal-block" data-color="blue">Soutenez reconnexion.tf sur Tipeee</a>
+                    <script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script>
                 </div>
             </div>
             

@@ -12,12 +12,26 @@
             flex-direction: row-reverse;
         }
 
-        #soutiens, #soutenir {
+        #soutenir {
             width: 50%;
+
+            .tipeee-plugins-widget {
+                text-align: center;
+            }
         }
 
         #soutiens {
             text-align: center;
+            width: 500px;
+
+            h3 {
+                text-align: left;
+                margin: 30px 0;
+            }
+            .befirst {
+                font-style: italic;
+                color: #dbd940;
+            }
         }
 
         h1 {
