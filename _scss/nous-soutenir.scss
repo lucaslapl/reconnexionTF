@@ -74,12 +74,24 @@ footer {
     position: inherit !important;
 }
 
-@media all and (max-width: 555px) {
-  #nous-soutenir {
-    width: 100%;
-
-    #content {
-      width: 100%;
+@media all and (max-width: 1340px) {
+    #nous-soutenir {
+        #content {
+        width: 100%;
+        }
     }
-  }
+}
+
+@media all and (max-width: 1200px) {
+    #nous-soutenir {
+        #content {
+            .flex-reverse {
+                flex-direction: column;
+            }
+
+            #soutenir, #soutiens {
+                width: 100%;
+            }
+        }
+    }
 }

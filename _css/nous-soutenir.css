@@ -61,11 +61,16 @@ footer {
   position: inherit !important;
 }
 
-@media all and (max-width: 555px) {
-  #nous-soutenir {
+@media all and (max-width: 1340px) {
+  #nous-soutenir #content {
     width: 100%;
   }
-  #nous-soutenir #content {
+}
+@media all and (max-width: 1200px) {
+  #nous-soutenir #content .flex-reverse {
+    flex-direction: column;
+  }
+  #nous-soutenir #content #soutenir, #nous-soutenir #content #soutiens {
     width: 100%;
   }
 }/*# sourceMappingURL=nous-soutenir.css.map */
