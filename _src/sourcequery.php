@@ -12,16 +12,16 @@
 	use xPaw\SourceQuery\SourceQuery;
 
 	$servers = [
-		['name' => 'holiday', 'ip' => '193.168.147.15', 'port' => 27075], // RECONN TF
-		['name' => 'vanilla',  'ip' => '193.168.147.15', 'port' => 27015],
-		['name' => 'custom',     'ip' => '193.168.147.15', 'port' => 27035],
-		['name' => 'mvm',  'ip' => '193.168.147.15', 'port' => 27055],
-		['name' => 'tfdb',     'ip' => '193.168.147.15', 'port' => 27095],
-		['name' => 'classified',     'ip' => '193.168.147.15', 'port' => 28015],
-		['name' => 'casu-fff',     'ip' => '37.156.42.49', 'port' => 27015],  // FFF
-		['name' => 'jump-fff',     'ip' => '37.156.42.49', 'port' => 27016],
-		['name' => 'mge-fff',     'ip' => '37.156.42.49', 'port' => 27017],
-		['name' => 'tf2c-fff',     'ip' => '37.156.42.49', 'port' => 27025]
+		['name' => 'holiday', 'ip' => 'jeu.reconnexion.tf', 'port' => 27075], // RECONN TF
+		['name' => 'vanilla',  'ip' => 'jeu.reconnexion.tf', 'port' => 27015],
+		['name' => 'custom',     'ip' => 'jeu.reconnexion.tf', 'port' => 27035],
+		['name' => 'mvm',  'ip' => 'jeu.reconnexion.tf', 'port' => 27055],
+		['name' => 'tfdb',     'ip' => 'jeu.reconnexion.tf', 'port' => 27095],
+		['name' => 'classified',     'ip' => 'jeu.reconnexion.tf', 'port' => 28015],
+		['name' => 'casu-fff',     'ip' => 'funfortress.tf', 'port' => 27015],  // FFF
+		['name' => 'jump-fff',     'ip' => 'funfortress.tf', 'port' => 27016],
+		['name' => 'mge-fff',     'ip' => 'funfortress.tf', 'port' => 27017],
+		['name' => 'tf2c-fff',     'ip' => 'funfortress.tf', 'port' => 27025]
 	];
 
 	$results = [];
