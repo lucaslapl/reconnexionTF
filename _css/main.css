@@ -934,17 +934,20 @@ header::before {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-#partners #commu-partners .commu-box {
+#partners #commu-partners .container a {
+  margin: 5px;
+}
+#partners #commu-partners .container a .commu-box {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   box-sizing: border-box;
 }
-#partners #commu-partners .commu-box img {
+#partners #commu-partners .container a .commu-box img {
   width: 70px;
   border-radius: 9999px;
   transition: 0.2s;
 }
-#partners #commu-partners .commu-box h3 {
+#partners #commu-partners .container a .commu-box h3 {
   font-family: TF2Secondary;
   margin: 5px 0;
   color: #f6f4f2;

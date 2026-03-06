@@ -8,6 +8,12 @@
                         <h3>Fun Fortress Family</h3>
                     </div>
                 </a>
+                <a href="https://discord.gg/BMuj3cqUFt">
+                    <div class="commu-box">
+                        <img src="_img/hf.webp" alt="Logo Highlander France">
+                        <h3>Highlander France</h3>
+                    </div>
+                </a>
             </div>
         </div>
         <div id="creator-partners">

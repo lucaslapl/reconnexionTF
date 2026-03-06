@@ -22,23 +22,27 @@
       text-align: center;
       flex-wrap: wrap;
       margin-bottom: 20px;
-    }
 
-    .commu-box {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 10px;
-      box-sizing: border-box;
+      a {
+        margin: 5px;
 
-      img {
-        width: 70px;
-        border-radius: 9999px;
-        transition: .2s;
-      }
+        .commu-box {
+          background: rgba(0, 0, 0, 0.4);
+          padding: 10px;
+          box-sizing: border-box;
 
-      h3 {
-        font-family: TF2Secondary;
-        margin: 5px 0;
-        color: #f6f4f2;
+          img {
+            width: 70px;
+            border-radius: 9999px;
+            transition: .2s;
+          }
+
+          h3 {
+            font-family: TF2Secondary;
+            margin: 5px 0;
+            color: #f6f4f2;
+          }
+        }
       }
     }
   }
