@@ -113,6 +113,12 @@
 
 /********** SIDE LINKS **********/
 
+@media all and (max-width: 1270px) {
+  #discord-iframe {
+    display: none;
+  }
+}
+
 @media all and (max-width: 550px) {
   #side-links, #side-social-links {
     margin: 15px auto;
