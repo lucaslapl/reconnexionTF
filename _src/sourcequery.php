@@ -18,6 +18,7 @@
 		['name' => 'mvm',  'ip' => 'jeu.reconnexion.tf', 'port' => 27055],
 		['name' => 'tfdb',     'ip' => 'jeu.reconnexion.tf', 'port' => 27095],
 		['name' => 'classified',     'ip' => 'jeu.reconnexion.tf', 'port' => 28015],
+		['name' => 'soap-dm', 'ip' => 'jeu.reconnexion.tf', 'port' => 29015],  // HL FRANCE
 		['name' => 'casu-fff',     'ip' => 'funfortress.tf', 'port' => 27015],  // FFF
 		['name' => 'jump-fff',     'ip' => 'funfortress.tf', 'port' => 27016],
 		['name' => 'mge-fff',     'ip' => 'funfortress.tf', 'port' => 27017],

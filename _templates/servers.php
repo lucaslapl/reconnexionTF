@@ -100,6 +100,26 @@
                 </div>
             </div>
 
+            <div id="hlfrance-servers">
+                <h2>Highlander France</h2>
+                <div class="container flex justify-center align-center">
+                    <div id="soap-dm-srv" class="server flex wrap-fff">
+                        <div class="server-title flex align-center">
+                            <h3>Soap DM</h3>
+                            <p>
+                                Chargement...
+                            </p>
+                        </div>
+                        <div class="server-connect flex align-center custom">
+                            <a href="#">
+                                <i class="fa-solid fa-right-to-bracket" style="font-size: 1.2em;"></i>
+                                <span>Rejoindre</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="fff-servers">
                 <h2>Fun Fortress Family</h2>
                 <div class="container flex justify-center align-center">

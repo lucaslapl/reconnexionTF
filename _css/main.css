@@ -780,6 +780,7 @@ header::before {
   margin-right: 10px;
 }
 #serveurs #reconntf-servers .server,
+#serveurs #hlfrance-servers .server,
 #serveurs #fff-servers .server {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -788,11 +789,13 @@ header::before {
 }
 
 #reconntf-servers,
+#hlfrance-servers,
 #fff-servers {
   width: 100%;
   margin-bottom: 10px;
 }
 #reconntf-servers h2,
+#hlfrance-servers h2,
 #fff-servers h2 {
   font-family: TF2Secondary;
   font-size: 1.2em;
@@ -801,12 +804,14 @@ header::before {
   margin: 5px 0;
 }
 #reconntf-servers h2 a,
+#hlfrance-servers h2 a,
 #fff-servers h2 a {
   color: #fff;
   font-size: 0.8em;
   text-decoration: underline;
 }
 #reconntf-servers h2 a img,
+#hlfrance-servers h2 a img,
 #fff-servers h2 a img {
   width: 20px;
   vertical-align: middle;
