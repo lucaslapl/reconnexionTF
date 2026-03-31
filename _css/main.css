@@ -258,7 +258,7 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 /********* HEADER ***********/
 header {
   width: 100%;
-  z-index: 10;
+  z-index: 1;
   height: 435px;
 }
 header::before {
