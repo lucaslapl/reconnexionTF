@@ -22,9 +22,11 @@
             <li>
                 <a href="https://reconnexion.tf/news/devenez-partenaire" title="Devenez partenaire !">Devenir partenaire</a>
             </li>
+            <!--
             <li>
                 <a href="nous-soutenir">Nous soutenir</a>
             </li>
+            -->
         </ul>
     </div>
 

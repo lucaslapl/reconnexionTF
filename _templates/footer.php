@@ -5,7 +5,7 @@
                     <a href="mailto:contact@reconnexion.tf">Contact</a>
                     <a href="confidentialite">Confidentialité</a>
                     <a href="https://statut.reconn.tf/">État des services</a>
-                    <a href="https://fr.tipeee.com/reconnexiontf">Nous soutenir</a>
+                    <!-- <a href="https://fr.tipeee.com/reconnexiontf">Nous soutenir</a> -->
                 </div>
                 <div id="social-links" class="flex align-center foot-links">
                     <a href="https://discord.gg/ShWmhQDb7H" target="_blank" title="Rejoindre le Discord">
