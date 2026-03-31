@@ -259,7 +259,7 @@ nav:hover + .bbq-overlay, .bbq-overlay:hover {
 header {
   width: 100%;
   z-index: 10;
-  height: 365px;
+  height: 435px;
 }
 header::before {
   content: "";
@@ -1097,7 +1097,7 @@ html body main {
   width: 100%;
   min-height: 100%;
   background-color: #e9f1ff;
-  background-image: url(../_img/gun_mettle_2560x1600.webp);
+  background-image: url(../_img/viaduct_poster.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1108,13 +1108,17 @@ html body main #content {
   margin: 0 auto;
   min-height: 100vh;
   z-index: 2;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px -30px 20px black;
 }
 html body main #content #left-content {
   width: 100%;
   background-color: #262626;
+  margin-top: -30px;
+  border-top-left-radius: 7px;
 }
 html body main #content #right-content {
   width: 400px;
   background-color: #333335;
+  margin-top: -30px;
+  border-top-right-radius: 7px;
 }/*# sourceMappingURL=main.css.map */
