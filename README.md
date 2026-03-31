@@ -4,8 +4,8 @@
 
 [reconnexion.tf](https://reconnexion.tf)
 
-Plateforme communautaire francophone dédiée à Team Fortress 2 et à ses joueurs.  
-Actualités, événements, serveurs, contenus créés par la communauté.
+**reconnexion.tf** est une plateforme qui propose des solutions et services à destination des communautés, créateurs de contenus et initiatives ambitieuses francophones sur Team Fortress 2.
+Nous accompagnons les créateurs dans leurs démarches de développement afin de les mettre en lumière et redynamiser la communauté française de TF2.
 
 ---
 
@@ -13,8 +13,8 @@ Actualités, événements, serveurs, contenus créés par la communauté.
 
 - 🎙️ Articles et podcasts communautaires
 - 📺 Intégration des streams en direct de TF2
-- 🧭 Liste des serveurs publics actifs
-- 👥 Annuaire des créateurs francophones
+- 🧭 Liste des serveurs publics actifs de nos partenaires
+- 👥 Annuaire des communautés et créateurs de contenus francophones
 - 🛠️ Back-office de gestion (seulement pour les articles pour le moment)
 
 ---
@@ -23,7 +23,7 @@ Actualités, événements, serveurs, contenus créés par la communauté.
 
 - **PHP**
 - **PDO MySQL**
-- **HTML / SCSS / JavaScript, jQuery**
+- **HTML / SCSS / JavaScript**
 - [SourceQuery](https://github.com/xPaw/PHP-Source-Query)
 - YouTube et Twitch Data API
 - Git
