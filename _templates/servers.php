@@ -182,12 +182,13 @@
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="serveurs-bg flex justify-center align-center">
             <div class="character flex justify-center">
                 <img src="_img/Red_Engineer.webp" alt="" fetchpriority="high">
             </div>
-            <!--<div class="bg"></div>-->
+            <div class="bg"></div>
         </div>
+        -->
     </section>
     <script src="_js/server-queries.js"></script>

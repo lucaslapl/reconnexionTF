@@ -83,8 +83,6 @@ require "_src/news_model.php";
                     
                 <?php require_once __DIR__ . '/_templates/actualites.php'; ?>
 
-                
-
                 <?php require_once __DIR__ . '/_templates/partners.php'; ?>
 
             </section>
@@ -104,8 +102,6 @@ require "_src/news_model.php";
     </main>
 
     <?php require_once __DIR__ . '/_templates/footer.php'; ?>
-
-    <div class="header_background"></div>
     
 
     <script src="https://kit.fontawesome.com/2f306d349c.js" crossorigin="anonymous"></script>
