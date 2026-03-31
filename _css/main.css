@@ -349,6 +349,20 @@ header::before {
   color: #fff;
   text-decoration: underline;
 }
+.news_home .main-news {
+  padding: 20px;
+}
+.news_home .main-news a {
+  color: #000;
+}
+.news_home .main-news a img {
+  width: 650px;
+  display: flex;
+  margin: 0 auto;
+}
+.news_home .main-news p, .news_home .main-news h2, .news_home .main-news h3, .news_home .main-news h4, .news_home .main-news h5, .news_home .main-news h6 {
+  color: #fff !important;
+}
 .news_home .news-list {
   width: 100%;
   margin: 0 auto;
@@ -439,6 +453,23 @@ header::before {
   z-index: 1;
 }
 
+#site_desc {
+  margin: 15px;
+  padding: 15px 0;
+}
+#site_desc .container {
+  padding: 5px 20px 15px 20px;
+}
+#site_desc .container h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: TF2Build;
+}
+#site_desc .container a {
+  color: #5abccc;
+  text-decoration: underline;
+}
+
 #box-stream {
   background: #1c1a19;
   border-radius: 3px;
@@ -454,7 +485,7 @@ header::before {
   background-repeat: no-repeat;
   position: absolute;
   top: -130px;
-  left: 10px;
+  left: -30px;
   width: 360px;
   height: 360px;
   z-index: -1;
@@ -798,7 +829,7 @@ header::before {
 #hlfrance-servers h2,
 #fff-servers h2 {
   font-family: TF2Secondary;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: left;
   color: #7ef9ff;
   margin: 5px 0;
@@ -847,11 +878,11 @@ header::before {
 #serveurs .server .server-title {
   justify-content: space-between;
   width: 365px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 #serveurs .server .server-title h3 {
   font-family: TF2Build;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 #serveurs .server .server-title p {
   font-size: 0.8em;
@@ -876,7 +907,7 @@ header::before {
   margin: 5px;
 }
 #serveurs .server .server-connect a {
-  width: 110px;
+  width: 30px;
   padding: 6px 0;
   font-family: TF2Build;
   color: #353535;
@@ -1073,14 +1104,14 @@ html body main {
   box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.5607843137);
 }
 html body main #content {
-  width: 1250px;
+  width: 1400px;
   margin: 0 auto;
   min-height: 100vh;
   z-index: 2;
   box-shadow: 0px 0px 30px black;
 }
 html body main #content #left-content {
-  width: 850px;
+  width: 100%;
   background-color: #262626;
 }
 html body main #content #right-content {

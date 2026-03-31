@@ -43,9 +43,11 @@
                     <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i> Twitter
                 </a>
             </li>
+            <li>
+                <a href="https://www.twitch.tv/reconnexionTF" target="_blank">
+                    <i class="fa-brands fa-twitch" style="color: #9146ff;"></i> Twitch
+                </a>
+            </li>
         </ul>
-    </div>
-    <div id="discord-iframe">
-        <iframe src="https://discord.com/widget?id=1368874861904269313&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
 </div>

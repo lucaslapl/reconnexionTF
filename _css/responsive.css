@@ -8,24 +8,27 @@
 ======================================================================================
 */
 /********* MAIN *********/
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1400px) {
   html body main #content {
     width: 100%;
     background-image: none;
   }
   html body main #content #left-content {
-    width: 70%;
+    width: 100%;
   }
   html body main #content #right-content {
     width: 350px;
   }
 }
-@media all and (max-width: 970px) {
+@media all and (max-width: 1040px) {
   html body main #content {
     flex-direction: column-reverse;
   }
   html body main #content #left-content, html body main #content #right-content {
     width: 100%;
+  }
+  html body main #content #right-content {
+    padding-bottom: 15px;
   }
   html body main #content .sm-flex {
     display: flex;
@@ -59,10 +62,6 @@
     width: 100%;
     margin: 0;
   }
-  #box-stream {
-    width: 100%;
-    margin: 0 auto;
-  }
   #streams {
     display: block;
   }
@@ -73,6 +72,9 @@
 @media all and (max-width: 726px) {
   .news_home .news-list .news p.titre-news {
     font-size: 0.9em;
+  }
+  .news_home .main-news a img {
+    width: 90%;
   }
 }
 @media all and (max-width: 550px) {
@@ -96,11 +98,6 @@
   }
 }
 /********** SIDE LINKS **********/
-@media all and (max-width: 1270px) {
-  #discord-iframe {
-    display: none;
-  }
-}
 @media all and (max-width: 550px) {
   #side-links, #side-social-links {
     margin: 15px auto;
@@ -116,41 +113,51 @@
   }
 }
 /****** SERVEURS *******/
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1040px) {
   #serveurs {
-    margin: 15px auto 20px auto;
-  }
-}
-@media all and (max-width: 550px) {
-  #serveurs .server .server-title {
-    padding: 0 7px;
-  }
-  #serveurs .server .server-title h3 {
-    font-size: 0.9em;
-  }
-  #serveurs .server .server-connect a {
-    width: 35px;
-  }
-  #serveurs .server .server-connect a .fa-right-to-bracket {
-    display: block;
-    margin: 0 auto;
-  }
-  #serveurs .server .server-connect a span {
     display: none;
   }
 }
-@media all and (max-width: 430px) {
+/**
+@media all and  (max-width: 550px) {
   #serveurs .server .server-title {
-    flex-direction: column;
-    justify-content: center;
+    padding: 0 7px;
+
+    h3 {
+      font-size: .9em;
+    }
   }
-  #serveurs .server .server-title h3, #serveurs .server .server-title p {
-    margin: 0;
-  }
+
   #serveurs .server .server-connect a {
-    width: 50px;
+    width: 35px;
+      .fa-right-to-bracket {
+        display: block;
+        margin: 0 auto;
+      }
+      span {
+        display: none;
+      }
   }
 }
+
+@media all and (max-width: 430px) {
+  #serveurs .server {
+
+    .server-title {
+      flex-direction: column;
+      justify-content: center;
+
+      h3, p {
+        margin: 0;
+      }
+    }
+
+    .server-connect a {
+      width: 50px;
+    }
+  }
+}
+  **/
 /****** PARTNERS ******/
 @media all and (max-width: 550px) {
   #partners {

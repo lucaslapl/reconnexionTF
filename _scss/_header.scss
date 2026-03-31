@@ -98,6 +98,24 @@ header {
     }
   }
 
+  .main-news {
+    padding: 20px;
+
+    a {
+      color: #000;
+
+      img {
+        width: 650px;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+
+    p, h2, h3, h4, h5, h6 {
+      color: #fff !important;
+    }
+  }
+
   .news-list {
     width: 100%;
     margin: 0 auto;

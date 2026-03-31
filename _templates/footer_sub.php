@@ -14,6 +14,9 @@
                     <a href="https://twitter.com/reconnexionTF" target="_blank" title="Rejoindre le Twitter">
                         Twitter
                     </a>
+                    <a href="https://www.twitch.tv/reconnexionTF" target="_blank" title="Rejoindre le Twitch">
+                        Twitch
+                    </a>
                     <p class="copyright">© Copyright 2026 <a href="https://reconnexion.tf/">reconnexion.tf</a></p>
                 </div>
             </div>

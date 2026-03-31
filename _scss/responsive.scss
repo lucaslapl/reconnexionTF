@@ -10,13 +10,13 @@
 
 /********* MAIN *********/
 
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1400px) {
   html body main #content {
     width: 100%;
     background-image: none;
 
     #left-content {
-      width: 70%;
+      width: 100%;
     }
     #right-content {
       width: 350px;
@@ -24,12 +24,15 @@
   }
 }
 
-@media all and (max-width: 970px) {
+@media all and (max-width: 1040px) {
   html body main #content {
     flex-direction: column-reverse;
 
     #left-content, #right-content {
       width: 100%;
+    }
+    #right-content {
+      padding-bottom: 15px;
     }
     .sm-flex {
       display: flex;
@@ -70,11 +73,6 @@
     margin: 0;
   }
 
-  #box-stream {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   #streams {
     display: block;
   }
@@ -87,6 +85,9 @@
 @media all and (max-width: 726px) {
   .news_home .news-list .news p.titre-news {
     font-size: .9em;
+  }
+  .news_home .main-news a img {
+    width: 90%;
   }
 }
 
@@ -113,12 +114,6 @@
 
 /********** SIDE LINKS **********/
 
-@media all and (max-width: 1270px) {
-  #discord-iframe {
-    display: none;
-  }
-}
-
 @media all and (max-width: 550px) {
   #side-links, #side-social-links {
     margin: 15px auto;
@@ -136,12 +131,13 @@
 
 /****** SERVEURS *******/
 
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1040px) {
   #serveurs {
-    margin: 15px auto 20px auto;
+    display: none;
   }
 }
 
+/**
 @media all and  (max-width: 550px) {
   #serveurs .server .server-title {
     padding: 0 7px;
@@ -180,6 +176,7 @@
     }
   }
 }
+  **/
 
 /****** PARTNERS ******/
 

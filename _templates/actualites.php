@@ -2,10 +2,32 @@
             <div class="container">
                 <h1><i class="fa-solid fa-rss"></i>Actualités communautaires <a href="news/" title="Voir les actualités communautaires">(Voir tout)</a></h1>
             </div>
+            <?php 
+                $mainNews = getFirstNews();
+
+                $titre = $mainNews["titre"];
+                $contenu = $mainNews["contenu"];
+                $thumbnail = str_replace('../', '', $mainNews["thumbnail"]);
+                $slug = $mainNews["slug"];
+
+                $contenu = preg_replace('/color\s*:\s*#[0-9a-fA-F]{3,6};?/', '', $contenu); // Supprime les styles de couleur imposées par TinyMCE
+                $contenu_court = truncateHtml($contenu, 1000);
+                ?>
+
+                <div class="main-news">
+                    <a href="news/<?= $slug ?>">
+                        <img src="<?= $thumbnail ?>" alt="thumbnail">
+                        <h2><?= $titre ?></h2>
+                    </a>
+                        <p style="color: #fff !important;">
+                            <?= $contenu_court ?>
+                            <a href="news/<?= $slug ?>" style="color: #fff; text-decoration: underline;">Lire la suite</a>
+                        </p>
+                </div>
                 <div class="news-list flex">
             <?php 
 
-                $results = getNews(4);
+                $results = getNews(3);
 
                 foreach ($results as $row) {
                     $id = $row["id"];

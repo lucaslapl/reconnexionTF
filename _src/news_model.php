@@ -1,23 +1,26 @@
 <?php
 function dbConnect() {
-    error_reporting(E_ALL);
-    $env = parse_ini_file(__DIR__ . '/.env');
+    static $db = null;
 
-    // Détection locale ou prod
+    if ($db !== null) {
+        return $db; // réutilisation de la connexion existante
+    }
+
+    $env = parse_ini_file(__DIR__ . '/.env');
     $isLocal = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']);
 
     if ($isLocal) {
-        define("DB_DSN", $env['DB_LOCAL_DSN']);
-        define("DB_USERNAME", $env['DB_LOCAL_USERNAME']);
-        define("DB_PASSWORD", $env['DB_LOCAL_PASSWORD']);
+        $dsn = $env['DB_LOCAL_DSN'];
+        $username = $env['DB_LOCAL_USERNAME'];
+        $password = $env['DB_LOCAL_PASSWORD'];
     } else {
-        define("DB_DSN", $env['DB_PROD_DSN']);
-        define("DB_USERNAME", $env['DB_PROD_USERNAME']);
-        define("DB_PASSWORD", $env['DB_PROD_PASSWORD']);
+        $dsn = $env['DB_PROD_DSN'];
+        $username = $env['DB_PROD_USERNAME'];
+        $password = $env['DB_PROD_PASSWORD'];
     }
 
     try {
-        $db = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+        $db = new PDO($dsn, $username, $password);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $db;
     } catch (PDOException $e) {
@@ -28,13 +31,79 @@ function dbConnect() {
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 
+function truncateHtml($html, $limit = 500) {
+    $textLength = 0;
+    $output = '';
+    $openTags = [];
+
+    preg_match_all('/(<[^>]+>|[^<]+)/', $html, $tokens);
+
+    foreach ($tokens[0] as $token) {
+
+        // Si c'est une balise HTML
+        if (preg_match('/<[^>]+>/', $token)) {
+
+            // balise fermante
+            if (preg_match('/<\/([a-z0-9]+)>/i', $token, $match)) {
+                $tag = strtolower($match[1]);
+                $key = array_search($tag, array_reverse($openTags, true), true);
+                if ($key !== false) {
+                    unset($openTags[$key]);
+                }
+                $output .= $token;
+            }
+            // balise ouvrante
+            elseif (preg_match('/<([a-z0-9]+)[^>]*>/i', $token, $match)) {
+                $tag = strtolower($match[1]);
+                $openTags[] = $tag;
+                $output .= $token;
+            } else {
+                $output .= $token;
+            }
+
+        } else {
+            // texte normal
+            $remaining = $limit - $textLength;
+
+            if ($remaining <= 0) break;
+
+            if (mb_strlen($token) > $remaining) {
+                $output .= mb_substr($token, 0, $remaining) . '...';
+                $textLength = $limit;
+                break;
+            } else {
+                $output .= $token;
+                $textLength += mb_strlen($token);
+            }
+        }
+    }
+
+    // fermer les balises restantes
+    foreach (array_reverse($openTags) as $tag) {
+        $output .= "</$tag>";
+    }
+
+    return $output;
+}
+
+// Récupération de la première news (la plus récente)
+function getFirstNews() {
+    $db = dbConnect();
+    
+    $sql = "SELECT * FROM reconnexiontf_news ORDER BY id DESC LIMIT 1";
+    $statement = $db->prepare($sql);
+    $statement->execute();
+    
+    return $statement->fetch(PDO::FETCH_ASSOC);
+}
+
 // Récupération News paramétrable
 function getNews($limit = null) {
     $db = dbConnect();
     $sql = "SELECT * FROM reconnexiontf_news ORDER BY id DESC";
 
     if ($limit !== null && is_int($limit)) {
-        $sql .= " LIMIT :limit";
+        $sql .= " LIMIT :limit OFFSET 1"; // OFFSET 1 pour sauter la première news déjà affichée
         $statement = $db->prepare($sql);
         $statement->bindValue(':limit', $limit, PDO::PARAM_INT);
     } else {
