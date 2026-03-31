@@ -1,6 +1,6 @@
         <section id="actualites" class="news_home">
             <div class="container">
-                <h1><i class="fa-solid fa-rss"></i>Actualités communautaires <a href="news/" title="Voir les actualités communautaires">(Voir tout)</a></h1>
+                <h1><i class="fa-solid fa-rss"></i>Actualités communautaires</h1>
             </div>
             <?php 
                 $mainNews = getFirstNews();
@@ -16,8 +16,8 @@
 
                 <div class="main-news">
                     <a href="news/<?= $slug ?>">
-                        <img src="<?= $thumbnail ?>" alt="thumbnail">
                         <h2><?= $titre ?></h2>
+                        <img src="<?= $thumbnail ?>" alt="thumbnail">
                     </a>
                         <p style="color: #fff !important;">
                             <?= $contenu_court ?>
@@ -53,4 +53,5 @@
                 }
             ?>
             </div>
+            <a class="all-news" href="news/" title="Voir les actualités communautaires">Voir toutes les actualités</a>
         </section>

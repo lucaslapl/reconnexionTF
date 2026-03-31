@@ -99,10 +99,14 @@ header {
   }
 
   .main-news {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 
     a {
       color: #000;
+
+      h2 {
+        margin-top: 0;
+      }
 
       img {
         width: 650px;
@@ -160,6 +164,16 @@ header {
       }
     }
   }
+
+  .all-news {
+    margin: 10px auto;
+    color: #fff;
+    text-decoration: underline;
+    width: 180px;
+    display: block;
+    text-align: center;
+  }
+
 }
 
 .mod {

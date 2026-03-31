@@ -350,10 +350,13 @@ header::before {
   text-decoration: underline;
 }
 .news_home .main-news {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 .news_home .main-news a {
   color: #000;
+}
+.news_home .main-news a h2 {
+  margin-top: 0;
 }
 .news_home .main-news a img {
   width: 650px;
@@ -401,6 +404,14 @@ header::before {
   width: 85px;
   filter: brightness(0.3);
   transition: 0.3s;
+}
+.news_home .all-news {
+  margin: 10px auto;
+  color: #fff;
+  text-decoration: underline;
+  width: 180px;
+  display: block;
+  text-align: center;
 }
 
 .mod {
