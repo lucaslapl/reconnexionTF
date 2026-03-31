@@ -56,16 +56,16 @@ require "_src/news_model.php";
     <link rel="stylesheet" type="text/css" href="_css/a-propos.css">
     
 
-    <!-- Cookie Manager (Tarteaucitron.io) 
+    <!-- Cookie Manager (Tarteaucitron.io) -->
     <script src="tarteaucitron/tarteaucitron.min.js"></script>
-    <script src="_js/tac_init.js"></script>-->
+    <script src="_js/tac_init.js"></script>
 
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js) -->
     <script>
         tarteaucitron.user.gtagUa = 'G-N32XTRSJWY';
         tarteaucitron.user.gtagMore = function () {};
         (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-    </script> -->
+    </script> 
 </head>
 
 <body>
@@ -94,18 +94,13 @@ require "_src/news_model.php";
             </div>
             <img src="_img/favicon2.webp" alt="Logo reconnexion.tf">
             <p>
-                <b>reconnexion.tf</b> est une plateforme communautaire lancée en mai 2025, dédiée à Team Fortress 2 pour la communauté francophone.<br>
-                Son but est de s'instaurer comme le point de repère officiel pour tous les joueurs français et toutes les communautés francophones sur Team Fortress 2.<br>
-                Ainsi, vous pourrez retrouver facilement toutes les informations et actualités concernant TF2 en France, ainsi que les serveurs de jeu francophones des communautés partenaires.
+                <b>reconnexion.tf</b> est un projet passion de plateforme communautaire qui a débuté en mai 2025, dont le but premier était de redynamiser la communauté francophone sur Team Fortress 2.<br>
+                Aujourd'hui, <b>reconnexion.tf</b> a pour mission de proposer sa plateforme et ses services à destination des communautés, créateurs de contenus et initiatives ambitieuses francophones sur Team Fortress 2.
             </p>
             <p>
-                Cette plateforme a également pour but de valoriser et mettre en lumière tous les créateurs de contenu, les organisateurs d'événements et les communautés qui le souhaitent.<br>
-                C'est pour cette raison que nous avons mis en place un <a href="https://beta.reconnexion.tf/news/devenez-partenaire" title="Devenir Partenaire">Programme Partenaire</a> pour avoir la possibilité d'être mis en avant gratuitement sur nos réseaux et notre site web.
-            </p>
-            <p>
-                Pour résumer, notre rôle n'est pas de rassembler les joueurs ou les communautés, mais d'agir comme un hub d'informations utiles pour tout le monde sur l'univers de Team Fortress 2.<br>
-                Voyez cela comme un annuaire communautaire, un journal d'actualités et une vitrine pour les créateurs de contenu et les événements francophones liés à TF2.<br>
-                Un peu comme les Pages Jaunes mais en mieux !
+                reconnexion.tf souhaite également agir comme un hub d'informations utiles pour tous les joueurs sur l'univers de Team Fortress 2. Voyez cela comme un annuaire communautaire, un journal d'actualités et une vitrine pour les créateurs de contenu et les événements francophones liés à TF2 !<br>
+                Un peu comme les Pages Jaunes mais en mieux !<br>
+                C'est dans cette optique que nous avons mis en place un <a href="https://beta.reconnexion.tf/news/devenez-partenaire" title="Devenir Partenaire">Programme Partenaire</a> pour avoir la possibilité en tant que créateur ou communauté, d'être mis en avant gratuitement sur nos réseaux et notre site web.
             </p>
             <p>
                 Si le projet vous intéresse et que vous souhaitez nous soutenir, n'hésitez pas à rejoindre notre <a href="https://discord.gg/ShWmhQDb7H" title="Rejoindre le Discord">serveur Discord</a> ou à nous suivre sur <a href="https://twitter.com/reconnexion_tf" title="Rejoindre le Twitter">Twitter</a> pour rester informé des dernières nouveautés.<br>
@@ -114,7 +109,7 @@ require "_src/news_model.php";
             </p>
             <p>
                 Enfin, si le coeur vous en dit et que vous avez des compétences bien particulières que vous souhaitez partager avec nous, n'hésitez pas à postuler pour rejoindre l'équipe via notre Discord !<br>
-                Nous sommes toujours à la recherche de personnes motivées pour nous aider à faire grandir le projet, que ce soit en tant que rédacteur, développeur, designer, modérateur, ou toute autre compétence utile !
+                Nous sommes toujours à la recherche de personnes motivées pour nous aider à faire grandir le projet, que ce soit en tant que rédacteur, développeur, designer, ou toute autre compétence que vous considérez être utile à reconnexion.tf !
             </p>
         </section>
     </main>
