@@ -34,8 +34,7 @@
 
 
     <meta name="author" content="Lucas Laplanche - lucaslaplanche.fr">
-	<meta name="description" content="reconnexion.tf c'est LA référence communautaire pour tous les joueurs et toutes les communautés sur Team Fortress 2 en France !">
-	<meta name="keywords" content="reconnexion.tf, reconnexion, communauté, TF2, Team Fortress 2, France, français, serveurs, commu, commu fr, communautaire, plateforme, francophone">
+	<meta name="description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
