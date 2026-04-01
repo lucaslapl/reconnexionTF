@@ -7,22 +7,22 @@ require '../_src/news_model.php';
 <head>
     <meta charset="utf-8">
 	<!-- HTML Meta Tags -->
-    <title>reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2</title>
-    <meta name="description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
+    <title>reconnexion.tf - Toutes les actualités</title>
+    <meta name="description" content="Retrouvez toutes les actualités communautaires, événements et annonces liés à Team Fortress 2 sur reconnexion.tf. Restez informé des dernières nouvelles de la scène TF2 francophone.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://reconnexion.tf/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2">
-    <meta property="og:description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
+    <meta property="og:title" content="reconnexion.tf - Toutes les actualités">
+    <meta property="og:description" content="Retrouvez toutes les actualités communautaires, événements et annonces liés à Team Fortress 2 sur reconnexion.tf. Restez informé des dernières nouvelles de la scène TF2 francophone.">
     <meta property="og:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="reconnexion.tf">
     <meta property="twitter:url" content="https://reconnexion.tf/">
-    <meta name="twitter:title" content="reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2">
-    <meta name="twitter:description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
+    <meta name="twitter:title" content="reconnexion.tf - Toutes les actualités">
+    <meta name="twitter:description" content="Retrouvez toutes les actualités communautaires, événements et annonces liés à Team Fortress 2 sur reconnexion.tf. Restez informé des dernières nouvelles de la scène TF2 francophone.">
     <meta name="twitter:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">

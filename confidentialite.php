@@ -6,13 +6,13 @@ require '_src/config.php';
 <head>
     <meta charset="utf-8">
 	  <!-- HTML Meta Tags -->
-    <title>reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2</title>
+    <title>reconnexion.tf - Politique de confidentialité</title>
     <meta name="description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://reconnexion.tf/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2">
+    <meta property="og:title" content="reconnexion.tf - Politique de confidentialité">
     <meta property="og:description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
     <meta property="og:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 
@@ -20,7 +20,7 @@ require '_src/config.php';
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="reconnexion.tf">
     <meta property="twitter:url" content="https://reconnexion.tf/">
-    <meta name="twitter:title" content="reconnexion.tf - Plateforme pour les Créateurs de Contenu TF2">
+    <meta name="twitter:title" content="reconnexion.tf - Politique de confidentialité">
     <meta name="twitter:description" content="reconnexion.tf propose sa plateforme et ses services aux créateurs de contenu, communautés et initiatives ambitieuses francophones sur Team Fortress 2.">
     <meta name="twitter:image" content="https://reconnexion.tf/_img/og-reconnexiontf.webp">
 	
