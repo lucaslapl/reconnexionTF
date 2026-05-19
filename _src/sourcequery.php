@@ -33,11 +33,11 @@
     exit;
 }
 
+	$Query = new SourceQuery();
 
 	foreach ($servers as $srv) {
-		$Query = new SourceQuery();
 		try {
-			$Query->Connect($srv['ip'], $srv['port'], 3, SourceQuery::SOURCE);
+			$Query->Connect($srv['ip'], $srv['port'], 1, SourceQuery::SOURCE);
 			$info = $Query->GetInfo();
 
 			$results[$srv['name']] = [
@@ -57,8 +57,6 @@
 		} finally {
 			$Query->Disconnect();
 		}
-
-	usleep(300000); // pause entre requêtes
 } 
 
 header('Content-Type: application/json');
