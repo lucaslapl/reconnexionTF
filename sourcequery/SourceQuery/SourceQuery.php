@@ -1,9 +1,6 @@
 <?php
 declare(strict_types=1);
 
-
-
-
 /**
  * This class provides the public interface to the PHP-Source-Query library.
  *
@@ -16,19 +13,7 @@ declare(strict_types=1);
  */
 
 namespace xPaw\SourceQuery;
-require_once 'SourceQuery.php';
-require_once 'SourceRcon.php';
-require_once 'Socket.php';
-require_once 'GoldSourceRcon.php';
-require_once 'Buffer.php';
-require_once 'BaseSocket.php';
-require_once 'BaseRcon.php';
 
-require_once 'Exception/SourceQueryException.php';
-require_once 'Exception/SocketException.php';
-require_once 'Exception/InvalidPacketException.php';
-require_once 'Exception/InvalidArgumentException.php';
-require_once 'Exception/AuthenticationException.php';
 use xPaw\SourceQuery\Exception\AuthenticationException;
 use xPaw\SourceQuery\Exception\InvalidArgumentException;
 use xPaw\SourceQuery\Exception\InvalidPacketException;
@@ -200,7 +185,42 @@ class SourceQuery
 	 * @throws InvalidPacketException
 	 * @throws SocketException
 	 *
-	 * @return array Returns an array with information on success
+	 * @return array{
+	 *     Protocol: int,
+	 *     HostName: string,
+	 *     Map: string,
+	 *     ModDir: string,
+	 *     ModDesc: string,
+	 *     AppID?: int,
+	 *     Players: int,
+	 *     MaxPlayers: int,
+	 *     Bots: int,
+	 *     Dedicated: string,
+	 *     Os: string,
+	 *     Password: bool,
+	 *     Secure: bool,
+	 *     Version?: string,
+	 *     ExtraDataFlags?: int,
+	 *     GamePort?: int,
+	 *     SteamID?: string|int,
+	 *     SpecPort?: int,
+	 *     SpecName?: string,
+	 *     GameTags?: string,
+	 *     GameID?: int,
+	 *     Address?: string,
+	 *     IsMod?: bool,
+	 *     Mod?: array{
+	 *         Url: string,
+	 *         Download: string,
+	 *         Version: int,
+	 *         Size: int,
+	 *         ServerSide: bool,
+	 *         CustomDLL: bool
+	 *     },
+	 *     GameMode?: int,
+	 *     WitnessCount?: int,
+	 *     WitnessTime?: int
+	 * } Returns an array with server information on success
 	 */
 	public function GetInfo( ) : array
 	{
@@ -379,7 +399,7 @@ class SourceQuery
 	 * @throws InvalidPacketException
 	 * @throws SocketException
 	 *
-	 * @return array Returns an array with players on success
+	 * @return array<int, array{Id: int, Name: string, Frags: int, Time: int, TimeF: string}> Returns an array with players on success
 	 */
 	public function GetPlayers( ) : array
 	{
@@ -424,7 +444,7 @@ class SourceQuery
 	 * @throws InvalidPacketException
 	 * @throws SocketException
 	 *
-	 * @return array Returns an array with rules on success
+	 * @return array<string, string> Returns an array with rules on success
 	 */
 	public function GetRules( ) : array
 	{
@@ -453,7 +473,7 @@ class SourceQuery
 			$Rule  = $Buffer->ReadNullTermString( );
 			$Value = $Buffer->ReadNullTermString( );
 
-			if( !empty( $Rule ) )
+			if( strlen( $Rule ) > 0 )
 			{
 				$Rules[ $Rule ] = $Value;
 			}
@@ -543,6 +563,11 @@ class SourceQuery
 			{
 				throw new SocketException( 'Unknown engine.', SocketException::INVALID_ENGINE );
 			}
+		}
+
+		if( $this->Rcon === null ) // This should not happen, but makes phpstan happy.
+		{
+			throw new SocketException( 'Something went wrong.', SocketException::INVALID_ENGINE );
 		}
 
 		$this->Rcon->Open( );

@@ -9,12 +9,10 @@ parameters:
 		- vendor
 	strictRules:
 		booleansInConditions: false
-		disallowedConstructs: false
 	ignoreErrors:
-		-
-			identifier: missingType.iterableValue
-
-		-
-			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
-			count: 1
-			path: SourceQuery/SourceQuery.php
+		- identifier: missingType.iterableValue
+		  path: Tests/Tests.php
+		- identifier: cast.int
+		  path: SourceQuery/Buffer.php
+		- identifier: cast.double
+		  path: SourceQuery/Buffer.php

@@ -1,6 +1,5 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
+declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -11,7 +10,7 @@ header( 'Content-Type: text/plain' );
 header( 'X-Content-Type-Options: nosniff' );
 
 // Edit this ->
-define( 'SQ_SERVER_ADDR', '152.53.183.126' );
+define( 'SQ_SERVER_ADDR', 'localhost' );
 define( 'SQ_SERVER_PORT', 27015 );
 define( 'SQ_TIMEOUT',     1 );
 define( 'SQ_ENGINE',      SourceQuery::SOURCE );

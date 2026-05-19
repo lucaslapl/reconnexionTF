@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+	use PHPUnit\Framework\Attributes\DataProvider;
 	use xPaw\SourceQuery\BaseSocket;
 	use xPaw\SourceQuery\SourceQuery;
 	use xPaw\SourceQuery\Buffer;
@@ -110,9 +111,6 @@ declare(strict_types=1);
 			$this->SourceQuery->GetPlayers();
 		}
 
-		/**
-		 * @expectedException xPaw\SourceQuery\Exception\SocketException
-		 */
 		public function testNotConnectedGetRules() : void
 		{
 			$this->expectException( xPaw\SourceQuery\Exception\SocketException::class );
@@ -140,9 +138,7 @@ declare(strict_types=1);
 			$this->SourceQuery->Rcon('a');
 		}
 
-		/**
-		 * @dataProvider InfoProvider
-		 */
+		#[DataProvider( 'InfoProvider' )]
 		public function testGetInfo( string $RawInput, array $ExpectedOutput ) : void
 		{
 			if( isset( $ExpectedOutput[ 'IsMod' ] ) )
@@ -180,9 +176,7 @@ declare(strict_types=1);
 			return $DataProvider;
 		}
 
-		/**
-		 * @dataProvider BadPacketProvider
-		 */
+		#[DataProvider( 'BadPacketProvider' )]
 		public function testBadGetInfo( string $Data ) : void
 		{
 			$this->expectException( xPaw\SourceQuery\Exception\InvalidPacketException::class );
@@ -191,9 +185,7 @@ declare(strict_types=1);
 			$this->SourceQuery->GetInfo();
 		}
 
-		/**
-		 * @dataProvider BadPacketProvider
-		 */
+		#[DataProvider( 'BadPacketProvider' )]
 		public function testBadGetChallengeViaPlayers( string $Data ) : void
 		{
 			$this->expectException( xPaw\SourceQuery\Exception\InvalidPacketException::class );
@@ -202,9 +194,7 @@ declare(strict_types=1);
 			$this->SourceQuery->GetPlayers();
 		}
 
-		/**
-		 * @dataProvider BadPacketProvider
-		 */
+		#[DataProvider( 'BadPacketProvider' )]
 		public function testBadGetPlayersAfterCorrectChallenge( string $Data ) : void
 		{
 			$this->expectException( xPaw\SourceQuery\Exception\InvalidPacketException::class );
@@ -214,9 +204,7 @@ declare(strict_types=1);
 			$this->SourceQuery->GetPlayers();
 		}
 
-		/**
-		 * @dataProvider BadPacketProvider
-		 */
+		#[DataProvider( 'BadPacketProvider' )]
 		public function testBadGetRulesAfterCorrectChallenge( string $Data ) : void
 		{
 			$this->expectException( xPaw\SourceQuery\Exception\InvalidPacketException::class );
@@ -250,10 +238,8 @@ declare(strict_types=1);
 			self::assertEquals( [ 'wow' => 'much' ], $this->SourceQuery->GetRules() );
 		}
 
-		/**
-		 * @dataProvider RulesProvider
-		 * @param array<string> $RawInput
-		 */
+		/** @param array<string> $RawInput */
+		#[DataProvider( 'RulesProvider' )]
 		public function testGetRules( array $RawInput, array $ExpectedOutput ) : void
 		{
 			$this->Socket->Queue( (string)hex2bin( "ffffffff4104fce20e" ) ); // Challenge
@@ -291,10 +277,8 @@ declare(strict_types=1);
 			return $DataProvider;
 		}
 
-		/**
-		 * @dataProvider PlayersProvider
-		 * @param array<string> $RawInput
-		 */
+		/** @param array<string> $RawInput */
+		#[DataProvider( 'PlayersProvider' )]
 		public function testGetPlayers( array $RawInput, array $ExpectedOutput ) : void
 		{
 			$this->Socket->Queue( (string)hex2bin( "ffffffff4104fce20e" ) ); // Challenge

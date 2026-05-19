@@ -1,13 +1,12 @@
 <?php
-	error_reporting(E_ALL);
-	ini_set('display_errors', 'on');
+	declare(strict_types=1);
 
-	require __DIR__ . '/../SourceQuery/SourceQuery.php';
+	require __DIR__ . '/../vendor/autoload.php';
 
 	use xPaw\SourceQuery\SourceQuery;
 
 	// Edit this ->
-	define( 'SQ_SERVER_ADDR', '152.53.183.126' );
+	define( 'SQ_SERVER_ADDR', 'localhost' );
 	define( 'SQ_SERVER_PORT', 27015 );
 	define( 'SQ_TIMEOUT',     3 );
 	define( 'SQ_ENGINE',      SourceQuery::SOURCE );
@@ -17,7 +16,7 @@
 
 	$Query = new SourceQuery( );
 
-	$Info    = [];
+	$Info    = null;
 	$Rules   = [];
 	$Players = [];
 	$Exception = null;
@@ -106,7 +105,7 @@
 						</tr>
 					</thead>
 					<tbody>
-<?php if( !empty( $Info ) ): ?>
+<?php if( $Info !== null ): ?>
 <?php foreach( $Info as $InfoKey => $InfoValue ): ?>
 						<tr>
 							<td><?php echo htmlspecialchars( $InfoKey ); ?></td>
@@ -129,7 +128,7 @@
 		}
 		else
 		{
-			echo htmlspecialchars( $InfoValue );
+			echo htmlspecialchars( (string)$InfoValue );
 		}
 	}
 ?></td>
@@ -153,7 +152,7 @@
 						</tr>
 					</thead>
 					<tbody>
-<?php if( !empty( $Players ) ): ?>
+<?php if( count( $Players ) > 0 ): ?>
 <?php foreach( $Players as $Player ): ?>
 						<tr>
 							<td><?php echo htmlspecialchars( $Player[ 'Name' ] ); ?></td>
@@ -179,7 +178,7 @@
 						</tr>
 					</thead>
 					<tbody>
-<?php if( !empty( $Rules ) ): ?>
+<?php if( count( $Rules ) > 0 ): ?>
 <?php foreach( $Rules as $Rule => $Value ): ?>
 						<tr>
 							<td><?php echo htmlspecialchars( $Rule ); ?></td>
