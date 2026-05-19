@@ -13,6 +13,19 @@ declare(strict_types=1);
  */
 
 namespace xPaw\SourceQuery;
+require_once 'SourceQuery.php';
+require_once 'SourceRcon.php';
+require_once 'Socket.php';
+require_once 'GoldSourceRcon.php';
+require_once 'Buffer.php';
+require_once 'BaseSocket.php';
+require_once 'BaseRcon.php';
+
+require_once 'Exception/SourceQueryException.php';
+require_once 'Exception/SocketException.php';
+require_once 'Exception/InvalidPacketException.php';
+require_once 'Exception/InvalidArgumentException.php';
+require_once 'Exception/AuthenticationException.php';
 
 use xPaw\SourceQuery\Exception\InvalidPacketException;
 use xPaw\SourceQuery\Exception\SocketException;
