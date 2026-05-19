@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0c0d10;
+  --surface:#13151a;
+  --surface2:#1a1d24;
+  --accent:#e8593c;
+  --accent2:#f2a623;
+  --text:#f0ede8;
+  --muted:#7a7870;
+  --border:#232630;
+  --font-display:'Barlow Condensed',sans-serif;
+  --font-body:'DM Sans',sans-serif;
+}
+
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;min-height:100vh}
+
+/* NAV */
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 40px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,13,16,0.92);backdrop-filter:blur(12px);z-index:100}
+.logo{font-family:var(--font-display);font-size:22px;font-weight:800;letter-spacing:0.04em;color:var(--text)}
+.logo span{color:var(--accent)}.logo em{color:var(--muted);font-style:normal;font-weight:400}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0.02em;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--accent);color:#fff;border:none;padding:9px 22px;font-family:var(--font-body);font-size:14px;font-weight:500;cursor:pointer;border-radius:4px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+
+/* HERO */
+.hero{padding:80px 40px 72px;max-width:960px;margin:0 auto;position:relative}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--border);border-radius:100px;padding:5px 14px 5px 10px;margin-bottom:28px}
+.hero-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(0.85)}}
+.hero-eyebrow span{font-size:12px;color:var(--muted);letter-spacing:0.05em;font-weight:500;text-transform:uppercase}
+h1{font-family:var(--font-display);font-size:clamp(52px,8vw,88px);font-weight:800;line-height:0.92;letter-spacing:-0.01em;text-transform:uppercase;margin-bottom:28px}
+h1 .line2{color:var(--accent);display:block}
+h1 .line3{color:var(--muted);display:block;font-weight:400}
+.hero-sub{font-size:16px;color:var(--muted);max-width:520px;line-height:1.7;margin-bottom:40px;font-weight:300}
+.hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:#fff;border:none;padding:13px 28px;font-family:var(--font-body);font-size:15px;font-weight:500;cursor:pointer;border-radius:4px;transition:all .2s}
+.btn-primary:hover{background:#d44a2d}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border);padding:13px 24px;font-family:var(--font-body);font-size:15px;font-weight:400;cursor:pointer;border-radius:4px;transition:all .2s}
+.btn-ghost:hover{color:var(--text);border-color:var(--muted)}
+.hero-stat{display:flex;align-items:baseline;gap:6px}
+.hero-stat strong{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--accent2)}
+.hero-stat span{font-size:13px;color:var(--muted)}
+.hero-stats{display:flex;gap:32px;margin-top:52px;padding-top:32px;border-top:1px solid var(--border)}
+.hero-bg {position: absolute;
+  opacity: 0.08;
+  top: 0;
+  width: 60%;
+  z-index: -1;}
+.hero-bg img {    width: 800px;
+  margin: 0 auto;
+  text-align: center;}
+
+/* SECTION WRAPPER */
+section{padding:72px 40px;max-width:960px;margin:0 auto}
+.section-label{font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font-family:var(--font-display);font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-0.01em;text-transform:uppercase;line-height:1;margin-bottom:8px}
+.section-sub{font-size:15px;color:var(--muted);margin-bottom:48px;max-width:560px;font-weight:300}
+
+/* SERVICES GRID */
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.service-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:28px;position:relative;overflow:hidden;transition:border-color .2s,transform .2s;cursor:default}
+.service-card:hover{border-color:#3a3e4a;transform:translateY(-2px)}
+.service-card.featured{border-color:rgba(232,89,60,0.35);background:linear-gradient(135deg,rgba(232,89,60,0.06) 0%,var(--surface) 60%)}
+.service-card.featured::before{content:'';position:absolute;top:0;right:0;width:120px;height:120px;background:radial-gradient(circle,rgba(232,89,60,0.12) 0%,transparent 70%);pointer-events:none}
+.service-icon{width:36px;height:36px;border-radius:6px;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:16px}
+.service-card h3{font-family:var(--font-display);font-size:22px;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;margin-bottom:10px;color:var(--text)}
+.service-card p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.service-tag{display:inline-block;margin-top:18px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);background:rgba(232,89,60,0.1);padding:4px 10px;border-radius:100px}
+
+/* PARTENAIRES */
+.partners-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 40px}
+.partners-inner{max-width:960px;margin:0 auto}
+.partners-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.partner-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:24px;transition:border-color .2s;cursor:default}
+.partner-card:hover{border-color:#3a3e4a}
+.partner-avatar{width:40px;height:40px;border-radius:6px;background:var(--surface2);margin-bottom:14px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--muted)}
+.partner-card h4{font-family:var(--font-display);font-size:18px;font-weight:700;text-transform:uppercase;margin-bottom:6px}
+.partner-card p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.6}
+.partner-badge{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-size:11px;color:var(--accent2);font-weight:500}
+.partner-badge::before{content:'';width:5px;height:5px;background:var(--accent2);border-radius:50%}
+
+/* CTA STRIP */
+.cta-strip{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:48px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-strip h3{font-family:var(--font-display);font-size:32px;font-weight:800;text-transform:uppercase;letter-spacing:0.02em;max-width:480px;line-height:1.1}
+.cta-strip h3 span{color:var(--accent)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:32px 40px;max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+footer .logo{font-size:16px}
+footer p{font-size:13px;color:var(--muted)}
+</style>
+</head>
+
+<body>
+    
+
+
+
+<nav>
+  <div class="logo">reconnexion<span>.</span>tf <em>— Studio</em></div>
+  <ul class="nav-links">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Partenaires</a></li>
+    <li><a href="#">À propos</a></li>
+    <li><a href="#">Actus</a></li>
+  </ul>
+  <button class="nav-cta">Nous contacter</button>
+</nav>
+
+<div style="border-bottom:1px solid var(--border)">
+  <div class="hero">
+    <div class="hero-eyebrow"><div class="hero-dot"></div><span>Studio & services — TF2 francophone</span></div>
+    <h1>
+      Votre projet<br>
+      <span class="line2">mérite mieux</span>
+      <span class="line3">qu'un simple post Discord.</span>
+    </h1>
+    <p class="hero-sub">reconnexion.tf accompagne les créateurs de contenu et communautés TF2 francophones dans leur développement — de la stratégie à la diffusion, en passant par l'identité visuelle et l'hébergement.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Découvrir nos services</button>
+      <button class="btn-ghost">Voir nos partenaires →</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>4</strong><span>services</span></div>
+      <div class="hero-stat"><strong>FR</strong><span>communauté TF2</span></div>
+      <div class="hero-stat"><strong>Live</strong><span>diffusion Twitch</span></div>
+      <div class="hero-stat"><strong>2024</strong><span>studio actif</span></div>
+    </div>
+  </div>
+  <div class="hero-bg">
+    <img src="https://i.imgur.com/0k3FB1k.png" alt="logo">
+  </div>
+</div>
+
+<section>
+  <div class="section-label">Ce qu'on fait</div>
+  <h2>Nos services</h2>
+  <p class="section-sub">Des solutions concrètes pour développer votre présence dans la communauté TF2 francophone.</p>
+  <div class="services-grid">
+
+    <div class="service-card featured">
+      <div class="service-icon">⚙️</div>
+      <h3>Hébergement & Web</h3>
+      <p>Serveurs de jeu TF2 et hébergement web haute disponibilité. Création de site sur mesure pour donner une vraie vitrine à votre communauté.</p>
+      <span class="service-tag">Infra · Web</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📡</div>
+      <h3>Diffusion d'événements</h3>
+      <p>Captation et diffusion live de vos événements sur Twitch, en partenariat avec notre chaîne dédiée. Votre tournoi mérite une prod digne de ce nom.</p>
+      <span class="service-tag">Twitch · Live</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎯</div>
+      <h3>Stratégie & Développement</h3>
+      <p>Accompagnement personnalisé pour structurer votre croissance : stratégie de contenu, communication, positionnement dans l'écosystème TF2 FR.</p>
+      <span class="service-tag">Conseil · Growth</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3>Identité visuelle</h3>
+      <p>Logo, charte graphique, overlays stream, assets — tout ce qu'il faut pour que votre communauté soit immédiatement reconnaissable.</p>
+      <span class="service-tag">Design · Branding</span>
+    </div>
+
+  </div>
+</section>
+
+<div class="partners-section">
+  <div class="partners-inner">
+    <div class="section-label">Ils nous font confiance</div>
+    <h2>Partenaires</h2>
+    <p class="section-sub">Communautés et créateurs avec qui nous travaillons directement.</p>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <div class="partner-avatar">FFF</div>
+        <h4>Fun Fortress Family</h4>
+        <p>Communauté francophone dynamique TF2 — serveurs, événements, entraide et ambiance détendue.</p>
+        <div class="partner-badge">Réalisation d'événements</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-avatar">HF</div>
+        <h4>Highlander France</h4>
+        <p>Communauté compétitive TF2.</p>
+        <div class="partner-badge">Hébergements web et serveurs - Stratégie - Web Design - Production</div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-avatar">DB</div>
+        <h4>Les Débrouillards</h4>
+        <p>Créateurs de contenu spécialisés dans le doublage FR de jeux vidéos.</p>
+        <div class="partner-badge">Hébergements web - Web Design</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="cta-strip">
+    <h3>Prêt à développer votre <span>projet TF2</span> sérieusement ?</h3>
+    <button class="btn-primary" style="white-space:nowrap;padding:15px 32px;font-size:15px">Parler de votre projet →</button>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">reconnexion<span>.</span>tf</div>
+  <p>© 2026 reconnexion.tf — Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
