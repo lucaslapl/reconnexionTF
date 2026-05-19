@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require __DIR__ . '/../vendor/autoload.php';
+//require __DIR__ . '/../vendor/autoload.php';
 
 use xPaw\SourceQuery\SourceQuery;
 
@@ -10,7 +10,7 @@ header( 'Content-Type: text/plain' );
 header( 'X-Content-Type-Options: nosniff' );
 
 // Edit this ->
-define( 'SQ_SERVER_ADDR', 'localhost' );
+define( 'SQ_SERVER_ADDR', 'jeu.reconnexion.tf' );
 define( 'SQ_SERVER_PORT', 27015 );
 define( 'SQ_TIMEOUT',     1 );
 define( 'SQ_ENGINE',      SourceQuery::SOURCE );
