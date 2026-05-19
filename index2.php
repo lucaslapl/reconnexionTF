@@ -551,7 +551,7 @@ footer {
 
 <footer class="main-footer">
     <div class="container">
-        <p>&copy; <?php echo date("Y"); ?> ReconnexionTF. Tous droits réservés.</p>
+        <p>&copy; <?php echo date("Y"); ?> reconnexion.tf - Tous droits réservés.</p>
     </div>
 </footer>
 
